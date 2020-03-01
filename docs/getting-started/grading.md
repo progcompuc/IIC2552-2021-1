@@ -30,11 +30,11 @@ Sin embargo, luego se bajará la escala del curso, es decir, si ningún alumno a
 - Nota_v2 = aplicar_escala_reducida(Nota_v1)
 
 Luego se calcula las décimas de bonus efectivas:
-- B = (BEP + BRPC + BCI + BR) * ((Nota_v1 - 1)/6)
+- B = (BRPC + BCI) * ((Nota_v1 - 1)/6)
 
 Finalmente, la nota final está dada por:
 - Nota_v3 = Nota_v2 + B
 
-Todo lo anterior se encuentra formalizado en el [spreadsheet de notas y asistencia](https://docs.google.com/spreadsheets/d/1Ty5mMrJmWHTnRGDhUum3pemTJL6FNnlgrM1TWpGa0rc/edit?usp=sharing)
+Todo lo anterior se encuentra formalizado en el _spreadsheet de notas y asistencia - pendiente_
 
 [Index](../index) > ```{{page.title}}```
