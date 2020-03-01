@@ -11,6 +11,6 @@ title: Index
 - [Cálculo de la Nota Final](getting-started/grading)
 - [Ética e Integridad Académica](ethics) **\<\<\<\<\<\< IMPORTANTE, LEER TODOS**
 - [Tips para alumn@s nuev@s](tips) **\<\<\<\<\<\< NOVAT@S, PLEASE LEER**
-- [Necesitas ayuda? Lee esto](help)
+- [Afligid@ o frustrad@ con un problema y necesitas ayuda? Lee esto](help)
 - [Recursos y Material de Estudio](resources/resources)
 - [Contests](contests)
