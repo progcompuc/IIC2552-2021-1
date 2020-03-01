@@ -6,7 +6,7 @@ title: Temario
 
 # {{page.title}}
 
-- Introducción a la Programación a la Programación Competitiva (2 semanas)
+- Introducción a la Programación Competitiva (2 semanas)
     - Introducción a C++ para programación competitiva
     - Estructuras de datos y librerías básicas de C++
     - Problemas fáciles e introductorios de implementación
