@@ -44,6 +44,7 @@ Ejemplo de secuencia de pasos para resolver un problema en C++ en Windows usando
 
 ## Tutoriales para aprender C++
 - <http://www.cplusplus.com/doc/tutorial/>
+- <https://www.hackerrank.com/domains/cpp>
 - INPUT / OUTPUT:
 	- [Yet again on C++ input/output](http://codeforces.com/blog/entry/5217)
 	- [¿Qué es mejor para leer input / imprimir output? cin/cout vs printf/scanf](http://www.cplusplus.com/forum/beginner/34165/)
