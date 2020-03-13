@@ -39,7 +39,6 @@ title: Recursos
   - [Repo de Apuntes de Pablo Messina (C++)](https://github.com/PabloMessina/Competitive-Programming-Material)
 - Otras páginas con links a muchos recursos y material de estudio:
   - [CP-ALGORITHMS](https://cp-algorithms.com/)
-  - [hackerrank - cpp](https://www.hackerrank.com/domains/cpp)
   - [Codeforces: An awesome list for competitive programming!](https://codeforces.com/blog/entry/23054)
     - [All of the good tutorials found on codeforces](https://codeforces.com/blog/entry/57282)
   - [Standford CS 97SI: Introduction to Programming Contests](http://web.stanford.edu/class/cs97si/)
