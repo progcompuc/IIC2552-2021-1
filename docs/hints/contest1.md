@@ -4,16 +4,14 @@ title: contest 1 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 1](../contests#contest-1) > ```{{page.title}}```
 
-### A - Valeriy and Deque
+### F - Center Alignment
 <details> 
-   <summary>Hint</summary>
-      Ver si en el algún momento las cosas comienzan a repetirse cíclicamente y aprovechar eso
+   <summary>Hint</summary> Problema bien fácil de implementación
 </details>
 <details>
    <summary>Solución + código</summary>
-   Simular hasta que el máximo quede al comienzo. De ahí en adelante los que están a la derecha del máximo van rotando. Para las queries que van antes del ciclo responde con lo simulado, y para las queries que caen dentro del ciclo calcula modularmente cual va a ser el elemento sacado. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1180C_ValeriyAndDeque.cpp">Código de ejemplo</a>
+   Básicamente hay que leer todas las líneas primero, calcular el ancho máximo, y luego iterar sobre las líneas calculando el whitespace con el que hay que rellenar, y si no es divisible por 2 ir alternando entre dejar uno menos a la izquierda y derecha (se puede usar una variable booleana). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/5B_CenterAlignment.py">Solución ejemplo (Python)</a>,  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/5B_CenterAlignment.cpp">Solución ejemplo (C++)</a>.
 </details>
-
 
 ### B - Roadwork
 <details> 
