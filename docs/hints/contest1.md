@@ -4,6 +4,17 @@ title: contest 1 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 1](../contests#contest-1) > ```{{page.title}}```
 
+### C - Maximum Square
+<details> 
+  <summary>Hint</summary>
+  Si se fijan, para tener un cuadrado de NxN es necesario tener al menor N tablas de al menos N de largo
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Una estrategia óptima es tener los largos de las tablas ordenados de mayor a menor, de esta forma si recorremos el arreglo ordenado se tendrá que en el momento en que la cantidad de tablas restantes sea menor o igual al tamaño de la tabla siguiente ese será el largo del cuadrado óptimo (Si no lo fuera deberían haber más que esa cantidad de tablas con tamaño mayor, lo cual no es posible porque tenemos las tablas ordenadas).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.py">Solución ejemplo (Python)</a>,  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.cpp">Solución ejemplo (C++)</a>
+</details>
+
 ### F - Center Alignment
 <details> 
    <summary>Hint</summary>
