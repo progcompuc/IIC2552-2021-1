@@ -26,6 +26,17 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.py">Solución ejemplo (Python)</a>,  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.cpp">Solución ejemplo (C++)</a>
 </details>
 
+### E - H-Index
+<details> 
+  <summary>Hint</summary>
+  Este problema es similar al de Maximum square. Notar que el H-Index no necesariamente se encuentra entre los números entregados, por ejemplo, para el caso 7 5 1 el resultado sería 2.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Una estrategia es en primer lugar ordenar las citaciones de mayor a menor en un arreglo c, de esta forma si nos fijamos en un índice específico del arreglo ordenado, digamos i (empezando de 0), sabemos que si c[i] < (i + 1) hay al menos c[i] documentos con al menos c[i] citaciones, y por otro lado si (i + 1) < c[i] hay al menos (i + 1) documentos con al menos (i + 1) citaciones. Así si guardamos el menor entre c[i] y (i + 1) para cada índice y de todos estos valores guardamos el mayor, tendremos el H buscado.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/H-Index.py">Solución ejemplo (Python)</a>,  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/H-Index.cpp">Solución ejemplo (C++)</a>
+</details>
+
 ### F - Center Alignment
 <details> 
    <summary>Hint</summary>
