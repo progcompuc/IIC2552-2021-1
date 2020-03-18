@@ -4,7 +4,7 @@ title: contest 1 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 1](../contests#contest-1) > ```{{page.title}}```
 
-### Sum of the Others
+### B - Sum of the Others
 <details> 
   <summary>Hint</summary>
   Problema bien fácil de implementación
