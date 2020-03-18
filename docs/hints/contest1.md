@@ -4,6 +4,17 @@ title: contest 1 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 1](../contests#contest-1) > ```{{page.title}}```
 
+### Sum of the Others
+<details> 
+  <summary>Hint</summary>
+  Problema bien fácil de implementación
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Al sumar todos los números en una linea podemos obtener la suma de los numeros que deberían estar a la izquierda del signo =, más el resultado de sumarlos, es decir al sumar obtenemos el doble del número que buscamos, basta dividir por dos este número.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/SumOfTheOthers.py">Solución ejemplo (Python)</a>,  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/SumOfTheOthers.cpp">Solución ejemplo (C++)</a>
+</details>
+
 ### C - Maximum Square
 <details> 
   <summary>Hint</summary>
