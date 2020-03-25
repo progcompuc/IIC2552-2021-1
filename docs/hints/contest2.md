@@ -4,7 +4,7 @@ title: contest 2 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 2](../contests#contest-2) > ```{{page.title}}```
 
-### G - Youngling Tournament
+### J - Hyperset
 
 <details> 
   <summary>Hint 1</summary>
