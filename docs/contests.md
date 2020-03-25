@@ -14,9 +14,9 @@ Marzo 04, 19 días, [link a **contest**](https://vjudge.net/contest/360690)\\
 ## Contest 2
 Marzo 20, 10 días, [link a **contest**](https://vjudge.net/contest/363243)\\
 **Tópicos**: [Problemas de implementación (excelente oportunidad para aprender C++)](resources/cpp)\\
-**Puntos**: _pending_\\
-**Puntaje Mínimo Esperado**: _pending_\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Puntos**: 1, 1, 2, 1, 3, 3, 3, 3, 4, 3\\
+**Puntaje Mínimo Esperado**: 5\\
+**Hints** y **códigos de ejemplo**: [link](hints/contest2)
 
 ## Contest 3
 Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/364465)\\
