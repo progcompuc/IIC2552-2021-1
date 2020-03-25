@@ -78,5 +78,6 @@ title: Recursos
   - <http://acmgnyr.org>
   - <http://cs.ecs.baylor.edu/~hamerly/icpc/>
   - <http://www.acmicpc-pacnw.org/results.htm>
+  - <http://icpc-ecna.ysu.edu/PastResults/>
 
 [Index](../index) > ```{{page.title}}```
