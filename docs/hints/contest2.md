@@ -32,7 +32,7 @@ title: contest 2 - hints y códigos de ejemplo
 
 <details> 
   <summary>Hint</summary>
-  Nos serviría primero guardar los pares de paréntesis en una lista. Luego sería útil iterar sobre todos los subconjuntos no vacíos de estos pares, y por cada subconjunto borrar esas paréntesis del string original y recolectar todos estos strings resultantes.
+  Nos serviría primero guardar los pares de paréntesis en una lista. Luego sería útil iterar sobre todos los subconjuntos no vacíos de estos pares, y por cada subconjunto borrar esos paréntesis del string original y recolectar todos estos strings resultantes.
 </details>
 <details> 
   <summary>Solución + código</summary>
