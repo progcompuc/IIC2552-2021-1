@@ -4,6 +4,18 @@ title: contest 2 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 2](../contests#contest-2) > ```{{page.title}}```
 
+### E - Counting Stars
+
+<details> 
+  <summary>Hint</summary>
+  Si visitamos cada posicion del arreglo una por una para contar, deben buscar una forma de una vez empezado a ver una estrella marcar todas las celdas que la componen antes de seguir, para no contar dos veces la misma estrella
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Tal como se dijo en el código empezamos a revisar celda por celda y si es que encontramos el inicio de una estrella, marcamos como vistas todas las posiciones que la componen antes de seguir. Para poder hacer esto podemos hacer uso de una función recursiva que dado un punto empiece a revisar recursivamente sus vecinos parte de la estrella, marcamos cada celda al visitarla para no repetir. Este acercamiento a la solución se conoce como DFS (Depth First Search).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingStars.cpp">Código de ejemplo (C++)</a>
+</details>
+
 ### J - Hyperset
 
 <details> 
