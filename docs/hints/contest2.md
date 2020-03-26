@@ -16,9 +16,32 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingStars.cpp">Código de ejemplo (C++)</a>
 </details>
 
-### H - Sum
+### F - Pizza Hawaii
 
 <details> 
+  <summary>Hint</summary>
+  Pensar en una forma de mapear cada ingrediente nativo a su conjunto de pizzas en que aparece, lo mismo para cada ingrediente extranjero, y luego iterar en orden lexicográfico sobre los pares de ingredientes y detectar cuando los conjuntos de pizzas son iguales.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos lo indicado por el hint usando diccionarios / maps. Como son a lo más 60 pizzas, podemos usar los bits de un long long int (64 bits) para representar el conjunto de pizzas a la que pertenece cada ingrediente. El resto es hacer un doble for en orden lexicográfico e imprimir cuando hay match. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/PizzaHawaii.py">Código de ejemplo (Python)</a>, <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/PizzaHawaii.cpp">Código de ejemplo (C++)</a>
+</details>
+
+
+### G - Zagrade
+
+<details> 
+  <summary>Hint</summary>
+  Nos serviría primero guardar los pares de paréntesis en una lista. Luego sería útil iterar sobre todos los subconjuntos no vacíos de estos pares, y por cada subconjunto borrar esas paréntesis del string original y recolectar todos estos strings resultantes.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Encontramos todos los pares de paréntesis usando un stack (vamos metiendo los abre paréntesis al stack y cuando vemos un cierra paréntesis, este forma pareja con el último abre paréntesis del stack y lo borramos). Luego iteramos sobre todos los subconjuntos no vacíos de la lista usando los bits de un entero mask que lo hacemos iterar desde 1 hasta 2^n-1 (for mask in range(1, 1 << n)). Dado un mask fijo, miramos sus bits y con eso sabemos qué pares de paréntesis hay que borrar. El resto es tener una subrutina que borre esos paréntesis, vamos guardando los strings resultantes en un set (para evitar duplicados) y finalmente imprimimos los strings en orden lexicográfico. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/Zagrade.py">Código de ejemplo (Python)</a>, <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/Zagrade.cpp">Código de ejemplo (C++)</a>
+</details>
+
+### H - Sum
+
+<details>
   <summary>Hint</summary>
   Fijense que al aumentar la base a un número es imposible que sus dígitos aumenten, por lo tanto la mayor cantidad de dígitos se alcanza con la menor base posible
 </details>
