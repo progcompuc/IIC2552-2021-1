@@ -16,6 +16,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingStars.cpp">Código de ejemplo (C++)</a>
 </details>
 
+### H - Sum
+
+<details> 
+  <summary>Hint</summary>
+  Fijense que al aumentar la base a un número es imposible que sus dígitos aumenten, por lo tanto la mayor cantidad de dígitos se alcanza con la menor base posible
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para solucionar el problema, según lo descubierto en el hint procedemos a encontrar en primer lugar la menor base posible, para esto basta recorrer los dígitos del input y guardar el mayor + 1. Posteriormente procedemos a sumar en esa base y guardar el largo del resultado, no es necesario obtener el resultado pues sólo nos importa su largo. Para sumar con respecto a una base B basta ir dígito por dígito y ver su suma, dividir por B y pasar el resultado a los siguientes dígitos (tal y como se enseña a sumar en el colegio). por ejemplo 18 + 17 en base 9, sumamos 8 + 7 = 15, dividimos por la base y nos queda 1, luego 1 + 1 = 2 luego sumamos lo que nos quedo de antes y obtenemos 3, al dividir por 9 no queda nada y terminamos.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.py">Código de ejemplo (Python)</a>, <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.cpp">Código de ejemplo (C++)</a>
+</details>
+
 ### J - Hyperset
 
 <details> 
