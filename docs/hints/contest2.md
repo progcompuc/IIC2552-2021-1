@@ -28,6 +28,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.py">Código de ejemplo (Python)</a>, <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.cpp">Código de ejemplo (C++)</a>
 </details>
 
+### I - Making Sequences is Fun
+
+<details> 
+  <summary>Hint</summary>   
+  Una forma simple es ir acumulando la cantidad de números con cantidad de digitos d para cada d desde la cantidad de dígitos de m, como esto sube exponencialmente no es necesario muchas iteraciones.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Como mencionamos en el hint, empezamos a acumular costo y cantidad de números para todos los números con cantidad de dígitos fija empezando desde la cantidad de dígitos de m, la cantidad de números con d dígitos es (10 ^ d - 10 ^ (d - 1)). En el momento en el que agregar todos estos números pase el máximo costo que podemos pagar, en vez de agregar todos estos números, sólo agregamos los que alcanzamos a pagar tomando el cuenta el costo acumulado que llevamos y el costo máximo total.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MakingSequencesIsFun.py">Código de ejemplo (Python)</a>, <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MakingSequencesIsFun.cpp">Código de ejemplo (C++)</a>
+</details>
+
 ### J - Hyperset
 
 <details> 
