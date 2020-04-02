@@ -26,6 +26,17 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/NeedForSpeed.cpp">Código de ejemplo</a>
 </details>
 
+### F - The Meeting Place Cannot Be Changed
+<details> 
+  <summary>Hint</summary>
+  Si un tiempo determinado es suficiente para juntarse, entonces la menor de las máximas posiciones que alcanzan los jugadores en ese tiempo es mayor o igual a la mayor de las mínimas posiciones.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos usar lo mencionado en el hint para hacer una búsqueda binaria sobre el tiempo necesario para juntarse, usando el que el tiempo sea sufuciente como predicado de la búsqueda.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheMeetingPlaceCannotBeChanged.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
