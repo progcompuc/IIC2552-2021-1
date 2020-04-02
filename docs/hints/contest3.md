@@ -23,7 +23,7 @@ title: contest 3 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Simplemente aplicar búsqueda binaria. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BBIN_BúsquedaBinaria2.cpp">Código de ejemplo</a>
+  Simplemente aplicar búsqueda binaria. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BBIN2_BúsquedaBinaria2.cpp">Código de ejemplo</a>
 </details>
 
 ### C - Berland Collider
