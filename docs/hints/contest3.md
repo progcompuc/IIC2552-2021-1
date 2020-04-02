@@ -4,6 +4,20 @@ title: contest 3 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 3](../contests#contest-3) > ```{{page.title}}```
 
+### C - Berland Collider
+
+<details> 
+  <summary>Hint</summary>
+  Para verificar si un tiempo fijo es suficiente para que exista un choque basta fijarse en que para cada partícula moviendose a la izquierda todas las partículas que estaban originalmente a su izquierda moviendose hacia la derecha sigan a su izquierda. O viceversa.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando lo expresado en el hint, podemos realizar búsqueda binaria sobre el tiempo necesario para que haya un choque de forma que para chequear si un tiempo determinado es suficiente recorremos el arreglo ordenado de posiciones guardando la mayor posición de las partículas que se mueven a la derecha en el tiempo actual. Si en algún momento mientras recorremos el arreglo la nueva posición de una partícula moviéndose a la izquierda es menor que la mayor acumulada de las que se mueven a la derecha, tendremos un choque.
+  
+  Ojo que en este problema los límites de tiempo son bastante acotados, por lo que recomendamos usar C++ para programar la solución usando los comandos ios::sync_with_stdio(0); cin.tie(0); para obtener manejo mas rápido de input y output.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/BerlandCollider.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Vanya and Lanterns 
 <details> 
   <summary>Hint</summary>
