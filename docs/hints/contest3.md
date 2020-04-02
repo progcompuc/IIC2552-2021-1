@@ -4,6 +4,28 @@ title: contest 3 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 3](../contests#contest-3) > ```{{page.title}}```
 
+### A - Busqueda Binaria
+
+<details> 
+  <summary>Hint</summary>
+  Hello world de búsqueda binaria
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Simplemente aplicar búsqueda binaria. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BBIN_BusquedaBinaria.cpp">Código de ejemplo</a>
+</details>
+
+### B - Búsqueda Binaria 2
+
+<details> 
+  <summary>Hint</summary>
+  Hello world de búsqueda binaria
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Simplemente aplicar búsqueda binaria. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BBIN_BúsquedaBinaria2.cpp">Código de ejemplo</a>
+</details>
+
 ### C - Berland Collider
 
 <details> 
