@@ -15,6 +15,17 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/VanyaAndLanterns.cpp">Código de ejemplo</a>
 </details>
 
+### E - Need for Speed 
+<details> 
+  <summary>Hint</summary>
+  Podemos abordar el problema como una búsqueda binaria sobre los posibles valores de la constante, piensen en cómo seria posible ocupar el tiempo real.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos como dice el hint hacer una búsqueda binaria sobre los posibles valores de la constante, para esto primero obtenemos los límites de sus posibles valores, la constante va a ser como mínimo el valor que hace a todas las entradas positivas y como máximo 2*10^6, para cada posible valor de la constante durante la búsqueda binaria obtenemos su tiempo dado como la suma de las distancias dividido en sus velocidades trasladadas.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/NeedForSpeed.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
