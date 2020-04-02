@@ -23,7 +23,7 @@ Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/364465)\\
 **Tópicos**: [Búsqueda Binaria](resources/search)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest3)
 
 
 
