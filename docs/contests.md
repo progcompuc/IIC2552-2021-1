@@ -26,7 +26,7 @@ Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/364465)\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest3)
 
 ## Contest 4
-Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/366134)\\
+Abril 03, 10 días, [link a **contest**](https://vjudge.net/contest/366134)\\
 **Tópicos**: [Búsqueda Ternaria](resources/search)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
