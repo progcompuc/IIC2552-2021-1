@@ -73,11 +73,21 @@ title: contest 3 - hints y códigos de ejemplo
 ### G - Distributing Ballot Boxes
 <details> 
   <summary>Hint</summary>
-  Nos preguntan por la cantidad de personas asignadas a la caja con más personas, en la distribución más eficiente posible. LLamemos a este valor óptimo X*. ¿Qué implica esto? Que no es posible hacerlo mejor que X*. Es decir, no es posible distribuir personas en las cajas de tal manera que la caja con más personas tengo estrictamente menos de X* personas. Cualquier otra distribución tendrá un máximo de X >= X*. En otras palabras, si nos preguntamos: ¿Es posible distribuir personas en las cajas de tal manera que la caja con más personas no se pase de X? la respuesta a esta pregunta es NO para X < X* y es sí para X >= X* ... eureka moment (?) ... podemos usar búsqueda binaria para encontrar X* !!
+  Nos preguntan por la cantidad de personas asignadas a la caja con más personas, en la distribución más eficiente posible. LLamemos a este valor óptimo X*. ¿Qué implica esto? Que no es posible hacerlo mejor que X*. Es decir, no es posible distribuir personas en las cajas de tal manera que la caja con más personas tenga estrictamente menos de X* personas. Cualquier otra distribución tendrá un máximo de X >= X*. En otras palabras, si nos preguntamos: ¿Es posible distribuir personas en las cajas de tal manera que la caja con más personas no se pase de X? la respuesta a esta pregunta es NO para X < X* y es sí para X >= X* ... eureka moment (?) ... podemos usar búsqueda binaria para encontrar X* !!
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Simplemente usamos búsqueda binaria para encotrar el primer X que responde sí a la pregunta del hint. ¿Cómo implementamos la pregunta? Dado un X, queremos saber si es posible asignar personas a las cajas de tal manera que la caja con más personas no se pase de X. Este predicado es fácil de implementar: por cada ciudad dividimos su población por X (redondeando hacia arriba) y ese es el mínimo número de cajas necesarias. Si sumamos todo esto y nos pasamos de la cantidad de cajas disponibles, no se puede, de lo contrario, sí se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/5822_DistributingBallotBoxes_v2.cpp">Código de ejemplo</a>
+  Simplemente usamos búsqueda binaria para encotrar el primer X que responde sí a la pregunta del hint. ¿Cómo implementamos la pregunta? Dado un X, queremos saber si es posible asignar personas a las cajas de tal manera que la caja con más personas no se pase de X. Este predicado es fácil de implementar: por cada ciudad dividimos su población por X (redondeando hacia arriba) y ese es el mínimo número de cajas necesarias para dicha ciudad. Si sumamos todo esto y nos pasamos de la cantidad de cajas disponibles, no se puede, de lo contrario, sí se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/5822_DistributingBallotBoxes_v2.cpp">Código de ejemplo</a>
+</details>
+  
+### H - Freight Train
+<details> 
+  <summary>Hint</summary>
+  Similar al problema G, podemos pensar en una cota superior X para el tren más largo que enviamos a Luxemburgo. Si el óptimo es X*, entonces para X < X* no se puede y para X >= X* sí se puede, entonces podemos encontrar X* haciendo búsqueda binaria.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos búsqueda binaria para encontrar X*. Dado una cota superior X, debemos verificar si es posible enviar los vagones con freight a Luxemburgo sin que el tren más largo se pase de X vagones. Eso lo podemos chequear de forma codiciosa: partimos con un tren de largo X que se agarra los primeros X vagones, si alguno de ellos contiene freight, se envía a luxemburgo. Si ningún vagón tenía freight, alargamos el tren lo máximo posible con vagones vacíos y lo enviamos a Netherlands, y repetimos el proceso con lo que va quedando. Si la cantidad de trenes necesarios para hacer eso se pasa de L, no se puede, de lo contrario, sí se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/FreightTrain.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
