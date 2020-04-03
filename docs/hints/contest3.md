@@ -5,7 +5,6 @@ title: contest 3 - hints y códigos de ejemplo
 [Index](../index) > [Contests](../contests) > [Contest 3](../contests#contest-3) > ```{{page.title}}```
 
 ### A - Busqueda Binaria
-
 <details> 
   <summary>Hint</summary>
   Hello world de búsqueda binaria
@@ -16,7 +15,6 @@ title: contest 3 - hints y códigos de ejemplo
 </details>
 
 ### B - Búsqueda Binaria 2
-
 <details> 
   <summary>Hint</summary>
   Hello world de búsqueda binaria
@@ -27,7 +25,6 @@ title: contest 3 - hints y códigos de ejemplo
 </details>
 
 ### C - Berland Collider
-
 <details> 
   <summary>Hint</summary>
   Para verificar si un tiempo fijo es suficiente para que exista un choque basta fijarse en que para cada partícula moviendose a la izquierda todas las partículas que estaban originalmente a su izquierda moviendose hacia la derecha sigan a su izquierda. O viceversa.
@@ -71,6 +68,16 @@ title: contest 3 - hints y códigos de ejemplo
   <summary>Solución + código</summary>
   Podemos usar lo mencionado en el hint para hacer una búsqueda binaria sobre el tiempo necesario para juntarse, usando el que el tiempo sea sufuciente como predicado de la búsqueda.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheMeetingPlaceCannotBeChanged.cpp">Código de ejemplo</a>
+</details>
+
+### G - Distributing Ballot Boxes
+<details> 
+  <summary>Hint</summary>
+  Nos preguntan por la cantidad de personas asignadas a la caja con más personas, en la distribución más eficiente posible. LLamemos a este valor óptimo X*. ¿Qué implica esto? Que no es posible hacerlo mejor que X*. Es decir, no es posible distribuir personas en las cajas de tal manera que la caja con más personas tengo estrictamente menos de X* personas. Cualquier otra distribución tendrá un máximo de X >= X*. En otras palabras, si nos preguntamos: ¿Es posible distribuir personas en las cajas de tal manera que la caja con más personas no se pase de X? la respuesta a esta pregunta es NO para X < X* y es sí para X >= X* ... eureka moment (?) ... podemos usar búsqueda binaria para encontrar X* !!
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Simplemente usamos búsqueda binaria para encotrar el primer X que responde sí a la pregunta del hint. ¿Cómo implementamos la pregunta? Dado un X, queremos saber si es posible asignar personas a las cajas de tal manera que la caja con más personas no se pase de X. Este predicado es fácil de implementar: por cada ciudad dividimos su población por X (redondeando hacia arriba) y ese es el mínimo número de cajas necesarias. Si sumamos todo esto y nos pasamos de la cantidad de cajas disponibles, no se puede, de lo contrario, sí se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/5822_DistributingBallotBoxes_v2.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
