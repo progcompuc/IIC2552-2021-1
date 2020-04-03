@@ -21,10 +21,15 @@ Marzo 20, 10 días, [link a **contest**](https://vjudge.net/contest/363243)\\
 ## Contest 3
 Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/364465)\\
 **Tópicos**: [Búsqueda Binaria](resources/search)\\
-**Puntos**: _pending_\\
-**Puntaje Mínimo Esperado**: _pending_\\
+**Puntos**: 1, 1, 3, 2, 3, 2, 3, 4, 5\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest3)
 
-
+## Contest 4
+Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/366134)\\
+**Tópicos**: [Búsqueda Ternaria](resources/search)\\
+**Puntos**: _pending_\\
+**Puntaje Mínimo Esperado**: _pending_\\
+**Hints** y **códigos de ejemplo**: _pending_
 
 [Index](index) > ```{{page.title}}```
