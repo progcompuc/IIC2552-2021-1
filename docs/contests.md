@@ -28,6 +28,13 @@ Marzo 25, 12 días, [link a **contest**](https://vjudge.net/contest/364465)\\
 ## Contest 4
 Abril 03, 10 días, [link a **contest**](https://vjudge.net/contest/366134)\\
 **Tópicos**: [Búsqueda Ternaria](resources/search)\\
+**Puntos**: 2, 2, 3, 4, 2, 5, 4, 3, 2, 3\\
+**Puntaje Mínimo Esperado**: 5\\
+**Hints** y **códigos de ejemplo**: _pending_
+
+## Contest 5
+Abril 10, 10 días, [link a **contest**](https://vjudge.net/contest/367344)\\
+**Tópicos**: [Backtracking](resources/backtracking)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
 **Hints** y **códigos de ejemplo**: _pending_
