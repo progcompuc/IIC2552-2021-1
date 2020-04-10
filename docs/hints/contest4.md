@@ -5,9 +5,6 @@ title: contest 4 - hints y códigos de ejemplo
 [Index](../index) > [Contests](../contests) > [Contest 4](../contests#contest-4) > ```{{page.title}}```
 
 ### Weakness and Poorness
-<details> 
-  <summary>Hint</summary>
-  
 </details>
 <details> 
   <summary>Hint</summary>
