@@ -5,7 +5,6 @@ title: contest 4 - hints y códigos de ejemplo
 [Index](../index) > [Contests](../contests) > [Contest 4](../contests#contest-4) > ```{{page.title}}```
 
 ### Weakness and Poorness
-</details>
 <details> 
   <summary>Hint</summary>
   Nos piden calcular el x que minimice el máximo de los valores absolutos de sumas por intervalos en el arreglo, esto se reduce a calcular el máximo entre las sumas positivas y las sumas negativas. Para calcular por ejemplo las sumas positivas basta recorrer un arreglo linealmente y para cada i almacenar la mayor suma positiva continua que termina en i, el máximo de las sumas positivas por intervalo corresponderá al mayor numero almacenado.
