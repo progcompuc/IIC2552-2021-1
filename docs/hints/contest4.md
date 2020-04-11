@@ -49,6 +49,16 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/PolicePatrol.cpp">Código de ejemplo</a>
 </details>
 
+### I - Devu and his Brother
+<details> 
+  <summary>Hint</summary>
+  Notar que es fácil calcular la cantidad de pasos necesarios para hacer que el maximo de B se menor o igual a x y el minimo de A sea mayor o igual a x.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos haver una búsqueda ternaria entera sobre los posibles valores que separan a ambos arreglos, para calcular la cantidad de pasos necesarios para hacer que ese sea el separados es suficiente hacer pasadas lineales sobre los arreglos y calcular los pasos necesarios para arreglar las entradas que se salgan del borde definido por x.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/DevuAndHisBrother.cpp">Código de ejemplo</a>
+</details>
 
 <!-- <details> 
   <summary>Hint</summary>   
