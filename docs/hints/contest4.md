@@ -34,6 +34,21 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/WeaknessAndPoorness.cpp">Código de ejemplo</a>
 </details>
 
+### H - Police Patrol
+<details> 
+  <summary>Hint 1</summary>
+  Se puede probar que la minima distancia a recorrer puede ser alcanzada situando la estación la posición de algún criminal
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Dada una posición de la estación de policía podemos calcular la distancia necesaria a recorrer tomando grupos de a lo más m criminales desde los extremos, este grupo contribuirá a la distancia total 2 veces la distancia del más lejando de ellos a la estación.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos hacer una búsqueda ternaria entera sobre los índices de las posiciones de los criminales, ya que podemos alcanzar el óptimo tomando el cuenta el hint 1. Para cada posición en la búsqueda calculamos la distancia total que requiere usando lo expresado en el hint 2.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/PolicePatrol.cpp">Código de ejemplo</a>
+</details>
+
 
 <!-- <details> 
   <summary>Hint</summary>   
