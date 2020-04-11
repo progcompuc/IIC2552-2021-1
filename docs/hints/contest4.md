@@ -37,7 +37,7 @@ title: contest 4 - hints y códigos de ejemplo
 ### H - Police Patrol
 <details> 
   <summary>Hint 1</summary>
-  Se puede probar que la minima distancia a recorrer puede ser alcanzada situando la estación la posición de algún criminal
+  Se puede probar que la minima distancia a recorrer puede ser alcanzada situando la estación en la posición de algún criminal.
 </details>
 <details> 
   <summary>Hint 2</summary>
