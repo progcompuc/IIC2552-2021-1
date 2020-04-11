@@ -56,7 +56,7 @@ title: contest 4 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Podemos haver una búsqueda ternaria entera sobre los posibles valores que separan a ambos arreglos, para calcular la cantidad de pasos necesarios para hacer que ese sea el separados es suficiente hacer pasadas lineales sobre los arreglos y calcular los pasos necesarios para arreglar las entradas que se salgan del borde definido por x.
+  Podemos hacer una búsqueda ternaria entera sobre los posibles valores que separan a ambos arreglos. Para calcular la cantidad de pasos necesarios para hacer que ese sea el separados es suficiente hacer pasadas lineales sobre los arreglos y calcular los pasos necesarios para arreglar las entradas que se salgan del borde definido por x.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/DevuAndHisBrother.cpp">Código de ejemplo</a>
 </details>
 
