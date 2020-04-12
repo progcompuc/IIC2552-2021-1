@@ -1,8 +1,59 @@
 ---
 title: contest 4 - hints y códigos de ejemplo
 ---
-
 [Index](../index) > [Contests](../contests) > [Contest 4](../contests#contest-4) > ```{{page.title}}```
+
+### A - K12 - Building Construction
+<details> 
+  <summary>Hint</summary>
+  Problema hello world de ternary. Usar long long ints en C++ para evitar overflow del int.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ternary nomás. La función es convexa y es fácil de implementar. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/KOPC12A_BuildingConstruction.cpp">Código de ejemplo</a>
+</details>
+
+### B - Is This JEE
+<details> 
+  <summary>Hint</summary>
+  Otro problema hello world de ternary.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ternary nomás. La función es convexa y es fácil de implementar. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/ICM2003_IsThisJEE.cpp">Código de ejemplo</a>
+</details>
+
+### C - Closest Distance
+<details> 
+  <summary>Hint</summary>
+  Notar que la función de distancia es convexa, así que podemos usar ternary.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ternary sobre la función de distancia nomás. La función de distancia es una función del tiempo. Podemos buscar el mínimo en el rango [0, 1] (en t = 0 están al principio y en t = 1 estan al final de sus respectivos segmentos). Esto requiere un poquito de conocimiento de geometría y vectores 2D. Intenta hacerlo por ti mism@ primero, y luego compara con la solución ejemplo para aprender una forma alternativa de implementación. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LightOJ/1146_ClosestDistance.cpp">Código de ejemplo</a>
+</details>
+
+
+### D - Keeping the Dogs Apart
+<details> 
+  <summary>Hint</summary>
+  Si recorremos los 2 paths en paralelo de a tramos, donde cada tramo es un segmento del mismo largo en ambos paths, entonces dentro de cada tramo el problema se nos reduce al mismo problema "C - Closets Distance" (el problema C es una subrutina del problema D).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usamos la técnica de 2 punteros: un puntero en el path A y un puntero en el path B. Asumimos que ambos perros avanzan en línea recta lo máximo que pueden hasta que alguno de los 2 perros choca con el comienzo del siguiente segmento de su path. En este instante, uno de los 2 perros cambia de dirección. Entonces, en ese tramo básicamente los 2 perros avanzan en segmentos de recta del mismo largo, entonces podemos calcular la distancia más corta entre ambos perros en ese tramo con ternary search (usamos el problema C como subrutina acá). El perro que llegó al comienzo del siguiente segmento en su path cambia de dirección, así que hacemos que su puntero aumente en 1. El puntero del otro perro sigue donde mismo pero su ubicación actual queda "a mita de camino" dentro de su segmento actual. La solución final es el mínimo entre todos los ternary searches hechos. La implementación de este problema puede ser un poco complicada la primera vez si es que no tienen mucha experiencia con problemas de geometría 2D. Intenta hacerlo por tu cuenta la primera vez, y luego compara con la solución ejemplo. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/KeepingTheDogsApart_v2.cpp">Código de ejemplo</a>
+</details>
+
+### E - Race Time!
+<details> 
+  <summary>Hint</summary>
+  Si dibujas las ecuaciones de recta en un gráfico de tiempo vs posición, notarás que la función máximo es convexa y la función mínimo es cóncava, entonces la resta es convexa. Así que se puede hacer ternary para encontrar el mínimo.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ternary nomás. Hay que implementar la función f(T) y hacerle ternary. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/AMCS03_RaceTime!.cpp">Código de ejemplo</a>
+</details>
+
 
 ### F - Rocket Powered hovercraft
 <details> 
