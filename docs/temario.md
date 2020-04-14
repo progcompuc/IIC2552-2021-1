@@ -13,8 +13,9 @@ title: Temario
 - Búsqueda Binaria y Ternaria (2 semanas)
 - Fuerza Bruta y Backtracking (1 semana)
 - Programación Dinámica (2 semanas)
+- Algoritmos Codiciosos (1 semanas)
 - Dividir para Conquistar (1 semana)
-- Introducción a Grafos (3 semanas)
+- Introducción a Grafos (2 semanas)
     - Conceptos básicos: grafos dirigidos, no dirigido, árboles.
     - Cómo representar grafos en código.
     - Recorriendo grafos: DFS y BFS.
