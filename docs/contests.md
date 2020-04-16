@@ -41,7 +41,7 @@ Abril 10, 10 días, [link a **contest**](https://vjudge.net/contest/367344)\\
 
 ## Contest 6
 Abril 17, 10 días, [link a **contest**](https://vjudge.net/contest/368719)\\
-**Tópicos**: [DP](resources/DP)\\
+**Tópicos**: [DP](resources/dp)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
 **Hints** y **códigos de ejemplo**: _pending_
