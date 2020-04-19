@@ -69,6 +69,16 @@ title: contest 5 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/LimitedCorrespondence.cpp">Código de ejemplo</a>
 </details>
 
+### G - Vitamins
+<details> 
+  <summary>Hint</summary>
+  Para hacerlo con backtracking, podemos pensar que por cada jugo tenemos que tomar la decisión de comprarlo o no. Esto naturalmente nos da un árbol de decisiones. Explorar todas las ramas nos daría tiempo O(2^N), así que la idea es usar muy buenas podas.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Haces backtracking según el hint. Como podas, podemos detectar cuando ya tenemos todas las vitaminas y cortar la búsqueda, también podemos sólo considerar la opción de comprar un jugo sólo si dicho jugo aporta vitaminas nuevas que no hemos visto antes, y también podemos tener una variable global con el costo más barato visto a la fecha, y sólo comprar un jugo si la solución parcial que estamos armando tiene un costo menor estricto al de la mejor solución a la fecha. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1042B_Vitamins.cpp">Código de ejemplo</a>
+</details>
+
 ### H - Tight-Fit Sudoku
 <details> 
   <summary>Hint</summary>
