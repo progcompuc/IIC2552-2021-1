@@ -27,16 +27,6 @@ title: contest 5 - hints y códigos de ejemplo
   Hacemos un doble for iterando sobre todas las celdas. Por cada celda, asumimos que dicha celda es nuestro punto de partida y lanzamos un backtracking para encontrar un camino que forme el string "ALLIZZWELL". En cada llamada de la función backtracking verificamos si la celda en que estamos parados tiene el caracter que corresponde al índice actual en el que vamos en "ALLIZZWELL". Luego intentamos completar el resto del path recursivamente llamando la función de backtracking sobre alguna de las 8 celdas adyacentes (siempre y cuando la celda adyacente no haya sido visitada ya, eso se puede chequear con una matriz booleana auxiliar). Si en algún momento un backtracking retorna true, se puede, si todos los backtrackings retornaron false, no se puede.  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/ALLIZWEL.cpp">Código de ejemplo</a>.
 </details>
 
-### B - ALL IZZ WELL
-<details> 
-  <summary>Hint</summary>
-  Si fijamos un punto de partida en la matriz, entonces podemos hacer backtracking para explorar todo el universo de posibles caminos válidos que forman el string "ALLIZZWELL" que comienzan en esa posición. Para ello, notar que en cada paso tenemos que ir decidiendo cuál va a ser nuestra siguiente celda.
-</details>
-<details> 
-  <summary>Solución + código</summary>
-  Hacemos un doble for iterando sobre todas las celdas. Por cada celda, asumimos que dicha celda es nuestro punto de partida y lanzamos un backtracking para encontrar un camino que forme el string "ALLIZZWELL". En cada llamada de la función backtracking verificamos si la celda en que estamos parados tiene el caracter que corresponde al índice actual en el que vamos en "ALLIZZWELL". Luego intentamos completar el resto del path recursivamente llamando la función de backtracking sobre alguna de las 8 celdas adyacentes (siempre y cuando la celda adyacente no haya sido visitada ya, eso se puede chequear con una matriz booleana auxiliar). Si en algún momento un backtracking retorna true, se puede, si todos los backtrackings retornaron false, no se puede.  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/ALLIZWEL.cpp">Código de ejemplo</a>.
-</details>
-
 ### C - 8 Queens Chess Problem
 <details> 
   <summary>Hint</summary>
