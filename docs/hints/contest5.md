@@ -90,6 +90,21 @@ title: contest 5 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/Tight-FitSudoku.cpp">Código de ejemplo</a>
 </details>
 
+### I - Magical Mystery Knight's Tour
+<details> 
+  <summary>Hint 1</summary> 
+  Para ver este problema como backtracking se puede plantear como un problema de decidir el camino del caballo posición por posición evitando repetir y coincidiendo con los pasos predeterminados por el input. La idea es probar todos los caminos que nos lleven al siguiente número determinado con las celdas disponibles. Ojo que es necesario usar buenas podas para pasar en el tiempo límite. 
+</details>
+<details>
+  <summary>Hint 2</summary> 
+  Podemos notar que al final del proceso todas las filas y columnas deben sumar 260. Una buena poda para este problema es evitar continuar con una exploración si no es posible llegar a 260 alguna de las filas o culumnas del tablero con los números restantes. Para esto basta tener guardadas las sumas de los números ya determinados en cada fila/columna y ver si el rango de posibles valores a los que puede llegar cada una con los números restantes contiene a 260. Si no lo hace podemos hacer "backtrack" sin riesgo a no encontrar la solución.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución consiste en realizar lo expresado en los hints. Para recorrer el tablero de forma óptima se pueden guardar los movimientos del cabayo en un arreglo y probar cada uno de ellos al realizar el backtracking. Guardamos sumas acumuladas por filas y columnas y realizamos las podas adecuadas. OJO: En este problema consideraremos que con pasar 51/52 tests cases se acepta la solución, esto porque el tiempo límite del judge es bastante ajustado.
+  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/MagicalMysterKnightsTour.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
