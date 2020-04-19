@@ -97,7 +97,7 @@ title: contest 5 - hints y códigos de ejemplo
 </details>
 <details>
   <summary>Hint 2</summary> 
-  Podemos notar que al final del proceso todas las filas y columnas deben sumar 260. Una buena poda para este problema es evitar continuar con una exploración si no es posible llegar a 260 alguna de las filas o culumnas del tablero con los números restantes. Para esto basta tener guardadas las sumas de los números ya determinados en cada fila/columna y ver si el rango de posibles valores a los que puede llegar cada una con los números restantes contiene a 260. Si no lo hace podemos hacer "backtrack" sin riesgo a no encontrar la solución.
+  Podemos notar que al final del proceso todas las filas y columnas deben sumar 260. Una buena poda para este problema es evitar continuar con una exploración si no es posible llegar a exactamente 260 en alguna de las filas o columnas del tablero con los números restantes. Para esto basta tener guardadas las sumas de los números ya determinados en cada fila/columna y ver si el rango de posibles valores a los que puede llegar cada una con los números restantes contiene a 260. Si no lo hace podemos hacer "backtrack" sin riesgo a no encontrar la solución.
 </details>
 <details> 
   <summary>Solución + código</summary>
