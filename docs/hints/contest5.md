@@ -40,11 +40,11 @@ title: contest 5 - hints y códigos de ejemplo
 ### D - Sum it up
 <details> 
   <summary>Hint</summary>
-  Supogamos que tenemos los números usados y sus frecuencias (cuántas veces tenemos cada número duplicado). Entonces podemos explorar todo el universo de soluciones como un árbol de decisiones con backtracking.
+  Supogamos que tenemos los números usados y sus frecuencias (cuántas veces tenemos cada número duplicado). Entonces podemos explorar todo el universo de soluciones como un árbol de decisiones con backtracking, donde la secuencia de decisiones es: cuántas veces uso el primer número, cuántas veces uso el segundo número, ..., cuántas veces uso el último número.
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Encotramos todas las soluciones con backtracking. La secuencia de decisiones es: cuántas veces uso el primer número, cuántas veces uso el segundo número, ..., cuántas veces uso el último número. Para encontrar las soluciones de mayor a menor, ordenamos los números de mayor a menor y además por cada número iteramos de mayor a menor en la cantidad de veces que lo usamos (de frecuencia[número] a 0). Como poda podemos chequear que si poner un número una cantidad X de veces hace que nos pasemos de la suma, entonces descartamos ponerlo. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/5319_SumItUp.cpp">Código de ejemplo</a>.
+  Encotramos todas las soluciones con backtracking, explorando el árbol de soluciones indicado en el hint. Para encontrar las soluciones de mayor a menor, ordenamos los números de mayor a menor y además por cada número iteramos de mayor a menor en la cantidad de veces que lo usamos (de frecuencia[número] a 0). Como poda podemos chequear que si poner un número una cantidad X de veces hace que nos pasemos de la suma, entonces descartamos ponerlo. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/5319_SumItUp.cpp">Código de ejemplo</a>.
 </details>
 
 ### E - Map Colouring
