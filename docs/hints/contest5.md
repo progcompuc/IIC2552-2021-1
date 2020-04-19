@@ -40,7 +40,7 @@ title: contest 5 - hints y códigos de ejemplo
 ### C - 8 Queens Chess Problem
 <details> 
   <summary>Hint</summary>
-  Dos reinas no pueden compartir columna, así que podemos primero simplificar el problema a tener una reina por columna. Entonces ahora el problema se nos reduce a iterar sobre las columnas y en cada columan decidir en qué fila poner la reina de esa columna (excepto para la columna de la reina fija, donde estamos obligados a hacerle caso al input). Entonces podemos hacer backtracking para explorar este árbol de decisiones y encontrar todas las soluciones, aprovechando las líneas de ataque de las reinas para hacer muchas podas.
+  Dos reinas no pueden compartir columna, así que podemos primero simplificar el problema a tener una reina por columna. Entonces ahora el problema se nos reduce a iterar sobre las columnas y en cada columna decidir en qué fila poner la reina de esa columna (excepto para la columna de la reina fija, donde estamos obligados a hacerle caso al input). Entonces podemos hacer backtracking para explorar este árbol de decisiones y encontrar todas las soluciones, aprovechando las líneas de ataque de las reinas para hacer muchas podas.
 </details>
 <details> 
   <summary>Solución + código</summary>
