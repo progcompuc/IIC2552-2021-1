@@ -4,6 +4,29 @@ title: contest 5 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 5](../contests#contest-5) > ```{{page.title}}```
 
+### A - A problem of Backtracking
+<details> 
+  <summary>Hint</summary>
+  Gracias a los límites este problema se puede resolver de dos formas:
+  1) fuerza bruta pura: iterar sobre todas las permutaciones lexicográficamente (muy fácil)
+  2) backtracking: iterar sobre todas las permutaciones con una función recursiva y agregando podas (un poquito más difícil pero vale la pena)
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Si usamos la opción uno del hint, la solución facilísima. En C++ existe la función next_permutation() que nos permite iterar sobre las permutaciones ne orden lexicográfico. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BTCK_A-problem-of-Backtracking_v1.cpp">Código de ejemplo 1</a>.
+  La otra opción es hacerlo con bactracking. En este caso podemos construir la permutación de izquierda a derecha, en cada posición iterando sobre los dígitos de 0 a 9 (de menor a mayor, para iterar en orden lexicográfico). Podemos agregar podas. Dos podas que se me ocurrieron a mí: 1) descartar dígitos que ya se pusieron antes y 2) descartar dígitos que al ponerlos hacen que nuestra suma hasta el momento supere la cota K. Para la primera podemos agregar un argumento 'mask' a la función del backtracking cuyos bits nos indiquen los dígitos ya puestos, y para la suma hasta el momento podemos agregar un argumento 'accsum' con la suma acumulada. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BTCK_A-problem-of-Backtracking_v2.cpp">Código de ejemplo 2</a>.
+</details>
+
+### B - ALL IZZ WELL
+<details> 
+  <summary>Hint</summary>
+  Si fijamos un punto de partida en la matriz, entonces podemos hacer backtracking para explorar todo el universo de posibles caminos válidos que forman el string "ALLIZZWELL" que comienzan en esa posición. Para ello, notar que en cada paso tenemos que ir decidiendo cuál va a ser nuestra siguiente celda.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos un doble for iterando sobre todas las celdas. Por cada celda, asumimos que dicha celda es nuestro punto de partida y lanzamos un backtracking para encontrar un camino que forme el string "ALLIZZWELL". En cada llamada de la función backtracking verificamos si la celda en que estamos parados tiene el caracter que corresponde al índice actual en el que vamos en "ALLIZZWELL". Luego intentamos completar el resto del path recursivamente llamando la función de backtracking sobre alguna de las 8 celdas adyacentes (siempre y cuando la celda adyacente no haya sido visitada ya, eso se puede chequear con una matriz booleana auxiliar). Si en algún momento un backtracking retorna true, se puede, si todos los backtrackings retornaron false, no se puede.  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/ALLIZWEL.cpp">Código de ejemplo</a>.
+</details>
+
 ### E - Map Colouring
 <details> 
   <summary>Hint</summary>
