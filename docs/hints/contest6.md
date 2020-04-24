@@ -27,6 +27,21 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/ScubaDiver.cpp">Código de ejemplo</a>
 </details>
 
+### H - Greenhouse Effect
+<details> 
+  <summary>Hint 1</summary>
+  Un primer insight es darse cuenta de que al poder colocar las plantas en el lugar que queramos, las coordenadas de estas no son realmente importantes para el problema, sólo el orden inicial de los tipos.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Podemos descomponer el problema en subproblemas que deciden para cada planta si es óptimo moverla o no, y retornar la opción que desencadene menos movimentos al largo plazo.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución de este problema es similar a la del problema G. Podemos hacer un dp que dependa de 2 cosas, indice de la planta que decidiremos ahora y el mayor de los tipos de planta que hemos no movido (en cuanto a su tipo, no coordenadas). Recorremos los problemas de izquierda a derecha, decidiendo para cada planta en el dp, de esta forma el óptimo para un subproblema depende de los óptimos de los subproblemas siguientes. Nos importa el mayor de los tipos que no hemos movido en las plantas que ya decidimos, pues si este tipo es mayor que el de la planta que decidimos ahora, no podemos no moverla pues no generaría una configuración deseada.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GreenhouseEffect.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
