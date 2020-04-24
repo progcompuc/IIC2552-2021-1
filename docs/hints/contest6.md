@@ -42,6 +42,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GreenhouseEffect.cpp">Código de ejemplo</a>
 </details>
 
+### I - Changing A String
+<details> 
+  <summary>Hint</summary>
+  Podemos pensar el problema como ir igualando los strings de a poco de izquierda a derecha, de esta forma podemos definir un subproblema del dp como minimizar la cantidad de movimientos dado que estoy en el el índice i del primer string y en el índice j del segundo (asumes que ya igualaste lo anterior).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos lo que dice el Hint. Para cada subproblema el mínimo es el que genere menos pasos de todas las opciones que tengan sentido, entre insertar, reemplazar, borrar o avanzar, que desencadenan a su vez una cantidad de movimientos que dependen de los siguientes subproblemas. Finalmente para recuperar los pasos de una estrategia óptima basta ir recorriendo las decisiones óptimas usando los valores que quedaron guardados en el memo. Es recomendable usar una funcion recursiva similar a la del dp para este último paso.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/ChangingAString.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
