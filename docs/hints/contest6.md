@@ -23,7 +23,7 @@ title: contest 6 - hints y códigos de ejemplo
 <details> 
   <summary>Solución + código</summary>
   Tomando en cuenta el hint, podemos pensar en hacer las elecciones en orden, es decir, podemos hacer un dp que dependa de 3 variables, indice, oxígeno a llevar y nitrógeno a llevar, y el índice indica que decidiremos sobre el i-ésimo tanque considerando sólo los tanques con índices mayores o iguales a i. Esto no cambia el resultado, pues cualquier configuración de tanques puede ser elegida en orden. Luego para cada subproblema hay dos opciones, llevar o no el i-ésimo tanque, si no lo llevamos el subproblema es equivalente al dp desde i+1 con los mismos requerimientos de oxígeno y nitrógeno. Pero si lo llevamos la respuesta es el peso del tanque más el óptimo desde i+1 de los requerimientos quitándole el aporte del tanque i.
-  De esta forma la resupesta puede ser accedida desde el subproblema desde el primer índice y los requerimientos iniciales.
+  De esta forma la respuesta puede ser accedida desde el subproblema desde el primer índice y los requerimientos iniciales.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/ScubaDiver.cpp">Código de ejemplo</a>
 </details>
 
