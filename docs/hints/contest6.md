@@ -51,6 +51,16 @@ Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, den
 <summary>Solución + código</summary>
 Hacemos un DP(i, c, flag) = todas las formas de completar tuplas (L, sequence, R) válidas, suponiendo que estamos tomando decisiones a partir del índice i hacia la derecha (i, i+1, ..., N-1), debemos terminar de escoger elementos tal que su suma sea 'c', y si flag es 0 todavía estamos en la fase de escoger el índice que va a ser el 'L' de la tupla, en cambio si flag es 1 significa que ya escogimos el 'L' y ahora tenemos que completar el sequence y luego escoger el índice de 'R'. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/AtCoder/abc159_f_KnapsackForAllSegments.cpp">Código de ejemplo</a>
 </details>
+  
+### E - The Coin Change Problem
+<details>
+  <summary>Hint</summary>
+  Pensar en un DP de la forma DP(k, i) = todas las formas que podemos generar el monto 'k' usando monedas de tipo i, i+1, ..., m-1. La llamada inicial del DP sería DP(n, 0), ya que queremos contar todas las formas de generar el monto 'n' teniendo a nuestra disposición todas las monedas (del 0 al m-1). Para deducir la recurrencia del DP, pensar que tenemos 2 opciones: usar la moneda i-ésima o no usarla, si la usamos después podemos usarla de nuevo, y si no la usamos entonces nos pasamos a la siguiente moneda.
+</details>
+<details> 
+<summary>Solución + código</summary>
+ Implementar el DP(k,i) explicado conceptualmente en el hint. Si usamos la moneda i, nos queda el subproblema DP(k - value[i], i), si no la usamos, nos queda el subproblema DP(k, i+1). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/hackerrank/TheCoinChangeProblem.cpp">Código de ejemplo</a>
+</details>
 
 ### F - Mixtures
 <details> 
