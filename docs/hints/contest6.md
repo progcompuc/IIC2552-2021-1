@@ -42,6 +42,16 @@ Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, den
   Primero nos quedamos con min(M,N) columnas según el Hint 1. Luego buscamos la suma de máximos óptima con un DP(i, mask) como se indicó en el Hint 2. Internamente, para la i-ésima columna debemos escoger un 'submask' de 'mask' (subconjunto de las filas disponibles) donde esta columna contribuirá con máximos. Dado un 'submask', podemos buscar la clase de equivalencia de 'submask' (que podemos precomputar de antes) y luego la suma de la rotación óptima de la columna i-ésima para dicha clase de equivalencia (también precomputable de antes). Entonces escoger un 'submask' de 'mask' para la columna i tiene un costo asociado de maxsum[i][mask2class[submask]] + DP(i+1, mask - submask). Es súper importante hacer estos pre-cómputos porque de no hacerlos, estaríamos obligados a hacerlos a cada rato dentro del DP y esto daría TLE por los límites del problema y la restricción de tiempo (este es un excelente problema para aprender el valor de precomputar muchas cosas). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1209E2_RotateColumns(HardVersion).cpp">Código de ejemplo</a>
 </details>
 
+### D - Knapsack for all Segments
+<details>
+  <summary>Hint</summary>
+  Notar que el problema es equivalente a contar todas las tuplas (L, sequence, R), donde sequence = (i1, i2, ..., ik) es una secuencia de índices de algún largo k tal que L <= i1 < i2 < .. < ik <= R y A[i1] + A[i2] + ... + A[ik] = S. Usando nuestro conocimiento previo de backtracking, todos las tuplas (L, sequence, R) válidas las podemos contar explorando un árbol de decisiones sobre los índices 0, 1, ..., N-1, donde por cáda índice vamos decidiendo si lo consideramos el L de la tupla, algún elemento de sequence o el R de la tupla (en ese orden). Pero bactracking daría TLE. La gracia está en darse cuenta que hay subproblemas que se repiten, y ahí podemos aplicar DP.
+</details>
+<details> 
+<summary>Solución + código</summary>
+Hacemos un DP(i, c, flag) = todas las formas de completar tuplas (L, sequence, R) válidas, suponiendo que estamos tomando decisiones a partir del índice i hacia la derecha (i, i+1, ..., N-1), debemos terminar de escoger elementos tal que su suma sea 'c', y si flag es 0 todavía estamos en la fase de escoger el índice que va a ser el 'L' de la tupla, en cambio si flag es 1 significa que ya escogimos el 'L' y ahora tenemos que completar el sequence y luego escoger el índice de 'R'. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/AtCoder/abc159_f_KnapsackForAllSegments.cpp">Código de ejemplo</a>
+</details>
+
 ### F - Mixtures
 <details> 
   <summary>Hint</summary>
