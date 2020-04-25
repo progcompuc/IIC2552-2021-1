@@ -15,7 +15,7 @@ title: contest 6 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Hint 3</summary>
-  Supongamos que para la columna i-ésima, yo escojo dicha columna va a contribuir con máximos en las filas 1 y 3. Dado que yo puedo rotar la columna como yo quiera, esto es equivalente a haber fijado las filas 2 y 4, o haber fijado las filas 3 y 5, etc. Es decir, hay muchas subconjuntos de filas que son equivalentes, es decir, que forma una clase de equivalencia. Entonces uno puede hacer dos cosas: 1) precomputar estas clases de equivalencia y 2) precomputar la rotación óptima (que maxima la suma) para cada clase de equivalencia.
+  Supongamos que para la columna i-ésima, yo escojo que dicha columna va a contribuir con máximos en las filas 1 y 3. Dado que yo puedo rotar la columna como yo quiera, esto es equivalente a haber fijado las filas 2 y 4, o haber fijado las filas 3 y 5, etc. Es decir, hay muchos subconjuntos de filas que son equivalentes bajo rotación, es decir, que forman una clase de equivalencia. Entonces uno puede hacer dos cosas: 1) precomputar estas clases de equivalencia y 2) precomputar la rotación óptima (que maximiza la suma) para cada clase de equivalencia.
 </details>
 <details> 
   <summary>Solución + código</summary>
