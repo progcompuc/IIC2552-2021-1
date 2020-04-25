@@ -21,7 +21,7 @@ La recurrencia del DP(n, h) del hint, ignorando casos bases, sería la sumatoria
 </details>
 <details> 
 <summary>Solución + código</summary>
-Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, dentro de DP(mask) tenemos que tomar la decisión de cómo ir a buscar el primer objeto con bit prendido. Tenemos dos opciones: 1) ir a buscarlo y traerlo de vuelta a la mochila altiro o 2) ir a buscarlo, luego aprovechar de ir a buscar un segundo objeto (con bit prendido también) y luego traernos los dos objetos juntos. En cada caso nos quedaría un submask de mask que resolver (llamamos DP(submask) para resolver el subproblema). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/8C_LookingForOrder.cpp">Código de ejemplo</a>
+Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, dentro de DP(mask) tenemos que tomar la decisión de cómo ir a buscar el primer objeto con bit prendido. Tenemos dos opciones: 1) ir a buscarlo y traerlo de vuelta a la mochila altiro o 2) ir a buscarlo, luego aprovechar de ir a buscar un segundo objeto (con bit prendido también) y luego traernos los dos objetos juntos. En cada caso nos quedaría un submask de mask como subproblema a resolver (llamamos a DP(submask) para resolver el subproblema). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/8C_LookingForOrder.cpp">Código de ejemplo</a>
 </details>
 
 ### C - Rotate Columns (Hard Version)
