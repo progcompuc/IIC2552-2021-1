@@ -4,6 +4,15 @@ title: contest 6 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 6](../contests#contest-6) > ```{{page.title}}```
 
+### A - Staircases
+<details> 
+  <summary>Hint</summary>
+  Un posible DP podría ser de la forma DP(n, h) = todas las formas de construir escaleras de n bloques tal que el primer peldaño es de altura h (pero si se te ocurre otro DP, go ahead)
+</details>
+<summary>Solución + código</summary>
+La recurrencia del DP(n, h) del hint, ignorando casos bases, sería la sumatoria sobre x = h+1 ... n-h de DP(n-h, x). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/acm.timus.ru/1017_Staircases.cpp">Código de ejemplo</a>
+</details>
+
 ### C - Rotate Columns (Hard Version)
 <details> 
   <summary>Hint 1</summary>
