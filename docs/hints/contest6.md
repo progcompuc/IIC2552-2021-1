@@ -14,6 +14,16 @@ title: contest 6 - hints y códigos de ejemplo
 La recurrencia del DP(n, h) del hint, ignorando casos bases, sería la sumatoria sobre x = h+1 ... n-h de DP(n-h, x). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/acm.timus.ru/1017_Staircases.cpp">Código de ejemplo</a>
 </details>
 
+### B - Looking for Order
+<details>
+  <summary>Hint</summary>
+  Podemos representar los objetos que tenemos que recoger con los bits de un entero 'mask'. Entonces podemos pensar en un DP de la forma DP(mask) = el mínimo tiempo para recoger los objetos indicados por los bits prendidos de 'mask', y la solución al problema inicial sería DP(2^N-1), con N siendo la cantidad de objetos.
+</details>
+<details> 
+<summary>Solución + código</summary>
+Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, dentro de DP(mask) tenemos que tomar la decisión de cómo ir a buscar el primer objeto con bit prendido. Tenemos dos opciones: 1) ir a buscarlo y traerlo de vuelta a la mochila altiro o 2) ir a buscarlo, luego aprovechar de ir a buscar un segundo objeto (con bit prendido también) y luego traernos los dos objetos juntos. En cada caso nos quedaría un submask de mask que resolver (llamamos DP(submask) para resolver el subproblema). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/8C_LookingForOrder.cpp">Código de ejemplo</a>
+</details>
+
 ### C - Rotate Columns (Hard Version)
 <details> 
   <summary>Hint 1</summary>
