@@ -16,7 +16,7 @@ title: contest 7 - hints y códigos de ejemplo
 <details> 
   <summary>Solución + código</summary>
   Podemos usar ambos Hints y obtener una solución. Primero descomponemos el número original N en dos partes, N1 = (N % 4000) y N2 = N - N1, evidentemente podemos resolver la solución de N1 por el DP descrito en el Hint 2. Mientras que N1 es divisible por 4 por lo que se puede obtener su solución usando el Hint 1. Luego la respuesta será los números de ambas soluciones sumados correspondientemente. Sólo hay un caso borde en que N1 no tiene solución al ser muy pequeño, acá basta con tomar N1 = (N % 4000) + 4000 y N2 = N - N1.
-  <a href="">Código de ejemplo</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LuckyNumberRepresentation.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
