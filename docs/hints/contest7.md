@@ -19,7 +19,7 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LuckyNumberRepresentation.cpp">Código de ejemplo</a>
 </details>
 
-### Gates of uncertainty
+### E - Gates of uncertainty
 <details> 
   <summary>Hint</summary> 
   Notar que el output de correcto o equivocado de la salida en uno de los nodos depende únicamente del output y correctitud del mismo en los nodos de input. De esta forma podemos separar el problema en nodos. Por ejemplo si ambos nodos input tienen salidas correctas y el nodo en cuestión funciona bien, el output será correcto. Por otro lado si uno de los nodos inputs tiene un cero correcto yo soy capaz de generar un uno correcto (a menos de que el nodo esté fijo en 0).
@@ -28,6 +28,17 @@ title: contest 7 - hints y códigos de ejemplo
   <summary>Solución + código</summary>
   Podemos construir un DP que dependa de 3 cosas, nodo, output generado (a) y output correcto (b) y que nos cuente cuantas combinaciones del input (la parte que afecta a este nodo) generan a en el nodo cuando deberían generar b. Para esto podemos ocupar el hint y hacer un dp que sólo dependa de las combinaciones de output y output correcto de los nodos input del nodo. Hay 4 combinaciones para cada nodo de input por lo que el dp en un nodo depende de 16 combinaciones de sus nodos input, las que se separan en aportar a las distintas posibilidades de a y b (y si el nodo esta defectuoso). Traten de ver qué combinaciones de los inputs aportan a cada combinación de a y b en el nodo, y armar el DP a base de esa dependencia. La complejidad total de esta solucion es O(100000 * 2 * 2 * 16) donde 100000 * 2 * 2 sale de la cantidad de estados y 16 de la  máxima cantidad de subestados de los que depende un estado.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GatesOfUncertainty.cpp">Código de ejemplo</a>
+</details>
+
+### F - Enigma
+<details> 
+  <summary>Hint</summary>
+  Notemos que podemos pensar el problema en cuanto al resto en módulo N. El problema se reduce a intentar que el resto total sea 0 dado lós dígitos predefinidos y los dígitos por definir. Para saber que resto aporta un dígito en la posición x desde la derecha basta multiplicar el dígito por el resto de la potencia de 10 correspondiente y sacar módulo. Podemos tener estos restos de potencias de 10 precalculados para evitar mayor complejidad.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos construir un DP que dependa de un índice (i) y un resto (r) y responda a la pregunta de si es posible hacer que el número tomando desde el índice i en adelante genere resto r. Para esto basta iterar por los posibles valores en el dígito i y preguntar por el estado (i + 1, r') donde r' está modificado para considerar el resto aportado en el dígito recién definido. Si probamos los dígitos del 0 al 9 nos aseguramos que la primera vez que se responda true estamos en la menor solución, guardamos el dígito probado y devolvemos true sin probar el resto de los dígitos. Finalmente la respuesta depende únicamente del estado (0, 0).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Enigma.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
