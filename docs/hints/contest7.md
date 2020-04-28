@@ -41,6 +41,17 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Enigma.cpp">Código de ejemplo</a>
 </details>
 
+### Garland
+<details> 
+  <summary>Hint</summary>
+  Como las transiciones dependen sólo de la paridad de los números podemos contar cuantos pares e impares faltan por poner y ver cómo ponerlos de manera inteligente.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos costruir un DP que calcule la mínima cantidad de transiciones para el garland desde el índice i en adelante cuando quedan x impares, y impares y el ultimo número tenía paridad p. Luego la respuesta será el mínimo entre o poner un número impar en la posición i mas el estado (i + 1, x - 1, y, 1) o poner un número par más el estado (i + 1, x, y - 1, 0), tomando en cuenta las transiciones cuando la paridad que decidamos sea distinta a la del número anterior. La respuesta será la del estado (0, X, Y, -1) donde X es la cantidad de impares restantes, Y la de pares y -1 una paridad que no corresponde a impar ni a par (para no tener transiciones al principio).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Garland.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
