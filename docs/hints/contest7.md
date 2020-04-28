@@ -41,7 +41,7 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Enigma.cpp">Código de ejemplo</a>
 </details>
 
-### Garland
+### G - Garland
 <details> 
   <summary>Hint</summary>
   Como las transiciones dependen sólo de la paridad de los números podemos contar cuantos pares e impares faltan por poner y ver cómo ponerlos de manera inteligente.
