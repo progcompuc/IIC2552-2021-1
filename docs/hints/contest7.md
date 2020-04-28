@@ -37,7 +37,7 @@ title: contest 7 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Podemos construir un DP que dependa de un índice (i) y un resto (r) y responda a la pregunta de si es posible hacer que el número tomando desde el índice i en adelante genere resto r. Para esto basta iterar por los posibles valores en el dígito i y preguntar por el estado (i + 1, r') donde r' está modificado para considerar el resto aportado en el dígito recién definido. Si probamos los dígitos del 0 al 9 nos aseguramos que la primera vez que se responda true estamos en la menor solución, guardamos el dígito probado y devolvemos true sin probar el resto de los dígitos. Finalmente la respuesta depende únicamente del estado (0, 0).
+  Podemos construir un DP que dependa de un índice (i) y un resto (r) y responda a la pregunta de si es posible hacer que el número tomando desde el índice i en adelante genere resto r. Para esto basta iterar por los posibles valores en el dígito i y preguntar por el estado (i + 1, r') donde r' está modificado para considerar el resto aportado en el dígito recién definido. Si probamos los dígitos en orden del 0 al 9 nos aseguramos que la primera vez que se responda true estamos en la menor solución, guardamos el dígito probado y devolvemos true sin probar el resto de los dígitos. Finalmente la respuesta depende únicamente del estado (0, 0).
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Enigma.cpp">Código de ejemplo</a>
 </details>
 
