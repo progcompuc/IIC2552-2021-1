@@ -51,6 +51,6 @@ Abril 24, 17 días, [link a **contest**](https://vjudge.net/contest/370134)\\
 **Tópicos**: [DP](resources/dp)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest7)
 
 [Index](index) > ```{{page.title}}```
