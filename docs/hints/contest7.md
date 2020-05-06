@@ -4,6 +4,17 @@ title: contest 7 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 7](../contests#contest-7) > ```{{page.title}}```
 
+### A - Cleaning Robot
+<details> 
+  <summary>Hint 1</summary> 
+  Supongamos que calculamos la distancia más corta (menor número de movidas) para llegar desde el robot hacia cada celda, y desde cada celda sucia a cada otra celda. Luego podemos olvidarnos del poblema original y verlo como el problema del vendedor viajero (TSP): el robot es un viajero que quiere visitar cada celda sucia en el menor tiempo posible. TSP es un problema clásico de DP. Revisen los apuntes de DP, ahí hay material sobre TSP.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Básicamente calculamos las distancias desde el robot a cada otra celda, y desde cada celda sucia a cada otra celda. Esto no es difícil de hacer, la intuición es que partimos desde un celda origen y cada celda adyacente tiene distancia 1, luego las adyacentes de las adyacentes (no visitadas) tienen 2 distancia, y así. Es decir, vamos visitando las celdas por capa, donde las celdas de la siguiente capa tiene distancia 1 más que la distancia de las celdas de la capa anterior. Esto se puede hacer con Breadth First Search (BFS). Una vez que tenemos estas distancias calculadas, el problema se reduce a TSP (travelling salesman problem), un DP muy estándar con bitmask. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/CLEANRBT_CleaningRobot.cpp">Código de ejemplo</a>
+</details>
+
+
 ### C - Lucky Number Representation
 <details> 
   <summary>Hint 1</summary> 
