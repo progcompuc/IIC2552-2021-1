@@ -5,6 +5,11 @@ title: "Strings"
 
 # {{page.title}}
 
+## Suffix Automaton:
+- <https://codeforces.com/blog/entry/20861>
+- <https://cp-algorithms.com/string/suffix-automaton.html>
+- [youtube - Suffix Automation Explanation](https://youtu.be/73Mm4dR2W1M)
+
 ## Suffix Array:
 - ¿Qué es un suffix array?: [Youtube - Suffix Array introduction](https://www.youtube.com/watch?v=zqKlL3ZpTqs)
 - Motivación para Suffix Arrays: [Youtube - 35 6 Suffix Arrays](https://youtu.be/f8S05ZS-8KY)
