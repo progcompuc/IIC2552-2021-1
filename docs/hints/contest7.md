@@ -6,7 +6,7 @@ title: contest 7 - hints y códigos de ejemplo
 
 ### A - Cleaning Robot
 <details> 
-  <summary>Hint 1</summary> 
+  <summary>Hint</summary> 
   Supongamos que calculamos la distancia más corta (menor número de movidas) para llegar desde el robot hacia cada celda, y desde cada celda sucia a cada otra celda. Luego podemos olvidarnos del poblema original y verlo como el problema del vendedor viajero (TSP): el robot es un viajero que quiere visitar cada celda sucia en el menor tiempo posible. TSP es un problema clásico de DP. Revisen los apuntes de DP, ahí hay material sobre TSP.
 </details>
 <details> 
