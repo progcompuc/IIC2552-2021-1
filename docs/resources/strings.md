@@ -6,7 +6,7 @@ title: "Strings"
 # {{page.title}}
 
 ## Suffix Automaton:
-- <https://codeforces.com/blog/entry/20861>
+- [codeforces - A short guide to suffix automata](https://codeforces.com/blog/entry/20861)
 - <https://cp-algorithms.com/string/suffix-automaton.html>
 - [youtube - Suffix Automation Explanation](https://youtu.be/73Mm4dR2W1M)
 
