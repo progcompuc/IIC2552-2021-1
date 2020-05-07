@@ -91,6 +91,16 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Garland.cpp">Código de ejemplo</a>
 </details>
 
+### H - Wooden Fence
+<details> 
+  <summary>Hint</summary>
+  Una forma de modelar el problema: tengo que contruir una cerca de largo horizontal L, poniendo tablas de izquierda a derecha, partiendo con una tabla de tipo i (1 <= i <= N) y orientación o (o = 0 (normal), o = 1 (rotado)). Luego de hacer eso, nos va a quedar como subproblema completar una cerca de largo L - W[i] (si o == 0) o bien L - H[i] (si o == 1), y donde la siguiente tabla a poner tiene que cumplir que la parte de abajo tiene que calzar W[i] (si o == 0) o bien con H[i] (si o == 1). Entonces nos podemos poner en todos los casos de las posibles siguientes tablas y orientaciones de las mismas para seguir resolviendo el subproblema que nos queda, y es fácil que podemos explorar todo el universo de posibilidades con backtracking y contar. Pero eso daría TLE, así que lo memoizamos y nos queda un DP.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Siguiendo la idea del hint, hacemos un DP(i, o, len) = la cantidad de formas distintas que podemos completar una cerca de largo 'len' (horizontal) poniendo tablas de izquierda a derecha, sujeto a que estamos obligados a partir poniendo primero una tabla de tipo 'i' con orientación 'o'. La recursión no es muy complicada, es básicamente iterar sobre todos los tipos de tablas (excluyendo 'i' ya que no podemos repetir el tipo consecutivamente), considerados las dos posibles rotaciones (mientras no sea cuadrada) y llamamos el DP recursivamente. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/182E_WoodenFence.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
