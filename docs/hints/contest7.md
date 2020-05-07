@@ -14,6 +14,20 @@ title: contest 7 - hints y códigos de ejemplo
   Básicamente calculamos las distancias desde el robot a cada otra celda, y desde cada celda sucia a cada otra celda. Esto no es difícil de hacer, la intuición es que partimos desde una celda origen y cada celda adyacente tiene distancia 1, luego las adyacentes de las adyacentes (no visitadas) tienen 2 distancia, y así. Es decir, vamos visitando las celdas por capas, donde las celdas de la siguiente capa tienen distancia 1 más que las celdas de la capa anterior. Esto se puede hacer con Breadth First Search (BFS). Una vez que tenemos estas distancias calculadas, el problema se reduce a TSP (travelling salesman problem), un DP muy estándar con bitmask. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/CLEANRBT_CleaningRobot.cpp">Código de ejemplo</a>
 </details>
 
+### B - Ball Stacking
+<details> 
+  <summary>Hint 1</summary>
+  Notar que si rotamos, reflejamos y "enderezamos" las cosas un poquito, la pirámide puede pasar a verse como las celdas de una matriz ocupando el triángulo inferior izquierdo, de tal manera que sacar la celda (i,j) implicaría sacar el rectángulo cuyas esquinas son las celdas (0,0) e (i,j).
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Si visualizamos el problema según el hint 1, una selección de bolas se traduce en una selección de celdas en la matriz, que a su vez implica seleccionar la unión de los respectivos rectángulos. La unión de esos rectángulos siempre se ve como una escalera decreciente. Más aún, dada una escalera decreciente, esa escalera se puede obtener seleccionando la bola de la esquina superior derecha de cada "peldaño". Es decir, generar escaleras decrecientes y seleccionar pelotas son problemas equivalentes. Así que podemos hacer DP para encontrar la escalera decreciente óptima.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Leemos el input y lo pasamos en limpio al formato de matriz según el hint 1. Luego hacemos DP para encontrar la escalera decreciente óptima (hint 2). Para ello podemos hacer un DP(i, j) = el máximo puntaje que podemos lograr con una escalera decreciente óptima desde la columna j hacia la derecha, sujeto a que la altura el peldaño j-ésimo no se pase de la fila i-ésima (y además sin salirnos de los límites del triángulo inferior izquierdo). En la recursión tenemos 2 opciones: hacer el peldaño j-ésimo de altura hasta la fila i o no. Si lo hacemos de altura hasta i, entonces nos agarramos las primeras i celdas de la columna j (esta suma vertical se puede precomputar o hacerse con DP también) y nos queda el subproblema DP(i, j+1), o bien no lo hacemos hasta i, lo que nos deja el subproblema DP(i-1, j) ( ** excepto en los casos bordes cuando nos salimos de los márgenes del triángulo inferior izquierdo, tener cuidado con los índices en esos casos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/URI/BallStacking.cpp">Código de ejemplo</a>
+</details>
+
 
 ### C - Lucky Number Representation
 <details> 
