@@ -21,7 +21,7 @@ title: contest 7 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Hint 2</summary>
-  Si visualizamos el problema según el hint 1, una selección de bolas se traduce en una selección de celdas en la matriz, que a su vez implica seleccionar la unión de los respectivos rectángulos. La unión de esos rectángulos siempre se ve como una escalera decreciente. Más aún, dada una escalera decreciente, esa escalera se puede obtener seleccionando la bola de la esquina superior derecha de cada "peldaño". Es decir, generar escaleras decrecientes y seleccionar pelotas son problemas equivalentes. Así que podemos hacer DP para encontrar la escalera decreciente óptima.
+  Si visualizamos el problema según el hint 1, una selección de bolas se traduce en una selección de celdas en la matriz, que a su vez implica seleccionar la unión de los respectivos rectángulos. La unión de esos rectángulos siempre se ve como una escalera decreciente, con peldaños posiblemente de distinto ancho. Más aún, dada una escalera decreciente, esa escalera se puede obtener seleccionando la bola de la esquina superior derecha de cada "peldaño". Es decir, generar escaleras decrecientes y seleccionar pelotas son problemas equivalentes. Así que podemos hacer DP para encontrar la escalera decreciente óptima.
 </details>
 <details> 
   <summary>Solución + código</summary>
