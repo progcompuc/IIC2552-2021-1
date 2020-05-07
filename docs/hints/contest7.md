@@ -44,6 +44,20 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LuckyNumberRepresentation.cpp">Código de ejemplo</a>
 </details>
 
+### D - Fabricating Sculptures
+<details> 
+  <summary>Hint 1</summary>
+  Notar que una base válida se puede pensar como una secuencia de segmentos horizontales apilados, donde el primer segmento es de ancho S y cada siguiente segmento es de ancho menor o igual al anterior y está contenido dentro de los límites del segmento anterior, y la cantidad total de bloques usados es B. Entonces una forma fácil de modelar esto sería con un DP(s, b) = todas las bases válidas que se pueden armar, dado que el primer segmento es de ancho 's' y la cantidad de bloques total a usar es 'b'. La solución al problema original sería DP(S, B).
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  El problema del DP(s, b) del hint 1 es que si lo implementamos ingenuamente, la recurrencia sería hacer una sumatoria sobre todos los posibles casos del siguiente segmento horizontal, es decir, DP(s, b) = sum k=1..min(s, b-s) {  (s-k+1) * DP(k, b-s) }. Esta solución es correcta, pero nos da TLE. ¿Por qué? Porque la tabla memo sería de 5000 x 5000 y llenar cada celda requiere hacer una sumatoria (un for loop de hasta 5000 pasos), o sea, 5000^3 = 1.25 x 10^11 (mega TLE). Hint: piensa en una forma de jugar algebráicamente con la sumatoria y luego aplica "DP dentro del DP" (inception) para que el costo de la sumatoria sea prácticamente constante y no lineal.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos el DP propuesto en los hints 1 y 2. La sumatoria la podemos descomponer en dos términos: DP(s, b) = (s+1) * (sum k=1..min(s, b-s) { DP(k, b-s) }) -  (sum k=1..min(s, b-s) { k * DP(k, b-s) }). Cada una de esas sumatorias las podemos encapsular en una función que recibe como argumentos el techo del k y el índice de la columna sobre la que se suma, y las podemos memoizar. Al final es como tener 3 tablas memo de 5000 x 5000 (peor caso) y el costo total es llenar las 3 tablas, es decir O(B x S x 3). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Matcomgrader/FabricatingSculptures.cpp">Código de ejemplo</a>
+</details>
+
 ### E - Gates of uncertainty
 <details> 
   <summary>Hint</summary> 
