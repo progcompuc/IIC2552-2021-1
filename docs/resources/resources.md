@@ -11,6 +11,7 @@ title: Recursos
 - [Binary & Ternary Search](search)
 - [Data Structures](data_structures)
 - [Dynamic Programming (DP)](dp)
+- [Greedy](greedy)
 - [Graphs](graphs)
 - [Strings](strings)
 - [Mathematics](math)
