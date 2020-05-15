@@ -81,6 +81,17 @@ title: contest 8 - hints y códigos de ejemplo
   Si consideramos el orden descrito en los hints, podemos ir recorriendo las muñecas una por una (en el orden descrito) y elegir cual de las muñecas que ya hemos visto podemos juntar a esta (encerrar con la que estamos viendo). Como las muñecas están ordenadas crecientemente en ancho, todas las muñecas que ya hemos visto tienen ancho no mayor a la actual. Luego para poder ser elegida sólo importa la altura. Si mantenemos las muñecas que ya vimos ordenadas por altura, por ejemplo en un multiset, podemos encontrar rápidamente la con la altura más alta que puedo encerrar, si junto la actual con esta muñeca encontrada (sacando la encontrada del multiset e ingresando la nueva) siempre tendré en el multiset a las muñecas más comprimidas posibles. La respuesta final será el tamaño final del multiset.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/NestedDolls.cpp">Código de ejemplo</a>
 </details>
+  
+### H - Crazy Driver
+<details> 
+  <summary>Hint</summary>
+  Notemos que vamos a tener que ir y volver entre algunos pares de puertas mientras esperamos a que la siguiente sea abierta. Una forma de hacer este problema de forma greedy elegir este par de puertas en las que daré vueltas como las que tengan el camino asociado más barato.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos pensar el problema como elecciones consecutivas, vamos puerta por puerta viendo si es que el tiempo que llevamos es suficiente, si no lo es vamos agregando de a 2 al tiempo y sumando al costo 2 veces el costo menor visto hasta que nuestro tiempo sea suficiente. La respuesta será el costo acumulado total.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CrazyDriver.cpp">Código de ejemplo</a>
+</details>
 
 <!-- <details> 
   <summary>Hint</summary>   
