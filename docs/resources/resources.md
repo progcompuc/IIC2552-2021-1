@@ -12,6 +12,7 @@ title: Recursos
 - [Data Structures](data_structures)
 - [Dynamic Programming (DP)](dp)
 - [Greedy](greedy)
+- [Greedy](divconq)
 - [Graphs](graphs)
 - [Strings](strings)
 - [Mathematics](math)
