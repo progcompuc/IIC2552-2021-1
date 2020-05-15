@@ -54,8 +54,15 @@ Abril 24, 17 días, [link a **contest**](https://vjudge.net/contest/370134)\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest7)
 
 ## Contest 8
-Abril 24, 17 días, [link a **contest**](https://vjudge.net/contest/372762)\\
+Mayo 8, 10 días, [link a **contest**](https://vjudge.net/contest/372762)\\
 **Tópicos**: [Greedy](resources/greedy)\\
+**Puntos**: _pending_\\
+**Puntaje Mínimo Esperado**: _pending_\\
+**Hints** y **códigos de ejemplo**: _pending_
+
+## Contest 9
+Mayo 15, 10 días, [link a **contest**](https://vjudge.net/contest/373993)\\
+**Tópicos**: [Divide and Conquer](resources/divconq)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
 **Hints** y **códigos de ejemplo**: _pending_
