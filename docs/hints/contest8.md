@@ -4,90 +4,48 @@ title: contest 8 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 8](../contests#contest-8) > ```{{page.title}}```
 
-### A - Jobbery
+### A - Letters Cyclic Shift
 <details> 
   <summary>Hint</summary>
-  Básicamente nos piden encontrar todos los nodos pertenecientes a la SCC raíz del DAG de SCCs (si es que hay). Si no hay una única SCC raíz para todo el DAG, entonces no hay ningún senador peligroso.
+  Siempre conviene achicar las letras más a la izquierda posible (esto es lo greedy).
 </details>
 <details> 
   <summary>Solución + código</summary>
-  <p>
-  Notar que encontrar la SCC raíz del DAG es equivalente a encontrar la (única) SCC hoja del DAG inverso (invirtiendo la dirección de las aristas). Corremos entonces tarjan sobre el grafo inverso y la primera vez que detectemos una SCC esa es una SCC hoja. Para chequear si dicha ese SCC es raíz del grafo original, corremos un DFS partiendo de un nodo cualquiera de dicha SCC y vemos si llegamos a todos los nodos, en cuyo caso todos los nodos de la SCC que encontramos son los senadores peligrosos. Para evitar seguir explorando más SCCs innecesariamente, una vez que ya encontramos la primera SCC interrumpimos la exploración (se puede hacer retornando true en el dfs).
-  </p>
-  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/acm.timus.ru/1198_Jobbery.cpp">Código de ejemplo</a>
+  Encontramos la primera letra que no es 'a' de izquierda a derecha, luego desde ahí encontramos la última letra que no es 'a', entonces todo ese segmento lo cyclic-shifteamos. Si no logramos encontrar ningún segmento así, quiere decir que el string sólo tiene a's, así como estamos obligados a cyclic-shiftear, la última 'a' la convertimos en 'z'. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/709C_LetterCyclicShift.cpp">Código de ejemplo</a>
 </details>
 
-### B - Good Travels
+### C - Bridge Crossing
+<details> 
+  <summary>Hint</summary>
+  Pensar en una solución por rondas, donde cada ronda comienza con el bote a la izquierda y el objetivo de la ronda es enviar a las 2 personas más lentas a la orilla derecha de la forma más eficiente posible.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacer una solución por rondas como lo indica el hint. Hay dos formas de enviar a las dos personas más lentas: 1) enviamos cada persona más lenta acompañada por la persona más rápida y nos devolvemos con la persona más rápida; 2) enviamos las dos personas más rápidas, nos devolvemos con la más rápida, luego enviamos las personas más lentas juntas y finalmente nos devolvemos con la segunda más rápida que dejamos al otro lado. Tener cuidado de que en la última ronda no hay que volver a la orilla izquierda (o si no no sería la última ronda). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/GEEK04_BridgeCrossing.cpp">Código de ejemplo</a>
+</details>
+
+### D - TheQueue
 <details> 
   <summary>Hint 1</summary>
-  Si el equipo llega a una ciudad u, el recorrido optimo siempre va a pasar por todas las ciudades v tales que v es alcanzable desde u y u es alcanzable desde v. Si un recorrido optimo no hiciera esto, siempre podriamos visitar esa ciudad v que nos falto, volver a u, y luego continuar el recorrido, mejorando el optimo.
+  Si destacamos en una recta de tiempo los intervalos en que la recepcionista está ocupada, para esperar 0 tendríamos que llegar en instante pertenciente a un gap entre 'ts' y el primer intervalo, un gap entre 2 intervalos, o un gap entre el último intervalo y 'tf'. Como cada intervalo es iniciado por una persona llegando en algún instante t, basta con probar llegar en t-1. Para el gap entre el último intervalo y 'tf', nos basta con probar en (tf - tiempo_atención).
 </details>
 <details> 
   <summary>Hint 2</summary>
-  Otra manera de plantear el hint anterior es: Si un recorrido pasa por una componente fuertemente conexa, entonces visita todos los nodos de esa componente.
+  Si no podemos ser primeros en la cola al llegar (i.e. esperar 0), entonces estamos obligados a llegar y que haya gente en la cola. Supongamos que queremos quedar justo antes que la persona i-ésima en la cola, lo greedy es llegar justo en el instante t_i - 1.
 </details>
 <details> 
   <summary>Solución + código</summary>
-  <p>
-  Dado el grafo de ciudades, obtener el DAG de componentes fuertemente conexas. Para cada componente calcular la suma de f_i para sus nodos. Luego el problema se reduce a encontrar el camino con la suma de f_i mas alta en el DAG de componentes fuertemente conexas, lo que puede hacerse en tiempo lineal.
-  </p>
-  <a href="https://github.com/ProgramacionCompetitivaPUC/IIC2553-2019-2/blob/master/code_samples/contest8/B_Good_Travels.cpp">Código de ejemplo</a>
+  El problema se puede resolver simulando la evolución de la cola en el tiempo e inyectando en la simulación consultas del tipo "cuánto tendría que esperar para que me antiendan si justo llego en el instante t". La simulación la podemos hacer con eventos con timestamps. Un evento puede ser del tipo "recepcionista llega", "recepcionista se va", "llega persona", "se va persona" y "consulta". Por cada persona i-ésima agregamos un evento tipo "consulta" con tiempo (t_i - 1) (siempre que t_i - 1 >= 0), y agregamos también un evento consulta con tiempo (t_f - tiempo_atención). Simulamos eventos y cuando nos toque un evento consulta, la espera será (tiempo_atención * personas_en_cola + tiempo que le falta a la recepcionista para desocuparse). Si la recepcionista me alcanza a atender dada esa espera, actualizo mi respuesta, e imprimo la mejor respuesta luego de simular todo. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/767B_TheQueue.cpp">Código de ejemplo</a>
 </details>
 
-### C - Checkposts
+### E - Criss-Cross Cables
 <details> 
   <summary>Hint</summary>
-  Cada checkpost puede proteger la SCC a la que pertenece y nada más. Por lo que basta con poner un checkpost por SCC, y como queremos minimizar el costo escogemos el nodo más barato en cada SCC, pero pueden haber empates ...
+  Si ordenamos los cables de menor a mayor y las distancias entre pares de puertos de menor a mayor, entonces es fácil hacer una solución con dos punteros. El problema es que la cantidad de pares de puertos es cuadrática y por ende demasiado grande (TLE). Piensa en una forma de ir recorriéndolos en orden si tener que generarlos todos.
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Corremos tarjan y encontramos todos los SCCs, por cada SCC encontramos el nodo de costo mínimo y cuántos nodos dentro de la SCC empatan a ese costo mínimo. El costo total es la sumatoria sobre el costo mínimo de cada SCC. Las formas de lograrlo es la productoria sobre la frecuencia del costo mínimo en cada SCC. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/427C_Checkposts.cpp">Código de ejemplo</a>
-</details>
-
-### D - Hedge Mazes
-<details> 
-  <summary>Hint</summary>
-  <p>
-  Supongamos que tenemos un camino simple entre los nodos S y T. Tomemos una arista (u,v) cualquiera de este camino. Tenemos dos opciones:
-  </p>
-  <ol>
-    <li>
-        Hay un camino entre u y v que no utiliza la arista (u,v)
-    </li>
-    <li>
-        La arista (u,v) es el unico camino entre los nodos u y v
-    </li>
-  </ol>
-  <p>
-  Si estamos en el primer caso, entonces hay otro camino simple entre los nodos S y T que no utiliza la arista (u,v).
-  </p>
-</details>
-<details> 
-  <summary>Hint 2</summary>
-  Si tomamos un camino simple entre S y T, este camino simple es unico si y solo si todas las aristas en este camino son aristas de corte.
-</details>
-<details> 
-  <summary>Solución + código</summary>
-  <p>
-  Como dicen los hints, la solucion para cada query (S,T) consiste en encontrar un camino simple entre S y T y luego revisar que todas las aristas utilizadas sean aristas de corte. Para realizar esto eficientemente se puede utilizar binary lifting.
-  </p>
-  <a href="https://github.com/ProgramacionCompetitivaPUC/IIC2553-2019-2/blob/master/code_samples/contest8/D_Hedge_Mazes.cpp">Código de ejemplo</a>
-</details>
-
-### E - Capital City
-<details> 
-  <summary>Hint</summary>
-  Lo mismo que el A - Jobbery pero al revés.
-</details>
-<details> 
-  <summary>Solución + código</summary>
-  Lo mismo que el A - Jobbery pero al revés. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/CAPCITY_CapitalCity.cpp">Código de ejemplo</a>
-</details>
-
-### H - Leaders
-<details> 
-  <summary>Hints + Solución + código</summary>
-  Leer los comentarios dentro del código. Para hacer la lectura más ordenada, partir leyendo desde el main. El código está <strong>MUY</strong> comentado. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/97E_Leaders.cpp">Código de ejemplo</a>
+  Usamos una priority_queue para ordenar pares de puertos. Inicialmente la llenamos con los pares consecutivos (i, i+1). Cuando sacamos el par (i, j), metemos el par (i, j+1). Al mismo tiempo tenemos un puntero en nuestros cables. Si en algún punto un cable no se la puede con el par (i, j) actual, menos se la va a poder con los pares futuros, así que inmediatamente no se puede. Si se nos acaban los cables y siempre pudimos, sí se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/crisscrosscables.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
