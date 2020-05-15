@@ -48,6 +48,25 @@ title: contest 8 - hints y códigos de ejemplo
   Usamos una priority_queue para ordenar pares de puertos. Inicialmente la llenamos con los pares consecutivos (i, i+1). Cuando sacamos el par (i, j), metemos el par (i, j+1). Al mismo tiempo tenemos un puntero en nuestros cables. Si en algún punto un cable no se la puede con el par (i, j) actual, menos se la va a poder con los pares futuros, así que inmediatamente no se puede. Si se nos acaban los cables y siempre pudimos, sí se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/crisscrosscables.cpp">Código de ejemplo</a>
 </details>
 
+### F - DZY Loves Modification
+<details> 
+  <summary>Hint 1</summary>
+  Si el problema fuera sólo tomar columnas o sólo tomar filas, podemos tomar un approach greedy tomando siempre la que me genere mayor ganancia (tomando en cuenta la disminución de la elegida luego de cada elección). En este caso sin embargo la combinación puede afectar el resultado.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Supongamos que queremos tomar i filas y (k - i) columnas, podemos elegir las filas y columnas que tomaremos usando el Hint 1, para calcular la ganancia general que esto nos genera hay que considerar además la disminución que genera sobre las columnas el elegir una fila y viceversa.
+</details>
+<details> 
+  <summary>Hint 3</summary>
+  Siguiendo con el hint anterior notemos que esta ganancia de elegir i filas y (k - i) columnas, no depende del orden en que sean elegidas (respecto a elegir primero filas o columnas o combinadas). La ganancia siempre será R(i) + C(k - i) - i * (k - i) * P. Donde R(i) es la ganancia de elegir i filas de forma consecutiva y C(i) lo mismo sobre columnas.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos precalcular los valores de R(i) y C(i) descritos en el Hint 2 para i de 0 a k y luego la respuesta será el máximo de R(i) + C(k - i) entre todos los i de 1 a k.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/DZYLovesModification.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
