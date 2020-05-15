@@ -67,6 +67,21 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/DZYLovesModification.cpp">Código de ejemplo</a>
 </details>
 
+### G - Nested Dolls
+<details> 
+  <summary>Hint 1</summary>
+  Busque una forma de ordenar las muñecas tal que el problema sea más fácil.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Ordene de mayor a menor (>) en ancho y desempate de menor a mayor (<) en altura. Vuelva a pensar el problema considerando este orden.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Si consideramos el orden descrito en los hints, podemos ir recorriendo las muñecas una por una (en el orden descrito) y elegir cual de las muñecas que ya hemos visto podemos juntar a esta (encerrar con la que estamos viendo). Como las muñecas están ordenadas crecientemente en ancho, todas las muñecas que ya hemos visto tienen ancho no mayor a la actual. Luego para poder ser elegida sólo importa la altura. Si mantenemos las muñecas que ya vimos ordenadas por altura, por ejemplo en un multiset, podemos encontrar rápidamente la con la altura más alta que puedo encerrar, si junto la actual con esta muñeca encontrada (sacando la encontrada del multiset e ingresando la nueva) siempre tendré en el multiset a las muñecas más comprimidas posibles. La respuesta final será el tamaño final del multiset.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/NestedDolls.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
