@@ -93,6 +93,21 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CrazyDriver.cpp">Código de ejemplo</a>
 </details>
 
+### I - Change-free
+<details> 
+  <summary>Hint 1</summary>   
+  Notemos que nos podemos olvidar de los billetes a pagar y sólo pensar en las monedas disponibles. Sólo hay 2 formas de pagar que podrían llegar a ser óptimas cada día, pagar C[i]/100 billetes y C[i]%100 monedas (change free) o pagar (C[i]/100 + 1) billetes y 0 monedas. Ninguna otra forma de pagar nos da beneficios o es óptima.
+</details>
+<details>
+  <summary>Hint 2</summary>
+  Notemos que la ganancia en monedas que nos genera el pagar de la segunda forma respecto a pagar de la primera siempre es de exactamente 100 monedas (pues no pagamos C[i]%100 y recibimos 100 - C[i]%100).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Notemos que para poder pagar justo un día necesitamos tener la cantidad de monedas necesarias, si las tenemos lo óptimo es pagarlas, de otro modo podemos elejir de forma greedy si parar de la segunda forma o elegir un día de los anteriores donde hayamos pagado justo y pasarlo a la segunda forma para pagar justo ahora. Para hacer esta elección basta con hacer uso de alguna estructura que nos ordene lo que hayamos visto, por ejemplo una priority_queue en c++.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/ChangeFree.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
