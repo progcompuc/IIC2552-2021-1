@@ -56,8 +56,8 @@ Abril 24, 17 días, [link a **contest**](https://vjudge.net/contest/370134)\\
 ## Contest 8
 Mayo 8, 10 días, [link a **contest**](https://vjudge.net/contest/372762)\\
 **Tópicos**: [Greedy](resources/greedy)\\
-**Puntos**: _pending_\\
-**Puntaje Mínimo Esperado**: _pending_\\
+**Puntos**: 1, 3, 2, 4, 3, 4, 4, 4, 5\\
+**Puntaje Mínimo Esperado**: 6\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest8)
 
 ## Contest 9
