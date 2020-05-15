@@ -21,7 +21,7 @@ title: contest 8 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Hacer una solución por rondas como lo indica el hint. Hay dos formas de enviar a las dos personas más lentas: 1) enviamos cada persona más lenta acompañada por la persona más rápida y nos devolvemos con la persona más rápida; 2) enviamos las dos personas más rápidas, nos devolvemos con la más rápida, luego enviamos las personas más lentas juntas y finalmente nos devolvemos con la segunda más rápida que dejamos al otro lado. De esas dos opciones escogemos la que sea mejor. Tener cuidado con que en la última ronda no hay que volver a la orilla izquierda (o si no no sería la última ronda). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/GEEK04_BridgeCrossing.cpp">Código de ejemplo</a>
+  Hacer una solución por rondas como lo indica el hint. Hay dos formas de enviar a las dos personas más lentas: 1) enviamos cada persona más lenta acompañada por la persona más rápida y nos devolvemos con la persona más rápida; 2) enviamos las dos personas más rápidas, nos devolvemos con la más rápida, luego enviamos las personas más lentas juntas y finalmente nos devolvemos con la segunda más rápida que dejamos al otro lado. De esas dos opciones escogemos la que sea mejor. Tener cuidado con que en la última ronda no hay que volver a la orilla izquierda (o si no no sería la última ronda). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/GEEK04_BridgeCrossing_v2.cpp">Código de ejemplo</a>
 </details>
 
 ### D - TheQueue
