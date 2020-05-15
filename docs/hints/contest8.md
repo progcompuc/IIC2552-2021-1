@@ -11,7 +11,7 @@ title: contest 8 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Encontramos la primera letra que no es 'a' de izquierda a derecha, luego desde ahí encontramos la última letra que no es 'a', entonces todo ese segmento lo cyclic-shifteamos. Si no logramos encontrar ningún segmento así, quiere decir que el string sólo tiene a's, así como estamos obligados a cyclic-shiftear, la última 'a' la convertimos en 'z'. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/709C_LetterCyclicShift.cpp">Código de ejemplo</a>
+  Encontramos la primera letra que no es 'a' de izquierda a derecha, luego desde ahí encontramos la última letra que no es 'a', entonces todo ese segmento lo cyclic-shifteamos. Si no logramos encontrar ningún segmento así, quiere decir que el string tiene puras a's, pero como estamos obligados a cyclic-shiftear por lo menos un caracter, entonces la última 'a' la convertimos en 'z'. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/709C_LetterCyclicShift.cpp">Código de ejemplo</a>
 </details>
 
 ### C - Bridge Crossing
@@ -21,17 +21,17 @@ title: contest 8 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Hacer una solución por rondas como lo indica el hint. Hay dos formas de enviar a las dos personas más lentas: 1) enviamos cada persona más lenta acompañada por la persona más rápida y nos devolvemos con la persona más rápida; 2) enviamos las dos personas más rápidas, nos devolvemos con la más rápida, luego enviamos las personas más lentas juntas y finalmente nos devolvemos con la segunda más rápida que dejamos al otro lado. Tener cuidado de que en la última ronda no hay que volver a la orilla izquierda (o si no no sería la última ronda). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/GEEK04_BridgeCrossing.cpp">Código de ejemplo</a>
+  Hacer una solución por rondas como lo indica el hint. Hay dos formas de enviar a las dos personas más lentas: 1) enviamos cada persona más lenta acompañada por la persona más rápida y nos devolvemos con la persona más rápida; 2) enviamos las dos personas más rápidas, nos devolvemos con la más rápida, luego enviamos las personas más lentas juntas y finalmente nos devolvemos con la segunda más rápida que dejamos al otro lado. De esas dos opciones escogemos la que sea mejor. Tener cuidado con que en la última ronda no hay que volver a la orilla izquierda (o si no no sería la última ronda). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/GEEK04_BridgeCrossing.cpp">Código de ejemplo</a>
 </details>
 
 ### D - TheQueue
 <details> 
   <summary>Hint 1</summary>
-  Si destacamos en una recta de tiempo los intervalos en que la recepcionista está ocupada, para esperar 0 tendríamos que llegar en instante pertenciente a un gap entre 'ts' y el primer intervalo, un gap entre 2 intervalos, o un gap entre el último intervalo y 'tf'. Como cada intervalo es iniciado por una persona llegando en algún instante t, basta con probar llegar en t-1. Para el gap entre el último intervalo y 'tf', nos basta con probar en (tf - tiempo_atención).
+  Si destacamos en una recta de tiempo los intervalos en que la recepcionista está ocupada, para esperar 0 tendríamos que llegar en un instante pertenciente a un gap entre 'ts' y el primer intervalo, un gap entre 2 intervalos, o un gap entre el último intervalo y 'tf'. Es decir, para todos los gaps excepto el último siempre hay alguien que llega después, así que podemos cubrir todos esos casos preguntándonos qué pasa si llegamos en t_i-1 para cada persona i. Para el gap entre el último intervalo y 'tf', nos basta con probar en (tf - tiempo_atención).
 </details>
 <details> 
   <summary>Hint 2</summary>
-  Si no podemos ser primeros en la cola al llegar (i.e. esperar 0), entonces estamos obligados a llegar y que haya gente en la cola. Supongamos que queremos quedar justo antes que la persona i-ésima en la cola, lo greedy es llegar justo en el instante t_i - 1.
+  Si no podemos ser primeros en la cola al llegar (i.e. esperar 0), entonces estamos obligados a llegar y que haya gente en la cola antes que nosotros. Entonces tenemos que decidir en qué posición de la cola quedaremos cuando llegemos. Esto es equivalente a decidir justo antes de quién voy a quedar parado. Si quiero quedar justo antes que la persona i-ésima en la cola, lo greedy es llegar justo en el instante t_i - 1.
 </details>
 <details> 
   <summary>Solución + código</summary>
