@@ -41,7 +41,7 @@ title: contest 8 - hints y códigos de ejemplo
 ### E - Criss-Cross Cables
 <details> 
   <summary>Hint</summary>
-  Si ordenamos los cables de menor a mayor y las distancias entre pares de puertos de menor a mayor, entonces es fácil hacer una solución con dos punteros. El problema es que la cantidad de pares de puertos es cuadrática y por ende demasiado grande (TLE). Piensa en una forma de ir recorriéndolos en orden si tener que generarlos todos.
+  Si ordenamos los cables de menor a mayor y las distancias entre pares de puertos de menor a mayor, entonces es fácil hacer una solución con dos punteros. El problema es que la cantidad de pares de puertos es cuadrática y por ende demasiado grande (TLE). Piensa en una forma de ir recorriéndolos en orden sin tener que generarlos todos.
 </details>
 <details> 
   <summary>Solución + código</summary>
