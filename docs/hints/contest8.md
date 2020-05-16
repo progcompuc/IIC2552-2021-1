@@ -14,6 +14,20 @@ title: contest 8 - hints y códigos de ejemplo
   Encontramos la primera letra que no es 'a' de izquierda a derecha, luego desde ahí encontramos la última letra que no es 'a', entonces todo ese segmento lo cyclic-shifteamos. Si no logramos encontrar ningún segmento así, quiere decir que el string tiene puras a's, pero como estamos obligados a cyclic-shiftear por lo menos un caracter, entonces la última 'a' la convertimos en 'z'. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/709C_LetterCyclicShift.cpp">Código de ejemplo</a>
 </details>
 
+### B - Black and White Stones
+<details> 
+  <summary>Hint 1</summary>
+  Si hay K letras B, podemos visualizar una línea vertical divisoria entre los índices K-1 y K. Todas las letras B que están a la derecha de la línea divisoria hay que trasladarlas o teletransportarlas a las posiciones con W que están a la izquierda de la línea divisoria.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Notar que trasladar uno a uno es mejor que teletransportar hasta que la distancia se vuelve muy grande, en cuyo caso teletransportar comienza a ser mejor.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos una solución greedy en la que buscamos llenar cada posición W a la izquierda de la línea divisoria (hint 1) con los B a la derecha de la línea divisoria. Usamos dos punteros, un puntero de derecha a izquierda para los W y otro puntero de izquierda a derecha para los B. El primero parte en el índice K-1 y el segundo en el índice K (donde K es la cantidad de letras B que hay en total). Para cada par de W y B que encontramos, usamos la opción más barata entre teletransportar y trasladar uno a uno. Sumamos todo eso y esa es la respuesta. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6822_BlackAndWhiteStones.cpp">Código de ejemplo</a>
+</details>
+
 ### C - Bridge Crossing
 <details> 
   <summary>Hint</summary>
