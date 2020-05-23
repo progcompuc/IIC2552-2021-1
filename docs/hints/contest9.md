@@ -30,7 +30,7 @@ title: contest 9 - hints y códigos de ejemplo
 
 <details> 
   <summary>Hint</summary>
-  Si tienes una cerca de ancho N, piensa en las formas de pintar el rectángulo de ancho N y altura 1 ubicado en el piso (la base de la cerca). Lo puedes pintar con un brochazo horizontal (costo 1), pero luego te faltaría pintar todo lo de arriba (la misma cerca pero restándole 1 a todas las alturas), o bien puedes pintar el rectángulo con N brochazos verticales (costo N, pero con eso pintas la cerca completa). Mezclar brochazos horizontales y verticales para el rectángulo basal no tiene sentido ya que en ese caso aprovechas de pintar el rectángulo entero con un puro brochazo horizontal y te ahorras todos los brochazos verticales. Ahora, no es dificil generalizar el razonamiento a todo el rectángulo basal de alturo hmin, donde hmin es la altura mínima de la cerca.
+  Si tienes una cerca de ancho N, piensa en las formas de pintar el rectángulo de ancho N y altura 1 ubicado en el piso (la base de la cerca). Lo puedes pintar con un brochazo horizontal (costo 1), pero luego te faltaría pintar todo lo de arriba (la misma cerca pero restándole 1 a todas las alturas), o bien puedes pintar el rectángulo con N brochazos verticales (costo N, pero con eso pintas la cerca completa). Mezclar brochazos horizontales y verticales para el rectángulo basal no tiene sentido ya que en ese caso aprovechas de pintar el rectángulo entero con un puro brochazo horizontal y te ahorras todos los brochazos verticales. Ahora, no es dificil generalizar el razonamiento a todo el rectángulo basal de altura hmin, donde hmin es la altura mínima de la cerca.
 </details>
 <details> 
   <summary>Solución + código</summary>
