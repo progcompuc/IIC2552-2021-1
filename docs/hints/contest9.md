@@ -23,7 +23,7 @@ title: contest 9 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Hacemos una función search(l, r, i) que reparte los jugadores l, l+1, l+2, ..., r-1 entre dos equipos para desde la sesión de práctica i en adelante (la profundida de la recursión corresponde al índice de la sesión de práctica). En cada llamada, calculamos m = (l+r)/2, entonces los jugadores desde l hasta m-1 se van al equipo 1 en la sesión de práctica i. Luego se llama a search(l, m, i+1) y search(m, r, i+1). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/234G_Practice.cpp">Código de ejemplo</a>
+  Hacemos una función search(l, r, i) que reparte los jugadores l, l+1, l+2, ..., r-1 entre dos equipos desde la sesión de práctica i en adelante (la profundida de la recursión corresponde al índice de la sesión de práctica). En cada llamada, calculamos m = (l+r)/2, entonces los jugadores desde l hasta m-1 se van al equipo 1 en la sesión de práctica i. Luego se llama a search(l, m, i+1) y search(m, r, i+1). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/234G_Practice.cpp">Código de ejemplo</a>
 </details>
 
 ### C - Painting Fence
