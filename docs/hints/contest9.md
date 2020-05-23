@@ -37,6 +37,18 @@ title: contest 9 - hints y códigos de ejemplo
   Hacemos una función recursiva para pintar paint(l, r, h) que calcula el costo óptmo de pintar la subcerca entre los índices l y r y considerando todo lo que está arriba de la altura h. El problema original se resuelve con paint(0, N, 0). Entonces en cada llamada tenemos dos opciones, pintar el rectángulo que va desde h hasta hmin(l, r) con brochazos horizontales (con lo cual nos quedarían subsubcercas aisladas por pintar recursivamente) o bien pintamos todo vertical de un viaje. Retornamos el mínimo entre ambas opciones. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/448C_PaintingFence_v2.cpp">Código de ejemplo</a>
 </details>
 
+### D - Code For 1
+
+<details> 
+  <summary>Hint</summary>
+  Pensar que tenemos un árbol binario donde la raíz es n, las dos hojas hijas son floor(n/2) y floor(n/2), luego en el tercer nivel hay 4 nodos floor(floor(n/2)/2), etc. Cada nodo está a cargo de un subrango de índices del arreglo final. Por ej. la raíz n genera la lista completa, así que su rango es todo el arreglo, o sea [0, size(n)-1], donde size(n) es el tamaño del arreglo final generado por n. Pensar en una forma de responder la consulta [l, r] como si estuvieramos navegando este árbol binario implícito, y descartamos nodos que no aportan a la consulta (por ej. si un nodo está a cargo del rango [i, j] y dicho rango tiene intersección vacía con [l, r], podemos descartar ese nodo y todo su subárbol para abajo).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos un divide and conquer navegando recursivamente sobre el árbol binario explicado en el hint, donde en cada llamada recursiva vamos pasando hacia abajo el rango de índices correspondiente a cada nodo, y descartamos nodos que no aportan a la query [l,r]. Si un nodo está completamente contenido en la query, podemos retornar altiro la cantidad de 1s que hay en ese nodo (no es neceario seguir haciendo recursión). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/768B_CodeFor1.cpp">Código de ejemplo</a>
+</details>
+
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
