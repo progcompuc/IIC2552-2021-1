@@ -15,6 +15,28 @@ title: contest 9 - hints y códigos de ejemplo
   Hacemos la misma recursión divide and conquer de mergesort(l, r, k), donde le agregamos un argumento extra k que nos dice cuantas llamadas tenemos que hacer. Si k == 1, entonces esta llamada en particular debe ser una llamada final (no más recursión hacia abajo), así que el subarreglo correspondiente debe estar ordenado (llenamos con valores crecientes). Si k > 1, entonces hay que decidir cómo repartir (k-1) llamadas entre las dos llamadas hijas. Pueden haber varias opciones. Una opción posible es tirar la mayor cantidad de llamadas a la izquierda y lo que sobre a la derecha. Como sea que distribuyamos, nos van a quedar los dos subarreglos hijos con valores asignados. Para garantizar que la unión de los dos subarreglos quede desordenada, le podemos sumar un offset a los valores del subarreglo hijo izquierdo para garantizar que todos esos valores sean mayores estrictos a los valores del subarreglo derecho (con eso queda sí o sí desordenado). Los casos bordes en que se retorna -1 son cuando el k supera el máximo de llamadas posibles o bien cuando k es par. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/873D_MergeSort.cpp">Código de ejemplo</a>
 </details>
 
+### B - Pratice
+
+<details> 
+  <summary>Hint</summary>
+  Notar que si tenemos un grupo de n personas y queremos repartirlos en dos grupos que maximicen la cantidad de pares, lo óptimo es repartidos en dos grupos de n/2 (si n es par) o lo más cercano a eso (floor(n/2) y n-floor(n/2)).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos una función search(l, r, i) que reparte los jugadores l, l+1, l+2, ..., r-1 entre dos equipos para desde la sesión de práctica i en adelante (la profundida de la recursión corresponde al índice de la sesión de práctica). En cada llamada, calculamos m = (l+r)/2, entonces los jugadores desde l hasta m-1 se van al equipo 1 en la sesión de práctica i. Luego se llama a search(l, m, i+1) y search(m, r, i+1). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/234G_Practice.cpp">Código de ejemplo</a>
+</details>
+
+### C - Painting Fence
+
+<details> 
+  <summary>Hint</summary>
+  Si tienes una cerca de ancho N, piensa en las formas de pintar el rectángulo de ancho N y altura 1 ubicado en el piso (la base de la cerca). Lo puedes pintar con un brochazo horizontal (costo 1), pero luego te faltaría pintar todo lo de arriba (la misma cerca pero restándole 1 a todas las alturas), o bien puedes pintar el rectángulo con N brochazos verticales (costo N, pero con eso pintas la cerca completa). Mezclar brochazos horizontales y verticales para el rectángulo basal no tiene sentido ya que en ese caso aprovechas de pintar el rectángulo entero con un puro brochazo horizontal y te ahorras todos los brochazos verticales. Ahora, no es dificil generalizar el razonamiento a todo el rectángulo basal de alturo hmin, donde hmin es la altura mínima de la cerca.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos una función recursiva para pintar paint(l, r, h) que calcula el costo óptmo de pintar la subcerca entre los índices l y r y considerando todo lo que está arriba de la altura h. El problema original se resuelve con paint(0, N, 0). Entonces en cada llamada tenemos dos opciones, pintar el rectángulo que va desde h hasta hmin(l, r) con brochazos horizontales (con lo cual nos quedarían subsubcercas aisladas por pintar recursivamente) o bien pintamos todo vertical de un viaje. Retornamos lo mejores entre ambas opciones. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/448C_PaintingFence_v2.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
