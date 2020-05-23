@@ -65,7 +65,7 @@ Mayo 15, 10 días, [link a **contest**](https://vjudge.net/contest/373993)\\
 **Tópicos**: [Divide and Conquer](resources/divconq)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest9)
 
 
 [Index](index) > ```{{page.title}}```
