@@ -34,7 +34,7 @@ title: contest 9 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Hacemos una función recursiva para pintar paint(l, r, h) que calcula el costo óptmo de pintar la subcerca entre los índices l y r y considerando todo lo que está arriba de la altura h. El problema original se resuelve con paint(0, N, 0). Entonces en cada llamada tenemos dos opciones, pintar el rectángulo que va desde h hasta hmin(l, r) con brochazos horizontales (con lo cual nos quedarían subsubcercas aisladas por pintar recursivamente) o bien pintamos todo vertical de un viaje. Retornamos lo mejores entre ambas opciones. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/448C_PaintingFence_v2.cpp">Código de ejemplo</a>
+  Hacemos una función recursiva para pintar paint(l, r, h) que calcula el costo óptmo de pintar la subcerca entre los índices l y r y considerando todo lo que está arriba de la altura h. El problema original se resuelve con paint(0, N, 0). Entonces en cada llamada tenemos dos opciones, pintar el rectángulo que va desde h hasta hmin(l, r) con brochazos horizontales (con lo cual nos quedarían subsubcercas aisladas por pintar recursivamente) o bien pintamos todo vertical de un viaje. Retornamos el mínimo entre ambas opciones. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/448C_PaintingFence_v2.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
