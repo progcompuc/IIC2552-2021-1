@@ -48,6 +48,20 @@ title: contest 9 - hints y códigos de ejemplo
   Hacemos un divide and conquer navegando recursivamente sobre el árbol binario implícito explicado en el hint, donde en cada llamada recursiva vamos pasando hacia abajo el rango de índices correspondiente a cada nodo, y descartamos nodos que no aportan a la query [l,r]. Si un nodo está completamente contenido en la query, podemos retornar altiro la cantidad de 1s que hay en ese nodo (no es necesario seguir haciendo recursión). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/768B_CodeFor1.cpp">Código de ejemplo</a>
 </details>
 
+### E - Guardians of the Lunatics
+<details> 
+  <summary>Hint 1</summary>
+  Es relativamente simple pensar en un dp que soluciona este problema pero este no pasará en el límite de tiempo del problema. Un posible dp como el mencionado arriba es resolver cómo asignar x guardias a los primeros y lunáticos, esto será el mínimo de todas las posibilidades de asignar 1 de los guardias (su costo) y del mismo dp en (x - 1, y - c) donde c es la cantidad asignada al último guardia (el que estamos decidiendo ahora). Este dp sin embargo tiene complejidad O(G * L^2) por lo que bnecesitamos optimizarlo para pasar en tiempo. Piensen en una optimización del estilo divide and conquer.
+</details>
+<details> 
+  <summary>Hint 2</summary>  
+  Si fijamos x y analizamos el índice en que se logra el mínimo (al iterar para asignar el último de los x guardias) en el dp mencionado para los estados (x, i) con i de 1 a L, podemos notar que este índice es creciente c/r a i. Es decir opt[i] <= opt[j] si i < j.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando lo anteriormente mencionado podemos haer una optimización del estilo divide and conquer a nuestro dp, donde no es necesario iterar en todas las posibilidades de 0 a i para asignar el último guardia, sino que podemos usar cotas en izquierda y derecha para acotar el espacio de búsqueda. Para aprender más al respecto pueden ver el siguiente  <a href="https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html">link</a>.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/HackerRank/GuardiansOfTheLunatics.cpp">Código de ejemplo</a>
+</details>
 
 <!-- <details> 
   <summary>Hint</summary>   
