@@ -76,6 +76,21 @@ title: contest 9 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TrickyFunction.cpp">Código de ejemplo</a>
 </details>
 
+### H - Money for Nothing
+<details> 
+  <summary>Hint 1</summary>
+  Notemos que podemos reducir el problema a ver los pares de (fecha, precio) como puntos en el plano y se busca un par de puntos en el plano tal que el rectángulo con esquina inferior en el set de puntos de venta y esquina superior en el set de puntos de compra sea el de mayor área.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Siguendo lo anterior podemos notar que hay algunos puntos que podemos descartar, pues nunca serán parte del óptimo, por ejemplo cualquier punto (x, y) en el grupo de venta tal que existe (x', y') en el mismo grupo con x'<=x, y y'<= y. O cualquier punto (x, y) en el grupo de compra tal que existe (x', y') en el mismo grupo con x<=x' y y<=y'. Luego de haber descartado esta clase de puntos tendremos que si ordenamos los puntos de cada grupo respecto a su eje x, obtendremos puntos que aumentan en x y disminuyen en y.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Finalmente usando todo lo anterior podemos hacer un análisis similar al realizado para el problema E, donde si el óptimo punto en el grupo de compra para un punto específico en el grupo de venta es en el índice i, entonces para un punto mayor en el grupo de venta el óptimo se debe alcanzar de i a la derecha. Usando una recurrencia similar a E pero maximizando en vez de minimizar, se obtiene la solución.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/MoneyForNothing.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
