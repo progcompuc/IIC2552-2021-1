@@ -71,11 +71,7 @@ title: contest 9 - hints y códigos de ejemplo
 <details> 
   <summary>Solución + código</summary>
   Una forma naive para encontrar el par de puntos más cercanos es checkear cada par, lo que es O(n^2) que no pasa en tiempo.
-  Hay un approach clásico divide and conquer para solucionar el problema de par de puntos más cercanos en O(n*log(n)). Para aprender más al respecto pueden revisar los siguientes links:
-  
-  <a href="https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/">O(n*log(n)^2)</a>.
-  
-  <a href="https://www.geeksforgeeks.org/closest-pair-of-points-onlogn-implementation/?ref=rp">O(n*log(n))</a>.
+  Hay un approach clásico divide and conquer para solucionar el problema de par de puntos más cercanos en O(n*log(n)). Para aprender más al respecto pueden revisar los siguientes links: <a href="https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/">link1</a>, <a href="https://www.geeksforgeeks.org/closest-pair-of-points-onlogn-implementation/?ref=rp">link2</a>.
   
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TrickyFunction.cpp">Código de ejemplo</a>
 </details>
