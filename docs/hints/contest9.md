@@ -51,7 +51,7 @@ title: contest 9 - hints y códigos de ejemplo
 ### E - Guardians of the Lunatics
 <details> 
   <summary>Hint 1</summary>
-  Es relativamente simple pensar en un dp que soluciona este problema pero este no pasará en el límite de tiempo del problema. Un posible dp como el mencionado arriba es resolver cómo asignar x guardias a los primeros y lunáticos, esto será el mínimo de todas las posibilidades de asignar 1 de los guardias (su costo) y del mismo dp en (x - 1, y - c) donde c es la cantidad asignada al último guardia (el que estamos decidiendo ahora). Este dp sin embargo tiene complejidad O(G * L^2) por lo que necesitamos optimizarlo para pasar en tiempo. Piensen en una optimización del estilo divide and conquer.
+  Es relativamente simple pensar en un dp que soluciona este problema pero este no pasará en el límite de tiempo del problema. Un posible dp como el mencionado arriba es resolver cómo asignar x guardias a los primeros y lunáticos, esto será el mínimo de todas las posibilidades de asignar 1 de los guardias (su costo) y del mismo dp en (x - 1, y - c) donde c es la cantidad asignada al último guardia (el que estamos decidiendo ahora). Este dp sin embargo tiene complejidad O(G*L^2) por lo que necesitamos optimizarlo para pasar en tiempo. Piensen en una optimización del estilo divide and conquer.
 </details>
 <details> 
   <summary>Hint 2</summary>  
@@ -59,8 +59,22 @@ title: contest 9 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Usando lo anteriormente mencionado podemos haer una optimización del estilo divide and conquer a nuestro dp, donde no es necesario iterar en todas las posibilidades de 0 a i para asignar el último guardia, sino que podemos usar cotas en izquierda y derecha para acotar el espacio de búsqueda. Para aprender más al respecto pueden ver el siguiente  <a href="https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html">link</a>. La complejidad final es de O(G * L * log(L)) que pasa en tiempo.
+  Usando lo anteriormente mencionado podemos haer una optimización del estilo divide and conquer a nuestro dp, donde no es necesario iterar en todas las posibilidades de 0 a i para asignar el último guardia, sino que podemos usar cotas en izquierda y derecha para acotar el espacio de búsqueda. Para aprender más al respecto pueden ver el siguiente  <a href="https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html">link</a>. La complejidad final es de O(G*L*log(L)) que pasa en tiempo.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/HackerRank/GuardiansOfTheLunatics.cpp">Código de ejemplo</a>
+</details>
+
+### F - Tricky Function
+<details> 
+  <summary>Hint</summary>
+  Notemos que si precalculamos las sumas parciales en un arreglo s, donde s[i] representa la suma de a[1] hasta a[i] entonces podemos reescribir f(i, j) = (j - i)^2 + (s[j] - s[i])^2. Notemos que minimizar esto es lo mismo que encontrar la distancia mínima entre puntos del estilo (i, s[i]) en el plano 2D. Luego el problema se reduce a encontrar el par de puntos más cercanos en un set.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Una forma naive para encontrar el par de puntos más cercanos es checkear cada par, lo que es O(n^2) que no pasa en tiempo.
+  Hay un approach clásico divide and conquer para solucionar el problema de par de puntos más cercanos en O(n*log(n)). Para aprender más al respecto pueden revisar los siguientes links:
+  <a href="https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/">O(n*log(n)^2)</a>
+  <a href="https://www.geeksforgeeks.org/closest-pair-of-points-onlogn-implementation/?ref=rp">O(n*log(n))</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TrickyFunction.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
