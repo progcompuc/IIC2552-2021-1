@@ -59,7 +59,7 @@ title: contest 9 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Usando lo anteriormente mencionado podemos haer una optimización del estilo divide and conquer a nuestro dp, donde no es necesario iterar en todas las posibilidades de 0 a i para asignar el último guardia, sino que podemos usar cotas en izquierda y derecha para acotar el espacio de búsqueda. Para aprender más al respecto pueden ver el siguiente  <a href="https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html">link</a>.
+  Usando lo anteriormente mencionado podemos haer una optimización del estilo divide and conquer a nuestro dp, donde no es necesario iterar en todas las posibilidades de 0 a i para asignar el último guardia, sino que podemos usar cotas en izquierda y derecha para acotar el espacio de búsqueda. Para aprender más al respecto pueden ver el siguiente  <a href="https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html">link</a>. La complejidad final es de O(G * L * log(L)) que pasa en tiempo.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/HackerRank/GuardiansOfTheLunatics.cpp">Código de ejemplo</a>
 </details>
 
