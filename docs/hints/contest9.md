@@ -51,11 +51,11 @@ title: contest 9 - hints y códigos de ejemplo
 ### E - Guardians of the Lunatics
 <details> 
   <summary>Hint 1</summary>
-  Es relativamente simple pensar en un dp que soluciona este problema pero este no pasará en el límite de tiempo del problema. Un posible dp como el mencionado arriba es resolver cómo asignar x guardias a los primeros y lunáticos, esto será el mínimo de todas las posibilidades de asignar 1 de los guardias (su costo) y del mismo dp en (x - 1, y - c) donde c es la cantidad asignada al último guardia (el que estamos decidiendo ahora). Este dp sin embargo tiene complejidad O(G * L^2) por lo que bnecesitamos optimizarlo para pasar en tiempo. Piensen en una optimización del estilo divide and conquer.
+  Es relativamente simple pensar en un dp que soluciona este problema pero este no pasará en el límite de tiempo del problema. Un posible dp como el mencionado arriba es resolver cómo asignar x guardias a los primeros y lunáticos, esto será el mínimo de todas las posibilidades de asignar 1 de los guardias (su costo) y del mismo dp en (x - 1, y - c) donde c es la cantidad asignada al último guardia (el que estamos decidiendo ahora). Este dp sin embargo tiene complejidad O(G * L^2) por lo que necesitamos optimizarlo para pasar en tiempo. Piensen en una optimización del estilo divide and conquer.
 </details>
 <details> 
   <summary>Hint 2</summary>  
-  Si fijamos x y analizamos el índice en que se logra el mínimo (al iterar para asignar el último de los x guardias) en el dp mencionado para los estados (x, i) con i de 1 a L, podemos notar que este índice es creciente c/r a i. Es decir opt[i] <= opt[j] si i < j.
+  Si fijamos x, y analizamos el índice en que se logra el mínimo (al iterar para asignar el último de los x guardias) en el dp mencionado para los estados (x, i) con i de 1 a L, podemos notar que este índice es creciente c/r a i. Es decir opt[i] <= opt[j] si i < j.
 </details>
 <details> 
   <summary>Solución + código</summary>
