@@ -76,6 +76,16 @@ title: contest 9 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TrickyFunction.cpp">Código de ejemplo</a>
 </details>
 
+### G - Boat Burglary
+<details> 
+  <summary>Hint</summary>
+  Son 30 objetos a lo más, poquitos. Es tentador usar fuerza bruta. El problema es que iterar sobre todos los subconjuntos tomaría 2^30 = 1024^3 > 10^9, y eso daría el medio TLE. Pero recordemos que este contest es de divide and conquer. ¿Qué pasa si repartimos los 30 objetos en dos grupos de 15 y 15, y calculamos todos los subconjuntos para cada mitad? Esto tomaría 2 x 2^15 = 65536, lo cual es poquísimo. Piensa en una forma de resolver el problema original combinando de alguna forma estas dos mitades.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Separamos los N objetos en dos mitades iguales (o casi iguales si N es impar). Por cada mitad iteramos sobre todos los posibles subconjuntos de elementos y guardamos en una lista/arreglo la suma de los pesos y la cantidad de objetos (una lista de pares). Ordenamos la segunda lista de menor a mayor lexicográficamente e iteramos sobre la primera lista. Para cada par de la primera lista, hacemos dos binary searches para encontrar todos los pares de la segunda lista cuya suma de pesos completa lo que nos falta para llegar a un peso total de D (el primer binary search es un lowerbound y el segundo un upperbound). Si el primero y el último par de ese rango tienen cantidades de objetos distintas, estamos en un caso ambiguo. Otro caso ambiguo es que encontremos respuestas válidas más de una vez y la cantidad de objetos sea distinta. Si nunca encontramos un caso válido, es imposible. Si logramos encontrar al menos un caso válido y todos los casos válidos siempre dieron la misma cantidad de objetos, esa es la respuesta. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/BURGLARY_BoatBurglary.cpp">Código de ejemplo</a>
+</details>
+
 ### H - Money for Nothing
 <details> 
   <summary>Hint 1</summary>
