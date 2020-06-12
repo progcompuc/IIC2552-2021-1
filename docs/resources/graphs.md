@@ -62,6 +62,7 @@ title: "Grafos"
     - ##### Bellman-Ford (cuando **SÍ** hay aristas negativas):
         - (youtube) [Bellman-Ford in 5 minutes — Step by step example](https://www.youtube.com/watch?v=obWXjtg0L64)
         - (youtube) [Bellman-Ford in 4 minutes — Theory](https://www.youtube.com/watch?v=9PHkk0UavIM)
+        - (youtube) [Bellman Ford Algorithm | Shortest path & Negative cycles | Graph Theory](https://youtu.be/lyw4FaxrwHg)
         - (video) [Bellman-Ford Algorithm: Proof of Correctness](https://es.coursera.org/lecture/algorithms-on-graphs/bellman-ford-algorithm-proof-of-correctness-txk8R)
         - (youtube) [Bellman Ford Algorithm - Single Source Shortest Path - Dynamic Programming (17m)](https://www.youtube.com/watch?v=FtN3BYH2Zes)
         - [cp-algorithms: bellman-ford (incluye códigos de ejemplo)](https://cp-algorithms.com/graph/bellman_ford.html)
