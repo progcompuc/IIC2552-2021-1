@@ -28,6 +28,16 @@ title: contest 10 - hints y códigos de ejemplo
   Corremos un DFS desde la raíz, en el cual vamos propagando hacia abajo el máximo de la distancia hacia arriba del parent y cuando detectamos un nodo que hace sad a alguien, retornamos altiro para "podar" todo ese subárbol. Además con el mismo DFS aprovechamos de contar los nodos visitados. Entonces la respueta será (N - los nodos visitados por el DFS). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/682C_AlyonaAndTheTree.cpp">Código de ejemplo</a>
 </details>
 
+### C - Kilani and the Game
+<details>
+  <summary>Hint</summary> 
+  Pensar en una forma de simular el juego tal cual por rondas, en cada ronda iterar por cada jugador k-ésimo y simular sus "speed[k]" expansiones. Tener cuidado que speed[k] puede ser muy grande (hasta 10^9).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Simular el juego tal cual con 3 loops anidados. Un loop principal que itera sobre las rondas, un segundo loop que itera sobre los jugadores y un tercer loop que itera sobre la cantidad de pasos o "speed" del jugador. Dentro del tercer loop tenemos que simular un paso de la expansión del jugador. Para ello podemos usar BFS: por cada jugador mantenemos una queue con las celdas en la "frontera" o "borde" del territorio controlado por el jugador, y nos expandimos a las celdas adyacentes a la frontera no controladas por nadie. Para no contaminar la misma queue, una opción es meter las nuevas celdas en una segunda queue auxiliar (que representaría la nueva frontera del territorio) y al final hacemos un swap. Cuando todas las queues quedan vacías y nadie se puede expandir más se acaba el juego y contamos. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1105D_KilaniAndTheGame.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Geophysics Prospection
 <details>
   <summary>Hint</summary> 
