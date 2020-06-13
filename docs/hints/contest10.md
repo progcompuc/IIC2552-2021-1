@@ -49,6 +49,16 @@ title: contest 10 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/ICPC/GeophysicsProspection.cpp">Código de ejemplo</a>
 </details>
 
+### E - Build Dependencies
+<details>
+  <summary>Hint</summary> 
+  Toposort (ver sección grafos en material del curso)
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Básicamente armar el grafo de dependencias (notar que es un DAG o directed acyclic graph) y luego correr toposort. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/BuildDependencies.cpp">Código de ejemplo</a>
+</details>
+
 ### F - Substring
 <details> 
   <summary>Hint 1</summary>
