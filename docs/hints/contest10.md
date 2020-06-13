@@ -92,7 +92,7 @@ title: contest 10 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Básicamente el hint. Para encontrar las letras alcanzables, podemos correr 25 DFSs o BFSs. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/URI/SecretChamberAtMountRushmore.cpp">Código de ejemplo</a>
+  Básicamente el hint. Para encontrar las letras alcanzables, podemos correr 26 DFS's/BFS's. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/URI/SecretChamberAtMountRushmore.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
