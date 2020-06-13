@@ -25,7 +25,7 @@ title: contest 10 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Corremos un DFS desde la raíz, en el cual vamos propagando hacia abajo el máximo de la distancia hacia arriba del parent y cuando detectamos un nodo que hace sad a alguien, retornamos altiro para "podar" todo ese subárbol. Además con el mismo DFS aprovechamos de contar los nodos visitados. En la respueta será N - los nodos visitados por el DFS. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/682C_AlyonaAndTheTree.cpp">Código de ejemplo</a>
+  Corremos un DFS desde la raíz, en el cual vamos propagando hacia abajo el máximo de la distancia hacia arriba del parent y cuando detectamos un nodo que hace sad a alguien, retornamos altiro para "podar" todo ese subárbol. Además con el mismo DFS aprovechamos de contar los nodos visitados. Entonces la respueta será (N - los nodos visitados por el DFS). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/682C_AlyonaAndTheTree.cpp">Código de ejemplo</a>
 </details>
 
 ### D - Geophysics Prospection
