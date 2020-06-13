@@ -14,6 +14,20 @@ title: contest 10 - hints y códigos de ejemplo
   Usamos DFS o BFS para identificar todas las componentes conexas de puntos en el tablero original. Cada punto lo reemplazados por el ID de su componente conexa. Además, por cada componente conexa guardamos su tamaño. Después iteramos sobre todas las celdas asterisco y vemos todas las compontentes conexas adyacentes (vemos todos los IDs distintos adyacentes en el tablero), y sumamos los tamaños + 1. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/616C_TheLabyrinth.cpp">Código de ejemplo</a>
 </details>
 
+### B - Alyona and the Tree
+<details>
+  <summary>Hint 1</summary>
+  Notar que un nodo u hace triste a alguien si y sólo si el máximo de la suma de distancias hacia arriba entre todos sus ancestros es mayor a a[u]. Además, si un nodo u hace triste a alguien, sí o sí hay que borrarlo, y por lo tanto, todo el subárbol que cuelga de u hay que borrarlo también.
+</details>
+<details>
+  <summary>Hint 2</summary>
+  Dado un nodo u con parent p, el máximo de las distancias hacia arriba entre todos los ancestros de u es igual al costo de la arista (p,u) + max{0, el máximo hacia arriba de p} (recursivo). Es decir, si lo pensamos como DP, si tengo calculado el máximo hacia arriba del parent p, entonces calcular el máximo hacia arriba de u se puede hacer en O(1).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Corremos un DFS desde la raíz, en el cual vamos propagando hacia abajo el máximo de la distancia hacia arriba del parent y cuando detectamos un nodo que hace sad a alguien, retornamos altiro para "podar" todo ese subárbol. Además con el mismo DFS aprovechamos de contar los nodos visitados. En la respueta será N - los nodos visitados por el DFS. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/682C_AlyonaAndTheTree.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Geophysics Prospection
 <details>
   <summary>Hint</summary> 
