@@ -30,6 +30,17 @@ title: contest 10 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Substring.cpp">Código de ejemplo</a>
 </details>
 
+### G - Galaxy Collision
+<details> 
+  <summary>Hint</summary>
+  Para empezar, debemos obtener un grafo que poder trabajar. Una opción es unir aquellas estrellas cuya distancia es menor a 5 años luz, para eso basta tener un map asociando las posiciones de las estrellas a su índice y para cada estrella ver si las posiciones a menos de 5 años luz tienen alguna estrella, en caso de haber una estrella unimos. De esta forma obtenemos el grafo que queríamos.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Finalmente, para obtener la solución al problema basta realizar un dfs por cada componente del grafo generado. Los vértices que visitamos a profundida par y los que visitamos a profundidad impar en cada componente deben ser parte de galaxias distintas. Luego la respuesta final corresponde a la suma de los tamaños del menor entre cantidad de estrellas a profundidad par o impar en cada componente.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GalaxyCollision.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
