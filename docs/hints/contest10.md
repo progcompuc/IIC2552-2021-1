@@ -85,6 +85,16 @@ title: contest 10 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GalaxyCollision.cpp">Código de ejemplo</a>
 </details>
 
+### H - Secret Chamber at Mount Rushmore
+<details> 
+  <summary>Hint</summary>
+  Pensar en una forma de obtener todas las letras alcanzables desde cada letra. Luego es cuestión de iterar sobre los pares de letras y ver si la segunda está en el conjunto de letras alcanzables desde la primera.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Básicamente el hint. Para encontrar las letras alcanzables, podemos correr 25 DFSs o BFSs. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/URI/SecretChamberAtMountRushmore.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
