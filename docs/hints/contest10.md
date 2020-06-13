@@ -7,7 +7,7 @@ title: contest 10 - hints y códigos de ejemplo
 ### A - The Labyrinth
 <details>
   <summary>Hint</summary> 
-  Los puntos forman "componentes conexas". Si un aterisco se convierte en punto, entonces se va a fusionar con todas las componentes conexas de puntos adyacentes a él. De hecho, si tenemos 2 o más componentes conexas de puntos separadas por un aterisco, al convertir el asterisco en punto esas dos componentes se van a fusionar en una pura gran componente.
+  Los puntos forman "componentes conexas". Si un aterisco se convierte en punto, entonces se va a fusionar con todas las componentes conexas de puntos adyacentes a él. De hecho, si tenemos 2 o más componentes conexas de puntos separadas por un asterisco, al convertir el asterisco en punto esas componentes se van a fusionar en una pura gran componente + el ex-asterisco entre medio.
 </details>
 <details> 
   <summary>Solución + código</summary>
