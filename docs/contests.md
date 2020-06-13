@@ -72,7 +72,7 @@ Junio 05, 10 días, [link a **contest**](https://vjudge.net/contest/377122)\\
 **Tópicos**: [Grafos - DFS/BFS](resources/graphs)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest10)
 
 ## Contest 11
 Junio 12, 10 días, [link a **contest**](https://vjudge.net/contest/378131)\\
