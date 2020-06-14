@@ -95,6 +95,21 @@ title: contest 10 - hints y códigos de ejemplo
   Básicamente el hint. Para encontrar las letras alcanzables, podemos correr 26 DFS's/BFS's. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/URI/SecretChamberAtMountRushmore.cpp">Código de ejemplo</a>
 </details>
 
+### I - Centroids
+<details> 
+  <summary>Hint 1</summary>
+  Notemos que siempre es posible encontrar un punto que es centroide sin necesidad de cambiar una arista, de hecho es posible probar que si un vértice cualquiera puede convertirse en centroide usando un cambio de arista, este cambio puede ser hecho usando una arista que toca el centroide, esto sale de que el centroide tiene todos sus subgrafos del tamaño necesario.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Suponiendo que encontramos el centroide, se puede probar que para convertir un vértice cualquiera en un centroide hay 2 opciones. La primera es quitarle un subarbol al centroide y agregarlo al nodo objetivo. La segunda es desconectar el centroide del subarbol al que pertenece el nodo que queremos transformar el centroide, y conectarlo directamente.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La sulución consiste en realiza lo que dicen los hints. Esto se puede hacer usando 3 versiones de dfs. Una versión calcula los tamaños de todos los subarboles tomando algún nodo como raíz. Luego el segundo dfs tomando el tamaño de los subárboles avanza por las aristas hasta encontrar el centroide, para esto siempre avanza hacia el subárbol con tamaño mayor a N/2, hasta que todo esté balanceado. El tercero avanza por los vértices chequeando que una de las condiciones del Hint 2 y marcando si cumple alguna. La respuesta es 1 para aquellos vértices que hayan sido marcados y 0 para el resto.
+  <a href="">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
