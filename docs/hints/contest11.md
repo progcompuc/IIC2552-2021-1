@@ -70,7 +70,7 @@ Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coor
 </details>
 <details>
   <summary>Solución + código</summary>
-  Hacemos búsqueda binaria para encontrar el R óptimo. En el predicado de la búsqueda binaria verificamos si el sistema de inecuaciones mencionado tiene solución. Para ello podemos expresar todas las desigualdades en forma canónica como var1 - var2 <= constante, armar un grafo a partir de estas desigualdades y correr bellman-ford sobre el grafo para detectar la existencia de ciclos negativos. Si no hay ciclos negativos, entonces hay solución. Para entender bien cómo funciona esto último, revisar las referencias en los comentarios del <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/SEGMENTS.cpp">Código de ejemplo</a>.
+  Hacemos búsqueda binaria para encontrar el R óptimo. En el predicado de la búsqueda binaria verificamos si el sistema de inecuaciones mencionado tiene solución. Para ello podemos expresar todas las desigualdades en forma canónica como var1 - var2 <= constante, armar un grafo a partir de estas desigualdades y correr bellman-ford sobre el grafo para detectar la existencia de ciclos negativos. Si no hay ciclos negativos, entonces el sistematica de inecuaciones tiene solución. Para entender bien cómo funciona esto último, revisar las referencias en los comentarios del <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/SEGMENTS.cpp">Código de ejemplo</a>.
 </details>
 
 <!-- <details> 
