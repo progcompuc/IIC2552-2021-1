@@ -30,6 +30,17 @@ title: contest 11 - hints y códigos de ejemplo
   Básicamente floyd warshall con el extra para detectar ciclos negativos (ver materia en sección grafos) y teniendo cuidado con manejar los casos bordes mencionados. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/AllPairsShortestPath.cpp">Código de ejemplo</a>
 </details>
 
+### D - Wormholes
+
+<details>
+  <summary>Hint</summary>
+  Bellman Ford
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Bellman Ford báscicamente, más el extra para pillar ciclos negativos (ver materia sección grafos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/558_Wormholes.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
