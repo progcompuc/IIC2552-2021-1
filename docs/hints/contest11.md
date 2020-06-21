@@ -23,7 +23,7 @@ title: contest 11 - hints y códigos de ejemplo
 
 <details>
   <summary>Hint</summary>
-  Por la materia vista, obviamente floyd warshall, pero cuidado con los casos bordes. Notar que el enunciado no mencionas restricciones sobre sobre cómo puede ser el grafo. Eso quiere decir que en teoría podrían haber múltiples aristas entre dos nodos y también self-loops (de un nodo a sí mismo).
+  Por la materia vista, obviamente floyd warshall, pero cuidado con los casos bordes. Notar que el enunciado no menciona restricciones sobre sobre cómo puede ser el grafo. Eso quiere decir que en teoría podrían haber múltiples aristas entre dos nodos y también self-loops (de un nodo a sí mismo).
 </details>
 <details>
   <summary>Solución + código</summary>
