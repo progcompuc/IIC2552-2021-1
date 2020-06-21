@@ -19,6 +19,17 @@ title: contest 11 - hints y códigos de ejemplo
   Para calcular L(S,u) para cada nodo u, corremos dijkstra desde S en el grafo G. Para calcular L(u,D), corremos dijkstra desde D sobre un grafo G' equivalente al grafo G con las aristas invertidas. Luego iteramos sobre todas las aristas (u,v) y aquellas que cumplan la propiedad del hint 1 las descartamos, y las demás las agregamos en nuevo grafo G''. Finalmente corremos un tercer dijkstra en G'' desde S y reportamos la distancia hasta D (o -1 si no se puede llegar). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/SAMER08A_AlmostShortestPath.cpp">Código de ejemplo</a>
 </details>
 
+### C - All Pairs Shortest Path
+
+<details>
+  <summary>Hint</summary>
+  Por la materia vista, obviamente floyd warshall, pero cuidado con los casos bordes. Notar que el enunciado no mencionas restricciones sobre sobre cómo puede ser el grafo. Eso quiere decir que en teoría podrían haber múltiples aristas entre dos nodos y también self-loops (de un nodo a sí mismo).
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Básicamente floyd warshall con el extra para detectar ciclos negativos (ver materia en sección grafos) y teniendo cuidado con manejar los casos bordes mencionados. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/AllPairsShortestPath.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
