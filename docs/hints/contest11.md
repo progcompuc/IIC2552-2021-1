@@ -38,7 +38,39 @@ title: contest 11 - hints y códigos de ejemplo
 </details>
 <details>
   <summary>Solución + código</summary>
-  Bellman Ford báscicamente, más el extra para pillar ciclos negativos (ver materia sección grafos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/558_Wormholes.cpp">Código de ejemplo</a>
+  Bellman Ford básicamente, más el extra para pillar ciclos negativos (ver materia sección grafos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/558_Wormholes.cpp">Código de ejemplo</a>
+</details>
+
+### E - Segments
+
+<details>
+  <summary>Hint 1</summary>
+  Notar que las alturas dan lo mismo, sólo importan los intervalos en el eje X.
+</details>
+<details>
+  <summary>Hint 2</summary>
+  Si podemos lanzar rayos verticales tal que ningún intervalo es atravesado por más de R rayos, entonces también se puede lograr con R+1, R+2, etc. Simétricamente, si no es posible lograrlo con una cota de R rayos, menos se va a poder con R-1, R-2, etc. Es decir, podemos hacer búsqueda binaria para encontrar el menor R donde se puede.
+</details>
+<details>
+  <summary>Hint 3</summary>
+Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coordenada x inclusive. Entonces podemos verificar si es que es posible satisfacer la cota por intervalo R si es que existe solución para un sistema de inecuaciones sobre K(x) evaluado en muchos puntos. Es decir:
+  <ul>
+    <li>K(x) <= K(y) para todo x < y</li>
+    <li>1 <= K(y - eps) - K(x + eps) <= R para todo intervalo abierto (x, y) dado en el input</li>
+  </ul>
+  El 'eps' es por el hecho de que justo en el extremo de un intervalo uno puede lanzar un rayo y dicho rayo no se agrega al contador del intervalo (recordar que son intervalos abiertos). Por ejemplo para este input:
+<p>
+5<\br>
+0 5 1<\br>
+5 10 1<\br>
+0 4 1<\br>
+4 6 1<\br>
+6 10 1</p>
+  la respuesta debería ser 1 (hacerse un dibujito para convencerse).
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Hacemos búsqueda binaria para encontrar el R óptimo. En el predicado de la búsqueda binaria verificamos si el sistema de inecuaciones mencionados tiene solución. Para ello podemos expresar todas las desigualdades en forma canónica como var1 - var2 <= constante, armar un grafo a partir de estas desigualdades y correr bellman-ford sobre el grafo para detectar la existencia de ciclos negativos. Si no hay ciclos negativos, entonces hay solución. Para entender bien cómo funciona esto último, revisar las referencias en los comentarios del <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/558_Wormholes.cpp">Código de ejemplo</a>.
 </details>
 
 <!-- <details> 
