@@ -100,15 +100,26 @@ Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coor
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/KeepItEnergized.cpp">Código de ejemplo</a>
 </details>
 
-### Roads In Berland
+### G -  Roads In Berland
 <details> 
   <summary>Hint</summary>
   Para este problema basta saber updatear la matriz de distancias mínimas dada la adición de una nueva arista. Para esto pueden considerar cómo funciona la iteración de Floyd Warshall (Pues considera caminos de todos a todos).
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Usando updates del estilo Floyd Warshall si se agrega una arista entre los nodos i y j de costo w podemos iterar cuadráticamente sobre cada par de nodos por ejemplo u y v y notar que la distancia entre ellos luego de un update será el mínimo entre tres valores. El costo previo a la adición de la nueva arista D[u][v], el costo de ir de u a i, pasar por la nueva arista e ir de j a v (D[u][i] + w + D[j][v]), y el orden contrario de la arista nueva (D[u][j] + w + D[i][v]). El mínimo entre estos tres valores será el nuevo D[u][v]. Si vamos tomando en cuenta estos cambios en una suma acumulada global podemos responder al problema.
-  <a href="">Código de ejemplo</a>
+  Usando updates del estilo Floyd Warshall si se agrega una arista entre los nodos i y j de costo w podemos iterar cuadráticamente sobre cada par de nodos por ejemplo u y v y notar que la distancia entre ellos luego de un update será el mínimo entre tres valores. El costo previo a la adición de la nueva arista D[u][v], el costo de ir de u a i, pasar por la nueva arista e ir de j a v (D[u][i] + w + D[j][v]), y el orden contrario de la arista nueva (D[u][j] + w + D[i][v]). El mínimo entre estos tres valores será el nuevo D[u][v]. Si vamos tomando en cuenta estos cambios en una suma acumulada global podemos responder al problema. Este algoritmo será de complejidad cúbica (una pasada cuadrática por cada arista nueva).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/RoadsInBerland.cpp">Código de ejemplo</a>
+</details>
+
+### H - Grag And Graph
+<details> 
+  <summary>Hint</summary>
+  Podemos pensar el problema al revés. Es decir, imprimir la suma de costos luego de haber agregado un vértice y todas sus aristas a un grafo que inicialmente parte vacío. Para ir calculando y updateando los valores de distancias mínimas podemos usar un approach parecido al del problema anterior, sólo que el update cambia, ya que agregamos nodos, no aristas.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos mantener una matriz de costos mínimos entre nodos, para esto tener una lista de nodos activos (aquellos que ya han sido agregados), y cada vez que se agregue un nuevo nodo realizar tres cosas. Agregar a la matriz de costos mínimos desde y hacia el nuevo nodo (hacia y desde los nodos activos). Para esto si agregamos un nodo u, para calcualar su distancia mínima hacia un nodo v basta tomar el mínimo de la entre D[u][v] y D[u][w] + Dmin[w][v] con w en los nodos activos, la distacia hacia el otro lado se updatea de forma similar. Finalmente también pueden cambiar las distancias mínimas entre dos nodos que no sean el agregado u. Para updatear Dmin[v][w] basta con tomar el mínimo entre Dmin[v][w] y Dmin[v][u] + Dmin[u][w]. La complejidad final del algorítmo será cuadrática.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GregAndGraph.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
