@@ -79,7 +79,7 @@ Junio 12, 10 días, [link a **contest**](https://vjudge.net/contest/378131)\\
 **Tópicos**: [Grafos - Shortest Paths (Dijkstra, Bellman Ford, Floyd Warshall](resources/graphs)\\
 **Puntos**: 4, 5, 3, 2, 7, 6, 4, 5 \\
 **Puntaje Mínimo Esperado**: 6 \\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest11)
 
 ## Contest 12
 Junio 19, 10 días, [link a **contest**](https://vjudge.net/contest/379066)\\
