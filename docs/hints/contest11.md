@@ -19,6 +19,18 @@ title: contest 11 - hints y códigos de ejemplo
   Para calcular L(S,u) para cada nodo u, corremos dijkstra desde S en el grafo G. Para calcular L(u,D), corremos dijkstra desde D sobre un grafo G' equivalente al grafo G con las aristas invertidas. Luego iteramos sobre todas las aristas (u,v) y aquellas que cumplan la propiedad del hint 1 las descartamos, y las demás las agregamos en nuevo grafo G''. Finalmente corremos un tercer dijkstra en G'' desde S y reportamos la distancia hasta D (o -1 si no se puede llegar). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/SAMER08A_AlmostShortestPath.cpp">Código de ejemplo</a>
 </details>
 
+### B - Galactic Taxes
+
+<details> 
+  <summary>Hint</summary>
+  Es posible demostrar que el "tax" asociado a la operación comercial se comporta como una función cóncava con respecto al tiempo. Para sacar el tax en un momento determinado basta con usar un algoritmo de shortest path básico como dijkstra sobre el grafo tomando los pesos en ese momento.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución consiste en realizar ternary search sobre el tiempo para encontrar cuando se produce el máximo tax. En cada momento en la búsqueda se calcula el tax asociado con dijkstra con los pesos del momento.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GalacticTaxes.cpp">Código de ejemplo</a>
+</details>
+
 ### C - All Pairs Shortest Path
 
 <details>
