@@ -4,7 +4,7 @@ title: contest 11 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 11](../contests#contest-11) > ```{{page.title}}```
 
-### A - Almost Shorest Path
+### A - Almost Shortest Path
 
 <details>
   <summary>Hint 1</summary>
