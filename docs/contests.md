@@ -70,15 +70,15 @@ Mayo 15, 23 días, [link a **contest**](https://vjudge.net/contest/373993)\\
 ## Contest 10
 Junio 05, 10 días, [link a **contest**](https://vjudge.net/contest/377122)\\
 **Tópicos**: [Grafos - DFS/BFS](resources/graphs)\\
-**Puntos**: 6\\
-**Puntaje Mínimo Esperado**: 3, 3, 4, 3, 4, 4, 4, 2, 5\\
+**Puntos**: 3, 3, 4, 3, 4, 4, 4, 2, 5\\
+**Puntaje Mínimo Esperado**: 6\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest10)
 
 ## Contest 11
 Junio 12, 10 días, [link a **contest**](https://vjudge.net/contest/378131)\\
 **Tópicos**: [Grafos - Shortest Paths (Dijkstra, Bellman Ford, Floyd Warshall](resources/graphs)\\
-**Puntos**: _pending_\\
-**Puntaje Mínimo Esperado**: _pending_\\
+**Puntos**: 4, 5, 3, 2, 7, 6, 4, 5 \\
+**Puntaje Mínimo Esperado**: 6 \\
 **Hints** y **códigos de ejemplo**: _pending_
 
 ## Contest 12
