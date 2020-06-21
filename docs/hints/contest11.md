@@ -100,6 +100,17 @@ Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coor
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/KeepItEnergized.cpp">Código de ejemplo</a>
 </details>
 
+### Roads In Berland
+<details> 
+  <summary>Hint</summary>
+  Para este problema basta saber updatear la matriz de distancias mínimas dada la adición de una nueva arista. Para esto pueden considerar cómo funciona la iteración de Floyd Warshall (Pues considera caminos de todos a todos).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando updates del estilo Floyd Warshall si se agrega una arista entre los nodos i y j de costo w podemos iterar cuadráticamente sobre cada par de nodos por ejemplo u y v y notar que la distancia entre ellos luego de un update será el mínimo entre tres valores. El costo previo a la adición de la nueva arista D[u][v], el costo de ir de u a i, pasar por la nueva arista e ir de j a v (D[u][i] + w + D[j][v]), y el orden contrario de la arista nueva (D[u][j] + w + D[i][v]). El mínimo entre estos tres valores será el nuevo D[u][v]. Si vamos tomando en cuenta estos cambios en una suma acumulada global podemos responder al problema.
+  <a href="">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
