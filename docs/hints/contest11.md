@@ -85,6 +85,21 @@ Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coor
   Hacemos búsqueda binaria para encontrar el R óptimo. En el predicado de la búsqueda binaria verificamos si el sistema de inecuaciones mencionado tiene solución. Para ello podemos expresar todas las desigualdades en forma canónica como var1 - var2 <= constante, armar un grafo a partir de estas desigualdades y correr bellman-ford sobre el grafo para detectar la existencia de ciclos negativos. Si no hay ciclos negativos, entonces el sistematica de inecuaciones tiene solución. Para entender bien cómo funciona esto último, revisar las referencias en los comentarios del <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/SEGMENTS.cpp">Código de ejemplo</a>.
 </details>
 
+### F - Keep It Energized
+<details> 
+  <summary>Hint 1</summary>
+  Una forma de interpretar este problema como una de grafos constiste en tomar cada tienda como un nodo en un grafo implícito. En este grafo hay una arista entre una tienda A y otra B en un nivel superior si al comprar el paquete de energía de A tienes suficiente energía para llegar al nivel donde se encuentra B. De esta forma podemos interpretar un camino en el grafo como visitar las tiendas en las SI que compraremos paquetes energéticos.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  La respuesta final al problema consistirá en el camino más corto entre alguna tienda inicial y el final del juego (Lo podemos considerar como una tienda en el nivel N + 1 de costo 0).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para terminar basta con hacer uso de un algoritmo de camino más corto como dijkstra. Notar que no es necesario construir el grafo para resolver el problema. Sólo basta saber cuando hay una conexión entre tiendas y usar eso en la iteración de dijkstra. Podemos acelerar la búsqueda sólo considerando pasar a tiendas en niveles que no hemos llegado aún. Esto funciona pues como dijkstra ordena según costo para realizar la su iteración. No valdrá la pena pasar a un nivel al cual ya hemos ido (pues llegamos a el con un costo menor).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/KeepItEnergized.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
