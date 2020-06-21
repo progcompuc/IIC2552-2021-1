@@ -111,7 +111,7 @@ Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coor
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/RoadsInBerland.cpp">Código de ejemplo</a>
 </details>
 
-### H - Grag And Graph
+### H - Greg And Graph
 <details> 
   <summary>Hint</summary>
   Podemos pensar el problema al revés. Es decir, imprimir la suma de costos luego de haber agregado un vértice y todas sus aristas a un grafo que inicialmente parte vacío. Para ir calculando y updateando los valores de distancias mínimas podemos usar un approach parecido al del problema anterior, sólo que el update cambia, ya que agregamos nodos, no aristas.
