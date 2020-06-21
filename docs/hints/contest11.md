@@ -60,11 +60,11 @@ Sea K(x) = la cantidad de rayos lanzados verticalmente a la izquierda de la coor
   </ul>
   El 'eps' es por el hecho de que justo en el extremo de un intervalo uno puede lanzar un rayo y dicho rayo no se agrega al contador del intervalo (recordar que son intervalos abiertos). Por ejemplo para este input:
 <p>
-5<\br>
-0 5 1<\br>
-5 10 1<\br>
-0 4 1<\br>
-4 6 1<\br>
+5<br/>
+0 5 1<br/>
+5 10 1<br/>
+0 4 1<br/>
+4 6 1<br/>
 6 10 1</p>
   la respuesta debería ser 1 (hacerse un dibujito para convencerse).
 </details>
