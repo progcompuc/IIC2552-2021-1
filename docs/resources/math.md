@@ -25,7 +25,7 @@ title: "Matemáticas"
     - [wikipedia: Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes) (hay un GIF muy bueno)
     - (youtube) [Finding Prime numbers - Sieve of Eratosthenes](https://www.youtube.com/watch?v=eKp56OLhoQs)
     - (youtube) [Criba de Eratóstenes [ICPCCL 2016]](https://www.youtube.com/watch?v=J4QCQ0dgeCI)
-    - [Código de ejemplo](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Mathematics/prime_numbers.cpp)
+    - [Código de ejemplo](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Mathematics/sieve_of_eratosthenes.cpp)
 - Criba de Eratóstenes Segmentada (más rápida):
     - <https://github.com/kimwalisch/primesieve/wiki/Segmented-sieve-of-Eratosthenes>
     - (cp-algorithms) [Segmented sieve of eratosthenes](https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html#toc-tgt-6)
