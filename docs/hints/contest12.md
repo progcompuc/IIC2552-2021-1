@@ -31,6 +31,17 @@ title: contest 12 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/YetAnotherMultipleProblem.cpp">Código de ejemplo</a>
 </details>
 
+### E - Forest for the Trees
+<details> 
+  <summary>Hint</summary>
+  Para que exista un lattice point entre (0, 0) y (xb, yb) se necesita un punto cuya pendiente desde (0, 0) sea la misma que (xb, yb). Es decir, necesitamos que la fracción yb / xb, no sea irreducible. En caso de no ser una fracción irreducile, podemo reducirla al máximo dividiendo tanto el numerador como el denominador por el gcd(xb, yb) y definir x' = xb / g, y' = yb / g. De esta forma todos los lattice entre (0, 0) y (xb, yb) serán multiplos de (x', y').
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para obtener el árbol más cercano a (0, 0) en caso de existir sólo hay 2 opciones, o es precisamente (x', y') descrito en el hint, o este punto estaa dentro del rectángulo talado. En el segundo caso necesitamos encontrar el primer múltiplo de (x', y') que esté fuera del rectángulo talado, esto se puede hacer de 2 formas, realizando búsqueda binaria sobre el factor o con una fórmula cerrada. La fórmula cerrada sale de obtener el factor como f = min(x2 / x', y2 / y') + 1, esto pues el el mínimo múltiplo de x' o y' que supera al rectángulo talado.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/ForestForTheTrees.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
