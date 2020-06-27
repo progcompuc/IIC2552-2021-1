@@ -20,7 +20,7 @@ title: contest 12 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/FindANumber.cpp">Código de ejemplo</a>
 </details>
 
-### Yet Another Multiple Problem
+### B - Yet Another Multiple Problem
 <details> 
   <summary>Hint</summary>
   Revisen los hints del problema A, en este problema podemos usar una idea parecida pero adaptada a lo que piden.
