@@ -86,7 +86,7 @@ Junio 19, 10 días, [link a **contest**](https://vjudge.net/contest/379066)\\
 **Tópicos**: [Math (GCD, Números Primos, Aritmética Modular)](resources/math)\\
 **Puntos**: _pending_\\
 **Puntaje Mínimo Esperado**: _pending_\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest12)
 
 ## Contest 13
 Junio 26, 10 días, [link a **contest**](https://vjudge.net/contest/380093)\\
