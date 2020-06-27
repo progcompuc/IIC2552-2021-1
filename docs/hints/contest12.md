@@ -1,4 +1,3 @@
-
 ---
 title: contest 12 - hints y códigos de ejemplo
 ---
@@ -29,6 +28,17 @@ title: contest 12 - hints y códigos de ejemplo
   <summary>Solución + código</summary>
   La solución consiste en realizar el mismo bfs del problema A pero sólo considerando restos y los dígitos que estén permitidos, la primera vez que lleguemos a la configuración (0) habremos tomado el camino óptimo. De lo contrario no habrá solución.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/YetAnotherMultipleProblem.cpp">Código de ejemplo</a>
+</details>
+
+### C - Last digit
+<details> 
+  <summary>Hint</summary>
+  Sacar factores primos del numerador y del denominador de la combinatoria puede servir.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La combi que da la cantidad de permutaciones sin repetición es N!/(C[0]! * ... * C[25]!), donde C[i] es la cantidad de veces que está el caracter i. Precomputados los primos hasta 10^6 con criba de eratóstenes y luego sacamos la factorización prima del numerador y de los factores del denominador linealmente con factorización prima de factoriales. Cancelamos exponentes, y luego matamos los 0's a la derecha matando los pares de 2 y 5 (min{ e[2], e[5] }). Luego el último dígito lo sacamos calculando el valor de la factorización módulo 10 usando binary exponentiation.
+  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/4008_LastDigit.cpp">Código de ejemplo</a>
 </details>
 
 ### E - Forest for the Trees
