@@ -20,6 +20,17 @@ title: contest 12 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/FindANumber.cpp">Código de ejemplo</a>
 </details>
 
+### Yet Another Multiple Problem
+<details> 
+  <summary>Hint</summary>
+  Revisen los hints del problema A, en este problema podemos usar una idea parecida pero adaptada a lo que piden.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución consiste en realizar el mismo bfs del problema A pero sólo considerando restos y los dígitos que estén permitidos, la primera vez que lleguemos a la configuración (0) habremos tomado el camino óptimo. De lo contrario no habrá solución.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/YetAnotherMultipleProblem.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
