@@ -83,7 +83,17 @@ title: contest 12 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Hacemos un BFS sobre un grafo de estados, donde los estados son pares (nodo, gcd). La cola del BFS la inicializamos con todos los pares (nodo, candies[nodo]). La idea es correr el BFS hasta explorar todos los estados alcanzables. Notar que si un estado ya visitado es re-visitado, no tiene sentido explorarlo porque todos los caminos que se puedan generar a partir de él tendrán el mismo gcd acumulado que los de la primera vez que fue visitado. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6825_EvenDistribution.cpp">Código de ejemplo</a>
+  Hacemos un BFS sobre un grafo de estados, donde los estados son pares (nodo, gcd). La cola del BFS la inicializamos con todos los pares (nodo, candies[nodo]). La idea es correr el BFS hasta explorar todos los estados alcanzables. Notar que si un estado ya visitado es re-visitado, no tiene sentido explorarlo porque todos los caminos que se puedan generar a partir de él tendrán el mismo gcd acumulado que los de la primera vez que fue visitado. La respuesta final va a ser la cantidad de distintos gcd's que hayamos visto (podemos meterlos en un set y retornar el tamaño del set). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6825_EvenDistribution.cpp">Código de ejemplo</a>
+</details>
+
+### H - Tile Painting
+<details> 
+  <summary>Hint</summary>
+  Analizar la relación entre los divisores primos de n y los grupos de celdas que se pintan del mismo color.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La respuesta es p si n sólo contiene un solo divisor primo p (o sea, n = p^e), o 1 si es que n contiene 2 o más factores primos. La razón es que cuando hay 2 o más factores primos, para cada par de factores primos siempre es posible encontrar una celda donde los grupos "se fusionan". Es decir, existe un índice i tal que i = r1 (mod p1) y i = r2 (mod p2), esto viene del teorema chino del resto (CRT). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1243C_TilePainting.cpp">Código de ejemplo</a>
 </details>
 
 ### I - Candy's Candy
