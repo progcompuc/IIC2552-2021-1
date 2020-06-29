@@ -62,6 +62,16 @@ title: contest 12 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/ForestForTheTrees.cpp">Código de ejemplo</a>
 </details>
 
+### F - Almost Prime
+<details> 
+  <summary>Hint</summary>
+  Dado un primo, todos sus múltiplos son divisibles por ese primo.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos modificar la criba de eratóstenes para ir marcando la cantidad de primos que dividen a cada número. Luego contamos cuántos números son divisibles por exactamente dos primos. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/26A_AlmostPrime.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
