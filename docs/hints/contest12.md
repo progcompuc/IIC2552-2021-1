@@ -37,8 +37,18 @@ title: contest 12 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  La combi que da la cantidad de permutaciones sin repetición es N!/(C[0]! * ... * C[25]!), donde C[i] es la cantidad de veces que está el caracter i. Precomputados los primos hasta 10^6 con criba de eratóstenes y luego sacamos la factorización prima del numerador y de los factores del denominador linealmente con factorización prima de factoriales. Cancelamos exponentes, y luego matamos los 0's a la derecha matando los pares de 2 y 5 (min{ e[2], e[5] }). Luego el último dígito lo sacamos calculando el valor de la factorización módulo 10 usando binary exponentiation.
+  La combi que da la cantidad de permutaciones sin repetición es N!/(C[0]! * ... * C[25]!), donde C[i] es la cantidad de veces que está el caracter i. Precomputamos los primos hasta 10^6 con criba de eratóstenes y luego sacamos la factorización prima del numerador y de los factores del denominador linealmente con factorización prima de factoriales. Cancelamos exponentes, y luego matamos los 0's a la derecha matando los pares de 2 y 5 (min{ e[2], e[5] }). Luego el último dígito lo sacamos calculando el valor de la factorización módulo 10 usando binary exponentiation.
   <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/4008_LastDigit.cpp">Código de ejemplo</a>
+</details>
+
+### D - Beautiful Numbers
+<details> 
+  <summary>Hint</summary>
+  Lo más complicado del problema es calcular número de permutaciones sin repetición módulo 10^9+7.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Iterar sobre k = 0, ..., N donde a es usado k veces y b usado (N-k) veces. Si (a*k + b*(N-k)) es good, entonces las N!/(k!x(N-k)!) permutaciones sin repeticiones son excelentes. Para calcular esa combi módulo 10^9+7, podemos calcularla como el producto del numerador con el inverso modular del denominador, que se puede obtener con euclides extendido. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/300C_BeautifulNumbers.cpp">Código de ejemplo</a>
 </details>
 
 ### E - Forest for the Trees
