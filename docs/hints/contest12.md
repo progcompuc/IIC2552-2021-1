@@ -72,6 +72,20 @@ title: contest 12 - hints y códigos de ejemplo
   Podemos modificar la criba de eratóstenes para ir marcando la cantidad de primos que dividen a cada número. Luego contamos cuántos números son divisibles por exactamente dos primos. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/26A_AlmostPrime.cpp">Código de ejemplo</a>
 </details>
 
+### G - Even Distribution
+<details> 
+  <summary>Hint 1</summary>
+  Dado un camino arbitrario, la cantidad de niños correspondiente es el GCD de los dulces de cada nodo en el camino.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Pensar en una forma de simular todos los posibles caminos pero podando caminos redundantes (que no van a aportar información nueva).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacemos un BFS sobre un grafo de estados, donde los estados son pares (nodo, gcd). La cola del BFS la inicializamos con todos los pares (nodo, candies[nodo]). La idea es correr el BFS hasta explorar todos los estados alcanzables. Notar que si un estado ya visitado es re-visitado, no tiene sentido explorarlo porque todos los caminos que se puedan generar a partir de él tendrán el mismo gcd acumulado que los de la primera vez que fue visitado. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6825_EvenDistribution.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
