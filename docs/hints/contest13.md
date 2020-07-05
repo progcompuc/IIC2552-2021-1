@@ -36,6 +36,17 @@ title: contest 13 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Timus/SpaceologyVsChronistics.cpp">Código de ejemplo</a>
 </details>
 
+### D - Santa's Bot
+<details> 
+  <summary>Hint</summary>
+  Podemos obtener el inverso modular de un número simplemente usando el algoritmo de euclides extendido en (x, M) donde x es el número a invertir y M es el módulo. Luego basta contar casos favorables y casos totales para concluir.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para cada combinación (x, y) la probabilidad de que elegir z sea exitoso es C[y] / N donde C cuenta cuantas personas pidieron el regalo y. Además la cantidad de formas de elegir (x, y) es 1 / (N * K[x]) donde K[x] cuenta cuantas cosas pidió x. Luego basta ir sumando probabilidades del estilo C[y] / (N * N * K[x]) para cada combinación de x, y. Podemos sumar pues estamos en espacio modular (Z_MOD).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/SantasBot.cpp">Código de ejemplo</a>
+</details>
+
 ### G - Prime Reduction
 <details> 
   <summary>Hint</summary>
