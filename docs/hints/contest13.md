@@ -21,6 +21,21 @@ title: contest 13 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Billiard.cpp">Código antiguo del ayudante (cuando usaba templates)</a>
 </details>
 
+### C - Spaceology vs. Chronistics
+<details> 
+  <summary>Hint 1</summary>  
+  Notemos que eventualmente ambos scientíficos se moverán en ciclos, podemos simular una cantidad de pasos para asegurarnos que entren al ciclo y seguir analizando desde ahí. Para asegurar un ciclo basta simular N pasos, pueden poner más para estar seguros.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Si no han chocado en los primeros N pasos simulados podemos chequear los ciclos en que se mueven ambos científicos. Para cada uno podemos calcular fácilmente el largo del ciclo y en cuantos pasos llegan a cada intersección en sus ciclos. Si hay una intersección por la que ambos científicos pasen durante sus ciclos podemos chquear si alguna vez estarán ahí al mismo tiempo haciendo uso de CRT para las ecuaciones t = t1 (mod l1), t = t2 (mod l2) donde t1 y t2 son los tiempos en que cada ciclo se demora en llegar a ese punto y l1, l2 son los largos de los ciclos.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta hacer lo indicado en el hint 2 para cada intersección a la que ambos científicos puedan llegar y acumular el menor de los tiempos obtenidos. Si nunca estaban ambos al mismo tiempo devolvemos -1.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Timus/SpaceologyVsChronistics.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
