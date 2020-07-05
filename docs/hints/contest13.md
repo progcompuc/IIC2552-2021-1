@@ -36,6 +36,17 @@ title: contest 13 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Timus/SpaceologyVsChronistics.cpp">Código de ejemplo</a>
 </details>
 
+### G - Prime Reduction
+<details> 
+  <summary>Hint</summary>
+  Para este probema la clave es poder simular el proceso de forma rápida.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para simularlo rápidamente sólo necesitamos un algoritmo capaz de calcular la descomposición prima de un número en un tiempo no muy grande. Esto se puede implementar fácilmente en O(sqrt(N) + log(N)) iterando sobre todos los números desde 2 hasta sqrt(n) y si el número divide a N entonces es un divisor primo, (debemos dividir N por el número encontrado lo más que se pueda para que el razonamiento siga siento válido).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PrimeReduction.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
