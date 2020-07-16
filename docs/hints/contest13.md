@@ -6,7 +6,8 @@ title: contest 13 - hints y códigos de ejemplo
 
 ### A - Environment Protection
 <details> 
-  <summary>Búsqueda binaria sirve</summary>
+  <summary>Hint</summary>
+  Búsqueda binaria sirve
 </details>
 <details> 
   <summary>Solución + código</summary>
