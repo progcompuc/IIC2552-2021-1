@@ -4,6 +4,15 @@ title: contest 13 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 13](../contests#contest-13) > ```{{page.title}}```
 
+### A - Environment Protection
+<details> 
+  <summary>Búsqueda binaria sirve</summary>
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Hacer búsqueda binaria, y en el predicado hacer integración numérica. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6135_EnvironmentProtection.cpp">Código de ejemplo</a>
+</details>
+
 ### B - Billiard
 <details> 
   <summary>Hint 1</summary>
@@ -47,8 +56,28 @@ title: contest 13 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/SantasBot.cpp">Código de ejemplo</a>
 </details>
 
-### G - Prime Reduction
+### E - Chinese Remainder Theorem (non-relatively prime moduli)
 <details> 
+  <summary>Hint</summary>
+  Problema hello world de CRT
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  CRT, revisar materia del curso. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/generalchineseremainder.cpp">Código de ejemplo</a>
+</details>
+
+### F - Whipe Your Whiteboards
+<details>
+  <summary>Hint</summary>
+  El algoritmo de extendido de Euclides es útil
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Básicamente queremos encontrar a y b tales que a * r + b * s = q. Podemos usar euclides extendido para encontrar x e y tales que x * r + y * s = gcd(r,s) = g. Luego si g divide a q, todos los a's y b's que sirven están dados por a(k) = x * q/g + k * s/g  y b(k) = y * q/g - k * r/g, donde k es cualquier número entero. Como necesitamos que a(k) > 0 y b(k) > 0, si despejamos k en ambas inecuaciones y tenemos cuidado con el efecto del signo de las cosas en la desigualdad, notaremos que el k más chico que sirve es el mínimo entre dos opciones (o quizá uno más que eso). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/wipeyourwhiteboards.cpp">Código de ejemplo</a>
+</details>
+
+### G - Prime Reduction
+<details>
   <summary>Hint</summary>
   Para este probema la clave es poder simular el proceso de forma rápida.
 </details>
@@ -56,6 +85,16 @@ title: contest 13 - hints y códigos de ejemplo
   <summary>Solución + código</summary>
   Para simularlo rápidamente sólo necesitamos un algoritmo capaz de calcular la descomposición prima de un número en un tiempo no muy grande. Esto se puede implementar fácilmente en O(sqrt(N) + log(N)) iterando sobre todos los números desde 2 hasta sqrt(n) y si el número divide a N entonces es un divisor primo, (debemos dividir N por el número encontrado lo más que se pueda para que el razonamiento siga siento válido).
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PrimeReduction.cpp">Código de ejemplo</a>
+</details>
+
+### H - Higgs Bosson
+<details>
+  <summary>Hint</summary>
+  Hay que ponerse en varios casos, y en cada caso implementar la matemática bien.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución es básicamente el hint pero hecho con mucho cuidado. Primero hay que ver dos casos generales: 1) qué pasa cuando las ecuaciones de los radios son iguales (a1 == a2 y b1 == b2) y 2) qué pasa cuando no. En el primer caso el radio siempre es el mismo, entonces sólo importa el ángulo (excepto cuando el radio se hace 0, y ahí el ángulo no importa). En el segundo caso hay que ver el caso en que r1(t) y r2(t) se intersectan en un solo punto, cuando r1(t) == -r2(t) para todo t y cuando r1(t) y -r2(t) se intersectan en un solo punto. En cada caso hay que manejar qué condiciones tienen que cumplirse para el radio. La respuesta final es el mínimo t >= 0 encontrado entre todos los casos y subcasos. En el <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/SAMER08H_HiggsBoson.cpp">código de ejemplo</a> tengo comentados los casos y subcasos.
 </details>
 
 <!-- <details> 
