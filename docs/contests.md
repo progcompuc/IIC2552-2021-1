@@ -91,8 +91,8 @@ Junio 19, 10 días, [link a **contest**](https://vjudge.net/contest/379066)\\
 ## Contest 13
 Junio 26, 10 días, [link a **contest**](https://vjudge.net/contest/380093)\\
 **Tópicos**: [Math (GCD extendido, CRT y más)](resources/math)\\
-**Puntos**: _pending_\\
-**Puntaje Mínimo Esperado**: _pending_\\
+**Puntos**: 4, 4, 4, 3, 2, 3, 3, 7\\
+**Puntaje Mínimo Esperado**: 9\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest13)
 
 
