@@ -9,7 +9,6 @@ title: "Cálculo de la Nota Final"
 - Sea P_i = total puntos por problemas resueltos **dentro** de plazo en el contest i-ésimo
 - Sea T_i = total puntos por problemas resueltos **fuera** de plazo en el contest i-ésimo
 - Sea M_i = puntaje mínimo esperado para el contest i-ésimo
-- Sea A la asistencia promedio del alumno
 
 Así, se calcula:
 - D_i = max(M_i - P_i, 0) = deuda de puntaje del contest i-ésimo
@@ -17,14 +16,14 @@ Así, se calcula:
 - X_i = 1 - D_i/M_i = fracción completada del mínimo esperado para el contest i-ésimo
 - D = suma de todos los D_i
 - E = suma de todos los E_i
-- X = promedio de todos los X_i
+- X = sum { M_i * X_i } / sum { M_i }  (es decir, el promedio ponderado de los X_i)
 
 Así, E se usa para reducir la deuda D de la siguiente manera:
 - D' = max(D - E*0.33, 0)
 - X' = X + (1-X) * (D-D')/D
 
 Así, se obtiene una nota preliminar
-- Nota_v1 = (1 + 6 * X') * 0.75 + (1 + 6 * A) * 0.25
+- Nota_v1 = 1 + 6 * X'
 
 Sin embargo, luego se bajará la escala del curso, es decir, si ningún alumno alcanzó el 7, el alumno con mayor nota quedará con 7 (siempre y cuando la escala baje "poco" - i.e. habrá un límite para bajar la escala con el fin de prevenir "hacks" al sistema).
 - Nota_v2 = aplicar_escala_reducida(Nota_v1)
