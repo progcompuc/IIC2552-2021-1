@@ -3,7 +3,7 @@ title: Recursos
 ---
 [Index](../index) > ```{{page.title}}```
 
-## [Para aprender C++](cpp)
+## [Para aprender C++](cpp) (<<<<<<<<<< OJO, NOVAT@S)
 
 ## Recursos para temas específicos
 
