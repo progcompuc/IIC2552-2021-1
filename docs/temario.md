@@ -14,7 +14,6 @@ title: Temario
     - Fenwick Tree
     - Fenwick Tree 2D
     - Union Find
-    - Treap (?)
 - [Algoritmos de Grafos](resources/graphs) (3 semanas)
     - MST (minimun spanning tree)
     - LCA (lowest common ancestor)
@@ -23,7 +22,8 @@ title: Temario
     - Flujo máximo y aplicaciones
 - [Algoritmos de Strings](resources/strings) (2 semanas)
     - Trie
-    - Suffix Array    
+    - Suffix Array
+    - Suffix Automaton (?)
     - Rolling Hashing
     - KMP (Knuth Morris Pratt)
     - Shortest Repeating Cycle
