@@ -30,16 +30,12 @@ Este curso es 100% práctico. La nota final dependerá de la resolución por par
 
 - vjudge permite enviar soluciones en **modo post-competencia**. Si lo deseas puedes seguir resolviendo problemas en este modo luego del fin de un contest, aunque todos los puntos de los problemas que resuelvas así van directo a tu excedente de puntaje, y por ende serán multiplicados por 0.33 (en otras palabras, rinde más resolver problemas dentro de plazo que fuera de plazo)
 
-## 2) Asistencia
 
-Para fomentar la participación y asistencia a clases de los estudiantes el curso tiene nota por asistencia, la cual corresponde al 25% de la nota del curso. Para quedar presente eso sí sólo basta con que vengas a uno de los 3 módulos (no es necesario que vengas a todos, aunque si pudieras quedarte los 3 módulos sería hermoso :))
-
-
-## 3) Bonuses
+## 2) Bonuses
 
 Además de las competencias semanales, existen varias formas de obtener décimas de bonus, las que se ponderarán y sumarán directamente a tu nota final:
 
-### 3.1) BONUS RPC _(grupal)_
+### 2.1) BONUS RPC _(grupal)_
 Cada cierto tiempo la [Red de Programación Competitiva (RPC)](http://redprogramacioncompetitiva.com/) organiza competencias de entrenamiento. El calendario y registro para estas competencias se encuentran acá: <http://registro.redprogramacioncompetitiva.com/contests>, y los scoreboards de las competencias pasadas se pueden encontrar acá: <http://redprogramacioncompetitiva.com/Contest>. Nótese que se trata de un **bonus grupal**, por ende para obtener este bonus deben:
 
   - Registrarse en una competencia en grupos de 2 o 3 alumn@s.
@@ -48,14 +44,14 @@ Cada cierto tiempo la [Red de Programación Competitiva (RPC)](http://redprogram
   - Al terminar la competencia, deben mandar el link al scoreboard final de la competencia RPC en que participaron.
   - El bonus se calculará como 6\*(X/N) décimas, donde X = problemas resueltos por el grupo, N = problemas resueltos por el equipo que quedó en primer lugar. Las 6\*(X/N) décimas obtenidas se sumarán a las décimas de bonus de cada integrante del equipo.
 
-### 3.2) BONUS Contest Individual _(individual)_:
+### 2.2) BONUS Contest Individual _(individual)_:
 Existen muchos sitios online que organizan competencias individuales cada cierto tiempo. Los alumnos tienen la opción de participar en estas competencias y obtener décimas de bonus. Los sitios que más recomendamos son [Codeforces](https://codeforces.com/), [Atcoder](https://atcoder.jp/) y [Codechef](https://www.codechef.com/). Todos tienen calendarios: [calendario codeforces](http://codeforces.com/calendar), [calendario atcoder](https://atcoder.jp/calendar), [calendario codechef](https://www.codechef.com/event-calendar). Para obtener este bonus debes:
   - Registrarte en Codeforces, Atcoder y/o Codechef.
   - Participar en una competencia individual (generalmente duran alrededor de 2 horas).
   - Al final de la competencia avisarnos en qué competencia participaste y mandar el link al ranking donde quedaste.
   - El bonus se calculará como 4\*(X/N) décimas, donde X = cantidad de problemas resueltos por ti, N = cantidad de problemas resueltos por la persona que quedó en primer lugar. Las 4\*(X/N) décimas obtenidas se sumarán a tus décimas de bonus.
 
-### 3.3) SUPER BONUS Codeforces:
+### 2.3) SUPER BONUS Codeforces:
 [Codeforces](https://codeforces.com/) tiene un sistema de [rating](https://codeforces.com/ratings/country/Chile) parecido al ELO en Ajedrez. Cualquier alumn@ que participe en **al menos 3 contests** de Codeforces durante el semestre y luego de ello alcance un **rating de 1700 o superior**, automáticamente tendrá **nota final 7.0 en el curso**.
 
 [Index](../index) > ```{{page.title}}```
