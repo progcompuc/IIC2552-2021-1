@@ -53,7 +53,7 @@ Cada cierto tiempo la [Red de Programación Competitiva (RPC)](http://redprogram
   - Al terminar la competencia, deben mandar el link al scoreboard final de la competencia RPC en que participaron.
   - El bonus se calculará como 6\*(X/N) décimas, donde X = problemas resueltos por el grupo, N = problemas resueltos por el equipo que quedó en primer lugar. Las 6\*(X/N) décimas obtenidas se sumarán a las décimas de bonus de cada integrante del equipo.
 
-### 2.3) BONUS Contest Individual _(individual)_:
+### 2.3) BONUS Contest Individual:
 Existen muchos sitios online que organizan competencias individuales cada cierto tiempo. Los alumnos tienen la opción de participar en estas competencias y obtener décimas de bonus. Los sitios que más recomendamos son [Codeforces](https://codeforces.com/), [Atcoder](https://atcoder.jp/) y [Codechef](https://www.codechef.com/). Todos tienen calendarios: [calendario codeforces](http://codeforces.com/calendar), [calendario atcoder](https://atcoder.jp/calendar), [calendario codechef](https://www.codechef.com/event-calendar). Para obtener este bonus debes:
   - Registrarte en Codeforces, Atcoder y/o Codechef.
   - Participar en una competencia individual (generalmente duran alrededor de 2 horas).
