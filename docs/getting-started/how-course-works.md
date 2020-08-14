@@ -35,7 +35,16 @@ Este curso es 100% práctico. La nota final dependerá de la resolución por par
 
 Además de las competencias semanales, existen varias formas de obtener décimas de bonus, las que se ponderarán y sumarán directamente a tu nota final:
 
-### 2.1) BONUS RPC _(grupal)_
+### 2.1) BONUS C++
+Para incentivar el uso de C++ (por lejos el lenguaje más popular en progcomp), existe un bonus de décimas que se sumarán directamente a tu nota final que puedes obtener si decides programar tus soluciones en C++. ¿Cómo obtener este bonus?
+
+ - Primero que todo, este bonus es válido sólo para gente que no tenga experiencia previa programando en C++ (o experiencia muy reducida).
+ - En algún contest debes programar al menos un problema en C++. Entre más problemas programes en C++, mejor. Al finalizar dicho contest, debes avisarnos al ayudante o al profesor que te revisemos los códigos (nosotros tenemos acceso a sus códigos en vjudge). Nosotros examinaremos tu código y según qué cosas uses, si se nota esfuerzo en hacer un código bonito y ordenado, si le sacas provecho al lenguaje, por ejemplo si usas cosas de C++11, etc., nosotros te premiaremos con décimas.
+ - Este bonus tiene un techo de 8 décimas. Si sacas este bonus muchas veces y te pasas de las 8 décimas, el bonus va a quedar congelado en las 8 décimas nomás.
+ - Este bonus sólo estará disponible las primeras 5 competencias. De la competencia número 6 en adelante ya no corre.
+ - Si quieres aprender C++, [puedes encontrar hartos recursos acá](../resources/cpp).
+
+### 2.2) BONUS RPC _(grupal)_
 Cada cierto tiempo la [Red de Programación Competitiva (RPC)](http://redprogramacioncompetitiva.com/) organiza competencias de entrenamiento. El calendario y registro para estas competencias se encuentran acá: <http://registro.redprogramacioncompetitiva.com/contests>, y los scoreboards de las competencias pasadas se pueden encontrar acá: <http://redprogramacioncompetitiva.com/Contest>. Nótese que se trata de un **bonus grupal**, por ende para obtener este bonus deben:
 
   - Registrarse en una competencia en grupos de 2 o 3 alumn@s.
@@ -44,14 +53,14 @@ Cada cierto tiempo la [Red de Programación Competitiva (RPC)](http://redprogram
   - Al terminar la competencia, deben mandar el link al scoreboard final de la competencia RPC en que participaron.
   - El bonus se calculará como 6\*(X/N) décimas, donde X = problemas resueltos por el grupo, N = problemas resueltos por el equipo que quedó en primer lugar. Las 6\*(X/N) décimas obtenidas se sumarán a las décimas de bonus de cada integrante del equipo.
 
-### 2.2) BONUS Contest Individual _(individual)_:
+### 2.3) BONUS Contest Individual _(individual)_:
 Existen muchos sitios online que organizan competencias individuales cada cierto tiempo. Los alumnos tienen la opción de participar en estas competencias y obtener décimas de bonus. Los sitios que más recomendamos son [Codeforces](https://codeforces.com/), [Atcoder](https://atcoder.jp/) y [Codechef](https://www.codechef.com/). Todos tienen calendarios: [calendario codeforces](http://codeforces.com/calendar), [calendario atcoder](https://atcoder.jp/calendar), [calendario codechef](https://www.codechef.com/event-calendar). Para obtener este bonus debes:
   - Registrarte en Codeforces, Atcoder y/o Codechef.
   - Participar en una competencia individual (generalmente duran alrededor de 2 horas).
   - Al final de la competencia avisarnos en qué competencia participaste y mandar el link al ranking donde quedaste.
   - El bonus se calculará como 4\*(X/N) décimas, donde X = cantidad de problemas resueltos por ti, N = cantidad de problemas resueltos por la persona que quedó en primer lugar. Las 4\*(X/N) décimas obtenidas se sumarán a tus décimas de bonus.
 
-### 2.3) SUPER BONUS Codeforces:
+### 2.4) SUPER BONUS Codeforces:
 [Codeforces](https://codeforces.com/) tiene un sistema de [rating](https://codeforces.com/ratings/country/Chile) parecido al ELO en Ajedrez. Cualquier alumn@ que participe en **al menos 3 contests** de Codeforces durante el semestre y luego de ello alcance un **rating de 1700 o superior**, automáticamente tendrá **nota final 7.0 en el curso**.
 
 [Index](../index) > ```{{page.title}}```
