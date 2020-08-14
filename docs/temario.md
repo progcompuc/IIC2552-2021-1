@@ -26,7 +26,6 @@ title: Temario
     - Suffix Automaton (?)
     - Rolling Hashing
     - KMP (Knuth Morris Pratt)
-    - Shortest Repeating Cycle
 - [Geometría](resources/geometry) (1 o 2 semanas)
     - Producto punto y producto cruz
     - Cálculo de áreas
