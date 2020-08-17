@@ -21,6 +21,22 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/AtCoder/Roadwork.cpp">Solución ejemplo</a>
 </details>
 
+### C - Two Teams
+<details> 
+  <summary>Hint 1</summary>
+  Podemos ordenar los estudiantes del con mayor habilidad al con menos habilidad podemos agregarlos a un MaxHeap, que agrega elementos en O(log N), consulta por el mayor en O(1) y quita el mayor en O(log N).
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Podemos visitar uno por uno los estudiantes y marcar el equipo correspondiente a los alumnos k a la derecha y a la izquierda no marcados, el problema es que si visitamos muchas veces estudiantes no marcados el algoritmo no cae en el límite de tiempo. Debemos encontrar una forma de no visitar más que una vez cada estudiante. Una estructura perfecta para esto es una lista ligada tal que podamos eliminar segmentos de un arreglo en O(1).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Recorremos en orden los estudiantes, para cada uno, si no ha sido marcado marcamos k a la derecha y a la izquierda de la lista y eliminamos el segmento.
+  Podemos simular la lista ligada usando vectores R, L, tal que R[i] indica qué indice está actualmente a la derecha de i y L[i] a la izquierda de i. al eliminar un segmento sólo debemos unir el de la izquierda del primer eliminado con el de la derecha del último, así en consultas siguientes no se pasará por lo eliminado.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoTeams.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
