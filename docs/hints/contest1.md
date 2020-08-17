@@ -48,7 +48,7 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/WeirdFunction.cpp">Código de ejemplo</a>
 </details>
 
-### Cat Party
+### I - Cat Party
 <details> 
   <summary>Hint</summary>
   Si pudieramos mantener conteo de las frecuencias de cada color hasta el índice i, este será válido en 3 casos, si todos son del mismo color, si hay un color con frecuencia 1 y todo el resto son iguales o si todos son iguales excepto un color con frecuencia 1 más que el resto. En todos estos casos eliminar 1 funcionaría. Piensen en una forma de mantener frecuencias y poder chequear esos casos eficientemente.
