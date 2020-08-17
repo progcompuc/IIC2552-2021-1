@@ -48,6 +48,17 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/WeirdFunction.cpp">Código de ejemplo</a>
 </details>
 
+### Cat Party
+<details> 
+  <summary>Hint</summary>
+  Si pudieramos mantener conteo de las frecuencias de cada color hasta el índice i, este será válido en 3 casos, si todos son del mismo color, si hay un color con frecuencia 1 y todo el resto son iguales o si todos son iguales excepto un color con frecuencia 1 más que el resto. En todos estos casos eliminar 1 funcionaría. Piensen en una forma de mantener frecuencias y poder chequear esos casos eficientemente.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Si iteramos por índice y mantenemos un multiset ordenado con las frecuencias de cada color que hemos visto podemos chequear todos los casos eficientemente usando iteradores. El primer caso se chequearía viendo si el tamaño del multiset es 1, el segundo caso si el elemento más pequeño del multiset es 1 y el siguiente es igual al último, y el último caso si el último elemento del múltiset es igual al primero - 1 y el primero es igual al penúltimo.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CatParty.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
