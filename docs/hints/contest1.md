@@ -59,6 +59,18 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CatParty.cpp">Código de ejemplo</a>
 </details>
 
+### K - Who is The Boss
+<details> 
+  <summary>Hint</summary>
+  Podemos ir acumulando la cantidad de subordinados de cada empleado, si todos parten en 0 al ver cual es el jefe los subordinados se le suman.
+  Si ordenamos los empleados por salario, todos aquellos empleados ya visitados que no tengan jefe y de altura menor o igual a la del empleado actual serán subordinados y la cantidad de subordinados se acumula. Piensen en una forma eficiente de mantener ordenados los empleados ya visitados sin jefe para hacer eso.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Si visitamos a los empleados según salario como en el Hint 1, basta mantener un set ordenado o un MinHeap de los empleados ya visitados sin jefe ordenados or altura, luego para cada empleado, agregamos como subordinados a todos aquellos miembros del MinHeap con altura menor o igual a la actual, acumulamos el conteo de subordinados y eliminamos del MinHeap.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/WhoIsTheBoss.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
