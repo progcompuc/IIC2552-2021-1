@@ -37,6 +37,17 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoTeams.cpp">Código de ejemplo</a>
 </details>
 
+### F - Weird Function
+<details> 
+  <summary>Hint</summary>
+  La clave del problema es ordenar los datos de una forma que permita acceder eficientemente a la mediana de estos ordenados.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos mantener un MaxHeap con la mitad inferior de los datos y un MinHeap con la mitad superior de los datos, tal que podemos acceder a la mediana como el tope del MaxHeap inferior en O(1). Cada vez que agregamos un dato lo agregamos al MaxHeap, si el mayor del MaxHeap es mayor que el menor del MinHeap, lo pasamos a la mitad superior, y si se desequilibran en tamaño pasamos el mayor del MaxHeap al MinHeap.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/WeirdFunction.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
