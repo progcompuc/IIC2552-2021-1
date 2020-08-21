@@ -113,6 +113,16 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/WhoIsTheBoss.cpp">Código de ejemplo</a>
 </details>
 
+### L - Daunting Device
+<details> 
+  <summary>Hint</summary>
+  Pensar el problema como intervalos de colores. Inicialmente partimos con un intervalo [0, L-1] pintado todo de color 1, y en cada iteración estamos haciendo una actualización que nos deja una nueva secuencia de intervalos.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Definimos un struct Interval con 3 variables: índice donde comienza, índice donde termina y color. Además mantenemos un std::set de C++ (un set ordenado) con los intervalos de colores actuales (inicialmente {0, L-1, 1}). Para saber cuántas veces aparece un color, mantenemos un arreglo o vector "freq" (o como quieran llamarle) con las frecuencias de cada color. Luego nos queda implementar el código que ejecuta los N updates. Calculamos M1 y M2 según enunciado. Luego debemos encontrar la secuencia de intervalos en nuestro set que son afectados por el update. Esto se puede hacer usando s.lower_bound() y manipulando iteradores (ver código de ejemplo si te complicas mucho con esto, aunque intenta primero revisar el material del curso sobre sets de C++ y sobre iteradores). Luego podemos borrar todos intervalos con s.erase(), insertar el nuevo intervalo y posiblemente insertar 2 intervalos nuevos en los bordes (si es que nuestro update borra parcialmente algunos de los 2 intervalos vecinos (izquierdo y/o derecho)). Luego de los N updates, la respuesta es el máximo en un nuestro arreglo/vector "freq".  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/URI/DauntingDevice.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
