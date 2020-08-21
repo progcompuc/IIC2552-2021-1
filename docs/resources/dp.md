@@ -23,6 +23,7 @@ title: "Programación Dinámica (DP)"
 - Otros ejemplos: [playlist](https://www.youtube.com/watch?v=8LusJS5-AGo&list=PLrmLmBdmIlpsHaNTPP_jHHDx_os9ItYXr)
 
 ## DP Avanzado: 
+- Clase Optimizaciones de DP: <https://youtu.be/wLSfdicxVLs>
 - Lista de Optimizaciones de DP: <https://codeforces.com/blog/entry/8219>
 - Problemas para practicar Optimizaciones de DP: <https://codeforces.com/blog/entry/47932>
 - Divide & Conquer Optimization:
