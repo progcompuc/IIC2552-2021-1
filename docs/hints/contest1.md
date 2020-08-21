@@ -4,6 +4,16 @@ title: contest 1 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 1](../contests#contest-1) > ```{{page.title}}```
 
+### A - Valeriy and Deque
+<details> 
+   <summary>Hint</summary>
+      Ver si en el algún momento las cosas comienzan a repetirse cíclicamente y aprovechar eso
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Simular hasta que el máximo quede al comienzo. De ahí en adelante los que están a la derecha del máximo van rotando. Para las queries que van antes del ciclo responde con lo simulado, y para las queries que caen dentro del ciclo calcula modularmente cual va a ser el elemento sacado. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1180C_ValeriyAndDeque.cpp">Código de ejemplo</a>
+</details>
+
 ### B - Roadwork
 <details> 
   <summary>Hint 1</summary>
