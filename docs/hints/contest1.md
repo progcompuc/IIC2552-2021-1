@@ -68,6 +68,17 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/WeirdFunction.cpp">Código de ejemplo</a>
 </details>
 
+### G - Criss-cross Cables
+
+<details> 
+  <summary>Hint</summary>
+  Hay N*(N-1)/2 pares de ubicaciones posibles, que si los ordenamos por largo de menor a mayor codiciosamente nos convendrían los M primeros ¿verdad? Piensa en una forma de encontrar los M primeros sin tener que generar los N*(N-1)/2 pares explícitamente.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ordenamos los cables por largo de menor a mayor. Además, usamos un minheap (priority_queue) y primero lo llenamos con intervalos correspondientes a pares consecutivos (i, i+1). Luego de forma sincronizada iteramos sobre los cables y vamos sacando intervalos del minheap, si el algún punto el cable no se la puede o nos quedamos cortos de intervalos, no se puede. Si no, cada vez que sacamos un intervalo, metemos al minheap un nuevo intervalo alargado un índice más a la derecha (o sea, si sacamos el intervalo (i,j), metemos el intervalo (i,j+1)). La complejidad es O(M log M + M log N). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/kattis/crisscrosscables.cpp">Código de ejemplo</a>
+</details>
+
 ### I - Cat Party
 <details> 
   <summary>Hint</summary>
