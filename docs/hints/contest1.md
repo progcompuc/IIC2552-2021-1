@@ -59,6 +59,17 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CatParty.cpp">Código de ejemplo</a>
 </details>
 
+### J - Back to the Future
+
+<details> 
+  <summary>Hint</summary>
+  Darse cuenta de que para un nodo cualquiera del grafo, para satisfacer los requisitos de A y B a ese nodo siempre le conviene que el conjunto sea lo más grande posible: para satisfacer A lo ideal es que estén la mayor cantidad de vecinos, para satisfacer B lo ideal es que estén la mayor cantidad de no-vecinos. Hay un conjunto de nodos que genera la situación ideal para todos los nodos simultáneamente: el conjunto de todos los nodos. Si en ese conjunto ideal hay nodos que no cumplen, entonces no hay ningún subconjunto en el que puedan llegar a cumplir y por ende los podemos descartar. Piensa en alguna forma eficiente de ir descartando nodos partiendo desde el conjunto universo hasta llegar a un subcojunto maximal en que todos cumplen.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Metemos todos los nodos a un set ordenados por cantidad de vecinos (y desempatados por ID para permitir duplicados), e iterativamente vamos borrando nodos por el extremo izquierdo del set cuando no cumplen A y por la derecha del set cuando no cumplen B. Cada vez que descartamos un nodo, tenemos que avisarle a cada uno de sus vecinos que ese nodo ya no está y además tenemos que actualizar la ubicación del vecino dentro del set (eso se puede hacer borrándolo y metiéndolo de nuevo con su score actualizado). La complejidad de esto es O((N+M)log(N)). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/7887_BackToTheFuture.cpp">Código de ejemplo</a>
+</details>
+
 ### K - Who is The Boss
 <details> 
   <summary>Hint</summary>
