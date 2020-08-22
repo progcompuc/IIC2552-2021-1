@@ -47,6 +47,16 @@ title: contest 1 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoTeams.cpp">Código de ejemplo</a>
 </details>
 
+### D - Memory Management
+<details> 
+  <summary>Hint</summary>
+   El problema se puede modelar como una simulación de eventos en el tiempo, desempatando por id. Los bloques libres también se pueden modelar con una estructura que priorice de izquierda a derecha.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos definir un struct Event para modelar eventos que pueden ser de 3 tipos: memory allocation, memory access y memory release. Los eventos los podemos simular en orden en una priority queue, sacando el siguiente evento del tope dentro de un while. Los eventos de alloc y access son los dados por el input. Los eventos de release los agregamos a medida que vamos simulando y un alloc o access es exitoso. Notar que los release pueden quedar obsoletos (por ej. un access puede extender el periodo de ocupación de un bloque, entonces eventos de release con un timestamp menor ya no son válidos), por lo tanto hay que registrar el último release time por bloque y comparar contra eso para descartar los release obsoletos. A su vez, los bloques de memoria libres se pueden modelar con una priority_queue también (para ir sacando siempre el de más a la izquierda). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/acm.timus.ru/1037_MemoryManagement.cpp">Código de ejemplo</a>
+</details>
+
 ### E - Largest Rectangle in a Histogram
 <details> 
   <summary>Hint</summary>   
