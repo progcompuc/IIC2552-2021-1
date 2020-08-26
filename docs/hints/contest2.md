@@ -26,6 +26,17 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/FourSegments.cpp">Código de ejemplo</a>
 </details>
 
+### F - Greg and Array
+<details> 
+  <summary>Hint</summary>
+  Podemos registrar la cantidad de veces que se termina haciendo cada update usando un arreglo de diferencias, la idea es la siguiente, usamos un arreglo U que empieza con 0's y si queremos hacer los updates entre x e y hacemos U[x] += 1, U[y + 1] += 1, luego despues de todas las queries podemos recorrer el arreglo U y la suma de los valores nos entrega la cantidad de veces que se hace cada update.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos usar la idea del hint 2 veces, una vez para cuantas veces se hace cada update y otra para saber cuanto se le suma a los A[i], en el caso de la segunda se puede tener un arreglo C donde para cada update hacemos C[L[i]] += d[i] * s, C[R[i] + 1] -= d[i] * s, donde L[i], R[i], d[i] son los límites del update i, y s es la variable acumulada del arreglo U. Finalmente la respuesta final se obptiene recorriendo C. La complejidad final de esta solución termina siendo lineal en N y M.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GregAndArray.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
