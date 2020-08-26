@@ -37,6 +37,17 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GregAndArray.cpp">Código de ejemplo</a>
 </details>
 
+### G - They Are Everywhere
+<details> 
+  <summary>Hint</summary>
+  Piensen en cómo calcular rápidamente cual es el menor índice j necesario a visitar asumiendo que empiezo a visitar desde i. Esto se hará para cada indice inicial.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos usar arreglos acumulados de aparición de cada letra, como son letras minúsculas y mayúsculas necesitaremos a lo más 54 arreglos. Luego para cada índice de inicio i, podemos encontrar el menor índice necesario j a partir de una búsqueda binaria, sólo se necesita chequear que cada letra ocurra al menos una vez en el rango. La complejidad final es en el peor caso O(54 * N * log N), lo que pasa en tiempo.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheyAreEverywhere.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
