@@ -20,7 +20,7 @@ Agosto 21, 10 días, [link a **contest**](https://vjudge.net/contest/390579)\\
 
 ## Contest 3
 Agosto 28, 10 días, [link a **contest**](https://vjudge.net/contest/391596)\\
-**Tópicos**: [Estructuras de Datos de C++ STL](resources/data_structures)\\
+**Tópicos**: [Segment Tree, Fenwick Tree, Sparse Table](resources/data_structures)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
