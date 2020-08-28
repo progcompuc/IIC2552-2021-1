@@ -15,10 +15,15 @@ Agosto 14, 10 días, [link a **contest**](https://vjudge.net/contest/389271)\\
 Agosto 21, 10 días, [link a **contest**](https://vjudge.net/contest/390579)\\
 **Tópicos**: [Estructuras de Datos de C++ STL](resources/data_structures)\\
 **Puntos**: ?, 3, ?, ?, 2, 4, 3, ?\\
-**Puntaje Mínimo Esperado**: _pending_\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest2)
 
-
+## Contest 3
+Agosto 28, 10 días, [link a **contest**](https://vjudge.net/contest/391596)\\
+**Tópicos**: [Estructuras de Datos de C++ STL](resources/data_structures)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
 
 
 [Index](index) > ```{{page.title}}```
