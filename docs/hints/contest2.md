@@ -15,6 +15,16 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/AGoodString.cpp">Código de ejemplo</a>
 </details>
 
+### D - Powerful Array
+<details> 
+  <summary>Hint</summary>
+  Ordenar las queries de forma muy inteligente puede servir.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  <a href="https://cp-algorithms.com/data_structures/sqrt_decomposition.html#toc-tgt-4"> El algoritmo de MO</a>. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/86D_PowerfulArray.cpp">Código de ejemplo</a>
+</details>
+
 ### E - Four Segments
 <details> 
   <summary>Hint</summary>   
