@@ -4,6 +4,16 @@ title: contest 2 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 2](../contests#contest-2) > ```{{page.title}}```
 
+### A - Petya and Exam
+<details> 
+  <summary>Hint</summary>
+  Los eventos interesantes son los momentos en que las preguntas se convierten en obligatorias. Diseña un algoritmo que se ponga en todos esos momentos interesantes.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ordenamos las preguntas por su tiempo en que se vuelven obligatorias. Iteramos sobre las preguntas y mantenemos contadores sobre la cantidad de preguntas obligatorias easy y hard que hay que hacer. Sea t el instante en que un grupo de preguntas se vuelven obligatorias. Un momento interesante es t-1 (uno antes que se vuelvan obligatorias), en dicho instante se maximiza el tiempo disponible para resolver las preguntas obligatorias que vienen antes. Si en t-1 alcanzamos a hacer todas las obligatorias, el tiempo sobrante lo gastamos codiciosamente en las preguntas fáciles y el resto en las difíciles que sobran. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1282C_PetyaAndExam.cpp">Código de ejemplo</a>
+</details>
+
 ### B - a-Good String
 <details> 
   <summary>Hint</summary>
