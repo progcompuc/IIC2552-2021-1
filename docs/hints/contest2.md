@@ -25,6 +25,24 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/AGoodString.cpp">Código de ejemplo</a>
 </details>
 
+### C - The Queue
+<details> 
+  <summary>Hint 1</summary>
+  Por simplificidad, notar que podemos ignorar toda la gente que llega un tiempo >= tf.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Si hubiese algún instante en que pudiesemos llegar y esperar 0, significa que hay una ventana de tiempo entre ts y tf de ancho >= 1 durante la cual la recepcionista está desocupada. Esa ventana tiene cota por la derecha ya sea el instante de llegada de alguien, o bien tf. Podemos cubrir todos esos casos considerando cada instante que llega alguien menos 1, o bien el instante en que se va la última persona (ignorando los que llegan >= tf).
+</details>
+<details> 
+  <summary>Hint 3</summary>
+  Si no fuese posible esperar 0, en cualquier instante que lleguemos siempre quedaremos ubicados atrás de alguien en la cola. Podemos ponernos en todos esos casos suponiendo que llegamos en cada instante que llega alguien menos 1 (el menos 1 es para minimizar la espera).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Según lo explicado en los hints, básicamente los únicos instantes interesantes son los tiempos de llegadas menos 1 de cada persona que llega en un t <= tf, o bien el instante en que se desocupa la última persona. Hacemos una simulación de la cola con una queue y la secuencia de instantes de llegada de la gente. Antes de procesar el instante t, sacamos de la cola todos los que se van antes de t (hasta t-1). Ahí vemos qué pasaría si llegamos justo en t-1 y actualizamos la respuesta. Un caso borde es que nadie llegue <= tf. En ese caso es obvio que la espera es 0 (basta llegar en ts y estamos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/767B_TheQueue.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Powerful Array
 <details> 
   <summary>Hint</summary>
