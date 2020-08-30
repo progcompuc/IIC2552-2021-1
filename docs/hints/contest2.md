@@ -86,6 +86,21 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheyAreEverywhere.cpp">Código de ejemplo</a>
 </details>
 
+### H - Rotation Matching
+<details> 
+  <summary>Hint 1</summary>
+  Notar que el problema se simplifica si asumimos que una permutación es fija, la otra se gira y sólo se puede girar hacia la derecha.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Si queremos que dos números queden matcheados, existe un único giro válido hacia la derecha de la permutación girable para dejarlos matcheados.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Iteramos de 1 a N y calculamos el giro único que deja el par de valores matcheados. El giro que maximiza la cantidad de matches es el óptimo. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1365C_RotationMatching.cpp">Código de ejemplo</a>
+</details>
+
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
