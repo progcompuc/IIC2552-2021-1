@@ -40,7 +40,7 @@ title: contest 2 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Según lo explicado en los hints, básicamente los únicos instantes interesantes son los tiempos de llegadas menos 1 de cada persona que llega en un t <= tf, o bien el instante en que se desocupa la última persona. Hacemos una simulación de la cola con una queue y la secuencia de instantes de llegada de la gente. Antes de procesar el instante t, sacamos de la cola todos los que se van antes de t (hasta t-1). Ahí vemos qué pasaría si llegamos justo en t-1 y actualizamos la respuesta. Un caso borde es que nadie llegue <= tf. En ese caso es obvio que la espera es 0 (basta llegar en ts y estamos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/767B_TheQueue.cpp">Código de ejemplo</a>
+  Según lo explicado en los hints, básicamente los únicos instantes interesantes son los tiempos de llegadas menos 1 de cada persona que llega en un t <= tf, o bien el instante en que se desocupa la última persona. Hacemos una simulación de la cola con una queue y la secuencia de instantes de llegada de la gente. Antes de procesar el instante t, sacamos de la cola todos los que se van antes de t (hasta t-1). Ahí vemos qué pasaría si llegamos justo en t-1 y actualizamos la respuesta. Lo mismo para el instante en que se va la última persona. Un caso borde es que nadie llegue <= tf. En ese caso es obvio que la espera es 0 (basta llegar en ts y estamos). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/767B_TheQueue.cpp">Código de ejemplo</a>
 </details>
 
 ### D - Powerful Array
