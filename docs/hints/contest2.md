@@ -28,7 +28,7 @@ title: contest 2 - hints y códigos de ejemplo
 ### C - The Queue
 <details> 
   <summary>Hint 1</summary>
-  Por simplificidad, notar que podemos ignorar toda la gente que llega un tiempo >= tf.
+  Por simplicidad, notar que podemos ignorar toda la gente que llega un tiempo >= tf.
 </details>
 <details> 
   <summary>Hint 2</summary>
