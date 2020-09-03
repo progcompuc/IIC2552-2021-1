@@ -48,7 +48,7 @@ title: contest 3 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Si en cada nodo guardamos el valor y la profundidad inversa (empezando desde 0 en las hojas), podemos realizar distintas operaciones en la unión de dos nodos dependiendo de la profundidad en la que se produzca la unión, es decir, si la profundidad es par unimos con or y si es impar unimos con xor. Ambas operaciones son compatibles con un Segment Tree y la complejidad final es O(m log(2^n))
+  Si en cada nodo guardamos el valor y la profundidad inversa (empezando desde 0 en las hojas), podemos realizar distintas operaciones en la unión de dos nodos dependiendo de la profundidad en la que se produzca la unión, es decir, si la profundidad es par unimos con or y si es impar unimos con xor. Ambas operaciones son compatibles con un Segment Tree y la complejidad final es O(m log(2^n)). Ojo que para que de accepted tal vez sea necesario el uso de fast input en c++.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/XeniaAndBitOperations.cpp">Código de ejemplo</a>
 </details>
 
