@@ -44,18 +44,18 @@ Ejemplo de secuencia de pasos para resolver un problema en C++ en Windows usando
 
 ## Tutoriales para aprender C++
 - [C++ for Python Programmers](https://runestone.academy/runestone/books/published/cpp4python/index.html) **(\<\<\<\< por si vienes de Python)**
+- [C++ Tutorial (SOLO LEARN: EVERYONE CAN CODE)](https://www.sololearn.com/Course/CPlusPlus/)
 - <http://www.cplusplus.com/doc/tutorial/>
 - <https://www.hackerrank.com/domains/cpp>
-- INPUT / OUTPUT:
-	- [Yet again on C++ input/output](http://codeforces.com/blog/entry/5217)
-	- [¿Qué es mejor para leer input / imprimir output? cin/cout vs printf/scanf](http://www.cplusplus.com/forum/beginner/34165/)
-- [Documentación Oficial de C++](http://www.cplusplus.com/reference/ )
-- [C++ Tutorial (SOLO LEARN: EVERYONE CAN CODE)](https://www.sololearn.com/Course/CPlusPlus/)
 - [LearnCpp](http://www.learncpp.com/)
+- [Documentación Oficial de C++](http://www.cplusplus.com/reference/)
 - (youtube) [Intro a C++](https://youtu.be/pqWsOsfGKA0)
 - (youtube) [Intro a la Programación Competitiva en C++](https://youtu.be/zTUJFG34Tyw)
 - (youtube) [Estructuras básicas en C++](https://youtu.be/OldL5e5eGmY)
 - (youtube) [C++ Programming Video Tutorials For Beginners [ Complete Series ]](https://www.youtube.com/playlist?list=PLfVsf4Bjg79Cu5MYkyJ-u4SyQmMhFeC1C )
+- INPUT / OUTPUT:
+	- [Yet again on C++ input/output](http://codeforces.com/blog/entry/5217)
+	- [¿Qué es mejor para leer input / imprimir output? cin/cout vs printf/scanf](http://www.cplusplus.com/forum/beginner/34165/)
  
 ## Tips de implementación en C++ (muy útiles en progcomp)
 - Cosas útiles que deberían saber de **C++11 (PARA ESCRIBIR CÓDIGOS MÁS CORTOS Y ELEGANTES)**:
