@@ -43,6 +43,7 @@ Ejemplo de secuencia de pasos para resolver un problema en C++ en Windows usando
 	- el output quedará guardado en el archivo output.txt
 
 ## Tutoriales para aprender C++
+- [C++ for Python Programmers](https://runestone.academy/runestone/books/published/cpp4python/index.html) **(\<\<\<\< por si vienes de Python)**
 - <http://www.cplusplus.com/doc/tutorial/>
 - <https://www.hackerrank.com/domains/cpp>
 - INPUT / OUTPUT:
