@@ -41,6 +41,17 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/RangeMinimumQuery.cpp">Código de ejemplo</a>
 </details>
 
+###  - Xenia and Bit Operations
+<details> 
+  <summary>Hint</summary>
+  Pinesen en cómo construir un nodo para poder resolver el problema con un Segment Tree
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Si en cada nodo guardamos el valor y la profundidad inversa (empezando desde 0 en las hojas), podemos realizar distintas operaciones en la unión de dos nodos dependiendo de la profundidad en la que se produzca la unión, es decir, si la profundidad es par unimos con or y si es impar unimos con xor. Ambas operaciones son compatibles con un Segment Tree y la complejidad final es O(m log(2^n))
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/XeniaAndBitOperations.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
