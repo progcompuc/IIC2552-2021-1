@@ -4,6 +4,21 @@ title: contest 3 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 3](../contests#contest-3) > ```{{page.title}}```
 
+### A - Ball
+<details> 
+  <summary>Hint 1</summary>
+  Piensen un una forma de ordenar los datos tal que usando alguna estructura para cada persona podamos saber rápidamente si existe alguien que tenga todas las características mayores.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Una posible idea es ordenar a las personas de forma decreciente en una de las características (por ejemplo B) e ir manteniendo en una estructura ordenadas según una segunda características (por ejemplo I) las terceras características (por ejemplo R). Piensen cómo mantener esto y en qué estructura ayudaría a saber si hay alguien dominante rápidamente.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Siguiendo la idea del hint 2, recorriendo de forma decreciente en una de las características podemos mantener un Segment Tree donde el índice indica el orden en la 2a característica y los valores corresponden a la 3a característica. De esta forma con un query de máximo al segmento (i, end) donde i corresponda a uno más que el valor de la persona que se revisa actualmente, si el mayor valor es mayor que el valor de la 3a característica actualmente entonces debe haber una persona con mayores valores en cada característica.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Ball.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Update the array!
 <details> 
   <summary>Hint</summary>
