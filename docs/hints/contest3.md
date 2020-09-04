@@ -41,7 +41,7 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/RangeMinimumQuery.cpp">Código de ejemplo</a>
 </details>
 
-###  - Xenia and Bit Operations
+### G - Xenia and Bit Operations
 <details> 
   <summary>Hint</summary>
   Pinesen en cómo construir un nodo para poder resolver el problema con un Segment Tree
