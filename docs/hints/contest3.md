@@ -19,6 +19,20 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Ball.cpp">Código de ejemplo</a>
 </details>
 
+### B - D-query
+<details> 
+  <summary>Hint</summary>
+  Piensa en una forma de ordenar las queries, de tal manera que al ir iterando sobre ellas puedas ir actualizando una estructura de datos que te permita contar cuántos números están activos (teniendo cuidado de nunca activar números duplicados simultáneamente).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Lo que hacemos es ordenar las queries (L,R) de forma creciente en R. Además, creamos un fenwick tree de tamaño N en el cual vamos trackeando con 0s y 1s los números del arreglo actualmente activos (inicialmente partimos con puros 0s, i.e. ningún número activo). Luego vamos iterando sobre las queries (crecientes en R) y para cada query hacemos avanzar un puntero r hasta alcanzar el R actual, y en cada paso activamos el número r-ésimo (sumamos 1 en la posición r-ésima del fenwick tree, indicando que el número r-ésimo está activo), <strong>PERO</strong> si el número r-ésimo ya estaba activo en una posición anterior, lo desactivamos (sumamos -1 en su posición anterior). De esta manera si un número está duplicado, siempre mantenemos activa la posición más a la derecha en la que aparece. Con eso logramos que se cumpla la invariante de que de todos los distintos números dentro del intervalo [1,R] estén activados en sus respectivas posiciones más a la derecha (dentro de [1,R]), y todo el resto está desactivado. Luego, para saber cuántos números distintos hay consultamos al fenwick tree la suma acumulada de 1s en el intervalo [L,R]. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/DQUERY_D-query.cpp">Código de ejemplo</a>
+</details>
+<details> 
+  <summary>Solución Alternativa + código</summary>
+  El problema se puede hacer trivialmente también aplicando el <a href="../resources/sqrtdecomp">algoritmo de MO</a>. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/SPOJ/DQUERY_D-query_v2.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Update the array!
 <details> 
   <summary>Hint</summary>
