@@ -106,7 +106,7 @@ title: contest 3 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Hint 3</summary>
-  Si para cada par (i, cota) tenemos precomputado el siguiente choque (i', cota'), la query (X, B, E) se podría resolver de la siguiente manera: primer encontrar el primer choque, si ocurre pasado de E, entonces no hay choques entre B y E y el cálculo es trivial, si hay choque, entonces nos paramos en el choque (i, cota) y seguimos los punteros al siguiente choque (i', cota') y así sucesivamente hasta llegar al último choque <= E, y luego ahí es trivial calcular el dinero final. El problema de esto es que en el peor caso podría pasar que hay que seguir muchos punteros y eso podría dar TLE. Piensa en una forma de optimizar este proceso, quizás precomputando saltos exponenciales de punteros.
+  Si para cada par (i, cota) tenemos precomputado el siguiente choque (i', cota'), la query (X, B, E) se podría resolver de la siguiente manera: primero encontrar el primer choque, si ocurre pasado de E, entonces no hay choques entre B y E y el cálculo es trivial, si hay choque, entonces nos paramos en el choque (i, cota) y seguimos los punteros al siguiente choque (i', cota') y así sucesivamente hasta llegar al último choque <= E, y luego ahí es trivial calcular el dinero final. El problema de esto es que en el peor caso podría pasar que hay que seguir muchos punteros y eso podría dar TLE. Piensa en una forma de optimizar este proceso, quizás precomputando saltos exponenciales de punteros.
 </details>
 <details> 
   <summary>Solución + código</summary>
