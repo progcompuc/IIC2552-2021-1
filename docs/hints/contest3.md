@@ -70,6 +70,21 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/RangeMinimumQuery.cpp">Código de ejemplo</a>
 </details>
 
+### F - Gravel
+<details>
+  <summary>Hint 1</summary>
+  Este problema es similar al B - update the array, tenemos updates sobre rangos y consultas puntuales. La diferencia es que acá los updates y consultas pueden estar intercalados.
+</details>
+<details>
+  <summary>Hint 2</summary>
+  Al igual que en el problema B - update the array, podemos usar el concepto de <a href="https://www.geeksforgeeks.org/difference-array-range-update-query-o1/">difference array</a>, sin embargo, como acá tenemos updates y consultas intercalados, recalcular un difference array a cada rato daría TLE. ¿Se te ocurre alguna forma de implementar el mismo concepto de difference array pero con una estructura que permita hacer updates y consultas de forma eficiente?
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Usamos un fenwick tree (a.k.a. bit) para simular un difference array dinámico. Cuando nos piden hacer un update por rango, hacemos bit.add(l,k) y bit.add(r+1,-k), y cuando nos hacen una consulta puntual consultamos con bit.psq(p). La complejidad es O(M log N). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/SPREAD_Gravel.cpp">Código de ejemplo</a>
+</details>
+
+
 ### G - Xenia and Bit Operations
 <details> 
   <summary>Hint</summary>
