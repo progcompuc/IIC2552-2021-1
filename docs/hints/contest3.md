@@ -84,7 +84,6 @@ title: contest 3 - hints y códigos de ejemplo
   Usamos un fenwick tree (a.k.a. bit) para simular un difference array dinámico. Cuando nos piden hacer un update por rango, hacemos bit.add(l,k) y bit.add(r+1,-k), y cuando nos hacen una consulta puntual consultamos con bit.psq(p). La complejidad es O(M log N). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codechef/SPREAD_Gravel.cpp">Código de ejemplo</a>
 </details>
 
-
 ### G - Xenia and Bit Operations
 <details> 
   <summary>Hint</summary>
@@ -95,6 +94,25 @@ title: contest 3 - hints y códigos de ejemplo
   Si en cada nodo guardamos el valor y la profundidad inversa (empezando desde 0 en las hojas), podemos realizar distintas operaciones en la unión de dos nodos dependiendo de la profundidad en la que se produzca la unión, es decir, si la profundidad es par unimos con or y si es impar unimos con xor. Ambas operaciones son compatibles con un Segment Tree y la complejidad final es O(m log(2^n)). Ojo que para que de accepted tal vez sea necesario el uso de fast input en c++.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/XeniaAndBitOperations.cpp">Código de ejemplo</a>
 </details>
+
+### H - Cut Inequality Down
+<details> 
+  <summary>Hint 1</summary>
+  Si estamos parados en el mes B con un ingreso inicial de X (L <= X <= U), si dibujamos la curva de nuestro ingreso acumulado mensual mes a mes (X + la sumatoria de los A hasta el mes actual) ignorando las cotas U y L, notaremos que la curva a veces choca con la cota L y a veces con la cota U. Notar que el instante que nos interesa encontrar es el primer choque (el mes del choque y con cuál de las 2 cotas chocamos). De ahí en adelante el proceso se puede pensar como ir saltando de choque en choque, hasta llegar al último choque que no se pase del mes E. Desde ese punto hasta E no hay choques, así que ahí es fácil calcular el dinero total en el mes E.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Si estamos en el mes B con un ingreso inicial de X, ¿cómo podemos encontrar el mes y la cota del siguiente choque? Una forma de verlo es pensar en una estrategia para encontrar el primer choque con cada cota (U y L) suponiendo que la otra cota no existe, y el primero de los dos que ocurra es el siguiente choque.
+</details>
+<details> 
+  <summary>Hint 3</summary>
+  Si para cada par (i, cota) tenemos precomputado el siguiente choque (i', cota'), la query (X, B, E) se podría resolver de la siguiente manera: primer encontrar el primer choque, si ocurre pasado de E, entonces no hay choques entre B y E y el cálculo es trivial, si hay choque, entonces nos paramos en el choque (i, cota) y seguimos los punteros al siguiente choque (i', cota') y así sucesivamente hasta llegar al último choque <= E, y luego ahí es trivial calcular el dinero final. El problema de esto es que en el peor caso podría pasar que hay que seguir muchos punteros y eso podría dar TLE. Piensa en una forma de optimizar este proceso, quizás precomputando saltos exponenciales de punteros.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para cada mes i y cota (U o L) precomputamos el siguiente choque (i', cota'). Esto se puede hacer con dos búsquedas binarias que en el predicado usen un sparse table de máximo o mínino sobre un arreglo accA (los ingresos de A acumulados). Para pegarnos saltos exponenciales, podemos crear un tercer sparse table que implemente <a href="https://youtu.be/kOfa6t8WnbI?t=405">binary lifting</a> sobre los punteros obtenidos anteriormente. Para responder las Q queries (X,B,E) podemos hacer una búsqueda binaria inicial para encontrar el primer choque, luego hacer binary lifting para encontrar el último choque que no se pasa de E, y luego cálcular el último cachito hasta E en O(1) haciendo restas de sumas acumuladas. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Matcomgrader/CutInequalityDown.cpp">Código de ejemplo</a>
+</details>
+
 
 <!-- <details> 
   <summary>Hint</summary>   
