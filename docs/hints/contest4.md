@@ -10,7 +10,7 @@ title: contest 4 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Hint 2</summary>
-  Si una celda marca +1 entonces fue actualizada una cantidad par de veces, sólo hay 2 formas de que esto pase, que su fila y columna respectivas ambas hayan sido actualizadas una cantidad par de veces o que ambas hayan sido actualizadas una cantidad impar de veces (de esta forma la suma es par). De la misma forma, si la celda marca -1, la suma debe ser impar, por lo que una debe ser impar y la otra par. Piensen en cómo llevar registro de estas implicancias de forma que sea fácil chequear en caso de una contradicción.
+  Si una celda es igual en ambos TROYS entonces fue actualizada una cantidad par de veces, sólo hay 2 formas de que esto pase, que su fila y columna respectivas ambas hayan sido actualizadas una cantidad par de veces o que ambas hayan sido actualizadas una cantidad impar de veces (de esta forma la suma es par). De la misma forma, si la celda marca distinto entre los TROYS, la suma debe ser impar, por lo que una debe ser impar y la otra par. Piensen en cómo llevar registro de estas implicancias de forma que sea fácil chequear en caso de una contradicción.
 </details>
 <details> 
   <summary>Solución + código</summary>
@@ -53,12 +53,19 @@ title: contest 4 - hints y códigos de ejemplo
 
 <!-- ### H - Cut Inequality Down
 <details> 
+  <summary>Hint 1</summary>
+  Piensen en una forma de procesar las queries en orden de tal forma que podamos realizar sólo una pasada por cada momento temporal
+</details>
+<details> 
+  <summary>Hint</summary>   
+</details>
+<details> 
   <summary>Hint</summary>   
 </details>
 <details> 
   <summary>Solución + código</summary>
   <a href="">Código de ejemplo</a>
-</details> -->
+</details>
 
 <!-- <details> 
   <summary>Hint</summary>   
