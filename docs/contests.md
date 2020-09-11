@@ -30,7 +30,7 @@ Septiembre 04, 10 días, [link a **contest**](https://vjudge.net/contest/392902)
 **Tópicos**: [Segment Tree Lazy, Fenwick Tree 2D, Union Find](resources/data_structures)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest4)
 
 
 [Index](index) > ```{{page.title}}```
