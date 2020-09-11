@@ -51,6 +51,15 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/UnDetected.cpp">Código de ejemplo</a>
 </details>
 
+<!-- ### H - Cut Inequality Down
+<details> 
+  <summary>Hint</summary>   
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  <a href="">Código de ejemplo</a>
+</details> -->
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
