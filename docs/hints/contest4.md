@@ -40,6 +40,17 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/MatrixSumation.cpp">Código de ejemplo</a>
 </details>
 
+### F - UnDetected
+<details> 
+  <summary>Hint</summary>
+  Podemos pensar que el momento en que ya no voy a ser capaz de cruzar el campo es cuando los robots activados cubren completamente el campo en una "linea", es decir separan la mitad inferior de la superior. Deben pensar en una forma de ir actualizando una estructura para cada sensor extra que agreguen de forma de poder detectar cuando se forme una barrera rápidamente.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos pensar en N + 2 conjuntos en un Union Find, uno por cada sensor y uno para el lado izquierdo y derecho del campo. Cada vez que activamos un sensor verificamos si choca con alguno de los lados o con alguno de los sensores activos, en caso de hacerlo unimos los conjuntos correspondientes. Si en algún momento el conjunto correspondiente al borde izquierdo y al derecho son unidos, sabemos que se formó una barrera y ya no se podrá cruzar.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/UnDetected.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
