@@ -18,6 +18,17 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TROYQuery.cpp">Código de ejemplo</a>
 </details>
 
+### D - K12-Bored of Suffixes and Prefixes
+<details> 
+  <summary>Hint</summary>
+  Notemos que si mantenemos la matriz con valores correspondientes al número de cada letra (A: 1, B: 2, ...) en vez de la letra en si, la consulta que se pide es equivalente a simplemente la suma en esa región.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos mantener registro segun el Hint en un Fenwick Tree 2D. Cada update será realizar N updates a lo largo de la fila/columna correspondiente. Cada consulta será devolver la suma en esa región.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/K12-BoredOfSuffixesAndPrefixes.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
