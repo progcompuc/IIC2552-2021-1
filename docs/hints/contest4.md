@@ -51,20 +51,26 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/UnDetected.cpp">Código de ejemplo</a>
 </details>
 
-<!-- ### H - Cut Inequality Down
+### H - Cut Inequality Down
 <details> 
   <summary>Hint 1</summary>
-  Piensen en una forma de procesar las queries en orden de tal forma que podamos realizar sólo una pasada por cada momento temporal
+  Piensen en una forma de procesar las queries en orden de tal forma que con realizar sólo una pasada por cada momento temporal podamos tener la respuesta a todas las queries.
 </details>
 <details> 
-  <summary>Hint</summary>   
+  <summary>Hint 2</summary>
+  Una opción es ir avanzando el tiempo desde el primer mes hasta el último procesando cuando corresponda distintos eventos. Estos pueden ser, el inicio de una query (con su monto inicial), y el fin de una query, donde guardamos el valor actual que tiene la query en ese momento. Debemos poder llevar cuenta del valor luego de las perdidas/ganancias en cada mes, sin pasarnos de los límites.
 </details>
 <details> 
-  <summary>Hint</summary>   
+  <summary>Hint 3</summary>
+  Notemos que es muy ineficiente ir sumando la ganancia / pérdida de cada mes a cada query activa, esa solución es cuadrática y no pasa en tiempo, por lo que debemos optimizarla. Una opción es en vez de sumar a cada una, mantener una variable de offset que me guarde las ganancias acumuladas hasta el momento actual, luego el valor que tengo guardado más el offset sería el verdadero valor de la query. Sin embargo también debemos ser capaces de ajustar cuando los valores de las queries activas se pasen de los límites superior o inferior. Una forma de hacer esto es mantener los valores de las queries en un set ordenado, mientras el valor más grande se pase del límite superior, sacamos del set, ajustamos y volvemos a insertar, similar en el límite inferior. Notemos que aún hay problemas de tiempo en esta solución, pues en el peor caso cada query activa se pasa de los límites en cada tiempo, piensen en una forma de no tener que modificar tantas veces el set.
+</details>
+<summary>Hint 4</summary>
+  Una opción para arreglar el problema que se evidenció al final del hint 3 es usar un Union Find, de tal forma de sólo guardar en el set un representante de cada conjunto del Union Find. Inicialmente podemos tener tantos conjuntos como Queries, sim embargo cuando sacamos cosas del set que se pasen del límite inferior, sabemos que van a tener el mismo valor de ahí en adelante, por lo tanto nos basta con volver a ingresar sólo uno de los que se hayan pasado, unir los conjuntos en el Union Find y al final de una query se guarda el valor que tiene el índice del padre de la query en el union find. Esto mejora la complejidad pues a lo más se unen una cantidad igual a la cantidad de queries.
 </details>
 <details> 
   <summary>Solución + código</summary>
-  <a href="">Código de ejemplo</a>
+  La solución consiste en implementar todas las ideas de los hints. Podemos implementar el orden de las queries en una priority_queue donde ordeno los inicios y términos de queries. Mantendo en cada momento un set de pares ordenados con el valor de cada query activa y su índice, juntamos según el hint 3 si se pasan en algún momento y retorno según corresponda.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Matcomgrader/CutInequalityDown2.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
