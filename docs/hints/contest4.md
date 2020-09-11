@@ -29,6 +29,17 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/K12-BoredOfSuffixesAndPrefixes.cpp">Código de ejemplo</a>
 </details>
 
+### E - Matrix Summation
+<details> 
+  <summary>Hint</summary>
+  Deben ocupar directamente una de las estructuras explicadas en clase en este problema.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta con ocupar directamente un Fenwick Tree 2D para sumas.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/MatrixSumation.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
