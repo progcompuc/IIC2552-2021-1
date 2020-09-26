@@ -24,6 +24,7 @@ title: contest 5 - hints y códigos de ejemplo
   <summary>Hint 1</summary>
   Notemos que en vez de considerar el grafo completo, basta considerar el MST obtenido al usar los C_i como pesos (en vez de 2^{C_i}). Esto pues si obtenemos el MST ordenando agregando desde las aristas de menor peso, entonces cualquier arista que no esté en el MST será subóptima, pues si no fue agregada al MST, por la construcción de Kruskal debe existir un camino entre los nodos que une con sólo costos estrictamente menores. Y como en potencias de 2 distintas se cumple que la suma de potencias menores a k siempre es menor que 2^k, cualquiera de estos caminos será óptimo frente a pasar por la arista que no está en el MST.
 </details>
+<details> 
 <summary>Hint 2</summary>
   Usando el MST del grafo, para obtener la solución tenemos que saber la suma de todas las distancias de pares de nodos en binario. Notemos que podemos obtener las veces que cada arista en el MST será usada usando un par de dfs. Primero usamos un dfs que precalcule los tamaños de cada subárbol y el segundo dfs ocupará esos valores para calcular cuantas veces se usa cada arista en el valor pedido (las veces que se usa una arista entre u y v es el tamaño del subárbol de v (S_v) multiplicado por su complemento N - S_v).
 </details>
