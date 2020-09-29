@@ -81,6 +81,17 @@ title: contest 5 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/BMW.cpp">Código de ejemplo</a>
 </details>
 
+### G - Transportation system
+<details> 
+  <summary>Hint</summary>
+  Para encontrar la cantidad de estados basta encontrar la cantidad de componentes conexas en el grafo implícito que sólo contiene aristas entre ciudades a distancia menor a r. Buscar componentes conexas se puede hacer fácilmente con un DFS que marque visitados. Piensen en una forma de buscar el resto con lo visto en clases.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para encontrar la menor extensión de caminos basta aplicar MST sobre el grafo implícito donde todos son unidos con todos, la única diferencia es que en vez de acumular las distancias en una variable global, debemos acumular por separado aquellos costos de caminos y trenes.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/UVA/TransportationSystem.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
