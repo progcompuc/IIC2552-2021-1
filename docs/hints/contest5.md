@@ -4,6 +4,17 @@ title: contest 5 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 5](../contests#contest-5) > ```{{page.title}}```
 
+### A - Edges in MST
+<details> 
+  <summary>Hint</summary>
+  En el algoritmo de kruskal para obtener el MST de un grafo, se procesan las aristas en orden de pesos y viendo la conectividad se llega siempre a la solución. La única parte en que podría haber más de una solución para un MST es si hay más de una arista con el mismo peso (y por tanto el procesamiento en kruskal es arbitrario en orden). Piensen en una forma de procesar las aristas con mismo peso simultáneamente para ver si cada una puede ser parte de una solución.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta con usar el hint y simular el algoritmo de kruskal pero procesando todas las aristas del mismo peso simultáneamente. Si una arista es la única de su peso que es aceptada por kruskal, entonces está en todos los MST (any), si hay más de una aceptada del peso entonces es al menos en un MST (at least one). Si no es aceptada es none.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/EdgesInMST.cpp">Código de ejemplo</a>
+</details>
+
 ### B - Tree 2
 <details> 
   <summary>Hint 1</summary>
