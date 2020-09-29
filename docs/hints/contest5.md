@@ -41,6 +41,16 @@ title: contest 5 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MinimumSpanningTreeForEachEdge.cpp">Código de ejemplo</a>
 </details>
 
+### D - Minimum Spanning Tree
+<details> 
+  <summary>Hint</summary>
+  Problema de implementación directa de MST.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/MST.cpp">Código de ejemplo</a>
+</details>
+
 ### E - Roads in HackerLand
 <details> 
   <summary>Hint 1</summary>
