@@ -92,6 +92,16 @@ title: contest 5 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/UVA/TransportationSystem.cpp">Código de ejemplo</a>
 </details>
 
+### H - Lowest Common Ancestor
+<details> 
+  <summary>Hint</summary>
+  Problema de implementación directa de LCA.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/LowestCommonAncestor.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
