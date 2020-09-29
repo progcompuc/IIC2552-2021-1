@@ -66,6 +66,21 @@ title: contest 5 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/HackerRank/RoadsInHackerLand.cpp">Código de ejemplo</a>
 </details>
 
+### F - BMW
+<details> 
+  <summary>Hint 1</summary>
+  Notemos que el camino que buscamos es aquel donde el peso de la arista de menor peso sea máximo. Es decir, el camino con aristas de mayor peso (no necesariamente la suma será mayor, sino que el mínimo es mayor).
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Se puede demostrar que todas las aristas del camino que buscamos estarán presentes en el Maximum Spanning Tree del grafo dado. Para encontrar el Maximum Spaning Tree basta ocupar el mismo algoritmo visto para el mínimo pero ordenando las arístas de mayor a menor peso.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución consiste en implementar un dfs que busque el camino con mayor mínimo, este dfs sólo funciona en tiempo lineal si el grafo sobre el que trabaja es un árbol sin ciclos, por eso trabajamos sobre el Maximum Spanning Tree según el hint 2.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/BMW.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
