@@ -11,7 +11,7 @@ title: contest 5 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Basta con usar el hint y simular el algoritmo de kruskal pero procesando todas las aristas del mismo peso simultáneamente. Si una arista es la única de su peso que es aceptada por kruskal, entonces está en todos los MST (any), si hay más de una aceptada del peso entonces es al menos en un MST (at least one). Si no es aceptada es none.
+  Basta con usar el hint y simular el algoritmo de kruskal pero procesando todas las aristas del mismo peso simultáneamente. Si hay más de una aceptada del peso entonces es al menos en un MST (at least one), para estar en todos los MST posibles se debe cumplir además que sin usarla el grafo queda desconexo necesarimente, para eso basta encontrar las aristas de corte en cada paso. Si no es aceptada es none.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/EdgesInMST.cpp">Código de ejemplo</a>
 </details>
 
