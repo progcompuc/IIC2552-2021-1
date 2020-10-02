@@ -29,14 +29,14 @@ Agosto 28, 10 días, [link a **contest**](https://vjudge.net/contest/391596)\\
 Septiembre 04, 10 días, [link a **contest**](https://vjudge.net/contest/392902)\\
 **Tópicos**: [Segment Tree Lazy, Fenwick Tree 2D, Union Find](resources/data_structures)\\
 **Puntos**: 4, ?, ?, 3, 2, 4, ?, 8\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest4)
 
 ## Contest 5
 Septiembre 11, 13 días, [link a **contest**](https://vjudge.net/contest/394087)\\
 **Tópicos**: [Grafos: MST (minimum spanning tree) y LCA (lowest common ancestor)](resources/graphs)\\
 **Puntos**: 5, 4, 5, 2, 4, 4, 3, 2\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest5)
 
 ## Contest 6
