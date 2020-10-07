@@ -29,7 +29,7 @@ title: contest 6 - hints y códigos de ejemplo
 ### E - Necklace
 <details> 
   <summary>Hint</summary>
-  Siempre que haya un camino donde todas las aristas no sean de corte, se podrá construir un necklace, esto pues al no ser de corte existe otro camino que completa el ciclo.
+  Siempre que haya un camino donde todas las aristas no sean de corte, se podrá construir un necklace, esto pues al no ser de corte existe otro camino que completa el ciclo para cada arista.
 </details>
 <details> 
   <summary>Solución + código</summary>
