@@ -26,6 +26,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/HedgeMazes.cpp">Código de ejemplo</a>
 </details>
 
+### E - Necklace
+<details> 
+  <summary>Hint</summary>
+  Siempre que haya un camino donde todas las aristas no sean de corte, se podrá construir un necklace, esto pues al no ser de corte existe otro camino que completa el ciclo.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta con encontrar y remover las aristas de corte y ver si después de ese proceso aún hay un camino entre S y T.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/ICPC/Necklace.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
