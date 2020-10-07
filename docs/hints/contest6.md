@@ -15,6 +15,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/GoodTravels.cpp">Código de ejemplo</a>
 </details>
 
+### D - Hegde Mazes
+<details> 
+  <summary>Hint</summary>
+  Si sólo existe un camino simple que une S y T entonces removiendo cualquier arista en el camino los nodos S y T quedarán desconectados, es decir, todas las aristas del camino que buscamos deben ser aristas de corte.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta saber si existe un camino entre S y T que use sólo aristas de corte, para esto podemos usar Union Find uniendo dos nodos si hay una arista de corte entre ellos. Luego la respuesta es si los nodos estan unidos en el union find o no.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/HedgeMazes.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
