@@ -37,6 +37,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/ICPC/Necklace.cpp">Código de ejemplo</a>
 </details>
 
+### H - Jobbery
+<details> 
+  <summary>Hint</summary>
+  Notemos que si construimos el grafo dirigido que modela las relaciones, si una persona es peligrosa, todas las personas en su misma componente fuertemente conexa también serán peligrosas, pues pueden llegar a la primera persona y por tanto a todas las que él llega.
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Podemos buscar las componentes fuertemente conexas y para cada una correr un dfs en todo el grafo desde un representante de la componente viendo a cuentos nodos se llega, si se llega a todos los N nodos, entonces todos los de la componente deben ser peligrosos.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Timus/Jobbery.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
