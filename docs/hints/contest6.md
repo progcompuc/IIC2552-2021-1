@@ -48,6 +48,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/CapitalCity.cpp">Código de ejemplo</a>
 </details>
 
+### G - Submerging Islands
+<details> 
+  <summary>Hint</summary>
+  Problema directo de contar puntos de articulación en el grafo
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Ojom usen un set para contar cuantos hay, si aumentan una variable contarán repetido.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/SubmergingIslands.cpp">Código de ejemplo</a>
+</details>
+
 ### H - Jobbery
 <details> 
   <summary>Hint</summary>
