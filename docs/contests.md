@@ -42,9 +42,9 @@ Septiembre 11, 13 días, [link a **contest**](https://vjudge.net/contest/394087)
 ## Contest 6
 Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/398634)\\
 **Tópicos**: [Grafos: SCC, Aristas de Corte y Puntos de Articulación](resources/graphs)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntos**: ?, ?, 5, 3, 4, ?, ?, 5\\
 **Puntaje Mínimo Esperado**: ?\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest6)
 
 
 [Index](index) > ```{{page.title}}```
