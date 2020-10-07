@@ -37,6 +37,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/ICPC/Necklace.cpp">Código de ejemplo</a>
 </details>
 
+### F - Capital City
+<details> 
+  <summary>Hint</summary>
+  Notemos que si una ciudad es candidata a ser capital, todas las ciudades en la misma componente fuertemente conexa deben serlo, luego basta con saber si alguna de las ciudades en cada componente fuertemente conexa puede ser capital.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Para chequear si una ciudad puede ser capital basta correr un DFS desde la cuidad en el grafo con las aristas invertidas, si se puede llegar a todos los nodos es porque todos podían llegar a ella por lo que puede ser capital.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/CapitalCity.cpp">Código de ejemplo</a>
+</details>
+
 ### H - Jobbery
 <details> 
   <summary>Hint</summary>
