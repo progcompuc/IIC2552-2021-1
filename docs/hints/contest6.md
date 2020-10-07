@@ -55,7 +55,7 @@ title: contest 6 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Ojom usen un set para contar cuantos hay, si aumentan una variable contarán repetido.
+  Ojo, usen un set para contar cuantos hay, si aumentan una variable contarán repetido.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/SubmergingIslands.cpp">Código de ejemplo</a>
 </details>
 
