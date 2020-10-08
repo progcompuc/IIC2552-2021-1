@@ -87,12 +87,16 @@ title: contest 6 - hints y códigos de ejemplo
 
 ### H - Jobbery
 <details> 
-  <summary>Hint</summary>
+  <summary>Hint 1</summary>
   Notemos que si construimos el grafo dirigido que modela las relaciones, si una persona es peligrosa, todas las personas en su misma componente fuertemente conexa también serán peligrosas, pues pueden llegar a la primera persona y por tanto a todas las que él llega.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Podriamos buscar las componentes fuertemente conexas y correr un dfs que cuente el alcance de cada una, pero esto no pasaría en tiempo. Pensemos en una forma de sólo hacer un dfs de conteo. Noten que siempre la primera componente fuertemente conexa que se encuentra con Tarjan será la más profunda en ese árbol de exploración. Además podemos notar que la componente que buscamos es la menos profunda en el grafo.
 </details>
 <details>
   <summary>Solución + código</summary>
-  Podemos buscar las componentes fuertemente conexas y para cada una correr un dfs en todo el grafo desde un representante de la componente viendo a cuentos nodos se llega, si se llega a todos los N nodos, entonces todos los de la componente deben ser peligrosos.
+   Usando los hints podemos ver que podemos aprovecharnos de la naturaleza del agloritmo de tarjan y buscar las componentes en el grafo inverso, de esta forma la primera que encontremos es la única candidata a contener a las personas peligrosas (pues es la más profunda del grafo inverso y por lo tanto la menos del grafo original). una vez encontrada corremos un dfs de conteo en el grafo normal y dejamos de buscar más componentes. si se contó que la componente llegaba a todo el grafo, devolvemos a sus miembros como respuesta.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Timus/Jobbery.cpp">Código de ejemplo</a>
 </details>
 
