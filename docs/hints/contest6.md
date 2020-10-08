@@ -4,6 +4,21 @@ title: contest 6 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 6](../contests#contest-6) > ```{{page.title}}```
 
+### A - Leaders
+<details> 
+  <summary>Hint 1</summary>
+  Notemos que de ser posible ir de un nodo a otro, para que haya un camino simple de largo impar podemos o ir directo pasando por una cantidad impar de aristas o pasar por una componente biconexa con un ciclo impar (la segunda opción siempre tendrá un camino simple que cumpla lo pedido). Si en el camino entre u y v se pasa por una componente biconexa con un ciclo impar la respuesta será siempre positiva, de lo contrario basta con bicolorear el grafo y ver si u y v son de colores distintos.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Para encontrar componentes biconexas con ciclo impar basta ocupar el mismo dfs que encuentra las componentes pero ir bicoloreando y recordando si los backedges iban a un nodo del mismo color o no, de hacerlo marcan un ciclo impar y al removerlas la componente tiene un ciclo impar.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La soluciön consiste en buscar bicomponentes con ciclos de largo impar y removerlas del grafo. Si dos nodos estaban conexos previo a la remoción y después no, es porque su camino pasaba por una de estas componentes por lo que la respuesta será "Yes". En caso de seguir conectadas la respuesta dependerá de si son del mismo color o no.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Leaders.cpp">Código de ejemplo</a>
+</details>
+
 ### C - Good Travels
 <details> 
   <summary>Hint</summary>
