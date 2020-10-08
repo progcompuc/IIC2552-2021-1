@@ -15,7 +15,7 @@ title: contest 6 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  La soluciön consiste en buscar bicomponentes con ciclos de largo impar y removerlas del grafo. Si dos nodos estaban conexos previo a la remoción y después no, es porque su camino pasaba por una de estas componentes por lo que la respuesta será "Yes". En caso de seguir conectadas la respuesta dependerá de si son del mismo color o no.
+  La solución consiste en buscar bicomponentes con ciclos de largo impar y removerlas del grafo. Si dos nodos estaban conexos previo a la remoción y después no, es porque su camino pasaba por una de estas componentes por lo que la respuesta será "Yes". En caso de seguir conectadas la respuesta dependerá de si son del mismo color o no.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Leaders.cpp">Código de ejemplo</a>
 </details>
 
