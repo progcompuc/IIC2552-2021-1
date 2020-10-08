@@ -19,6 +19,17 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Leaders.cpp">Código de ejemplo</a>
 </details>
 
+### B - Checkposts
+<details> 
+  <summary>Hint</summary>
+  Si es posible ir a un nodo y volver, entonces ambos deben pertenecer a la misma componente fuertmenete conexa.
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Basta con encontrar las componentes fuertemente conexas y calcular lo pedido usando las inesecciones de meno costo en cada una. El costo final será la suma de los menores costo y las formas de hacerlo será la multiplicación de cuantas intersecciones tenían ese menor costo en cada componente.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Checkposts.cpp">Código de ejemplo</a>
+</details>
+
 ### C - Good Travels
 <details> 
   <summary>Hint</summary>
