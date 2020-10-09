@@ -43,8 +43,15 @@ Septiembre 11, 13 días, [link a **contest**](https://vjudge.net/contest/394087)
 Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/398634)\\
 **Tópicos**: [Grafos: SCC, Aristas de Corte y Puntos de Articulación](resources/graphs)\\
 **Puntos**: 5, 3, 5, 3, 3, 4, 2, 5\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest6)
+
+## Contest 7
+Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/400285)\\
+**Tópicos**: [Grafos: Dinic y Flujo Máximo](resources/graphs)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
 
 
 [Index](index) > ```{{page.title}}```
