@@ -47,8 +47,15 @@ Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/398634)\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest6)
 
 ## Contest 7
-Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/400285)\\
+Octubre 09, 12 días, [link a **contest**](https://vjudge.net/contest/400285)\\
 **Tópicos**: [Grafos: Dinic y Flujo Máximo](resources/graphs)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
+
+## Contest 8
+Octubre 16, 12 días, [link a **contest**](https://vjudge.net/contest/401948)\\
+**Tópicos**: [Strings: Rolling Hashing, Trie](resources/strings)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
