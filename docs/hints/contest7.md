@@ -45,6 +45,21 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Otros/DominoArt.cpp">Código de ejemplo</a>
 </details>
 
+### F - Kill the Werewolf
+<details> 
+  <summary>Hint 1</summary>
+  Piensen en como contar los que no tienen oportunidad de ganar en vez de los que si la tengan
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Supongamos que analizamos las posibilidades de la i-ésima persona, suponinendo que todos los que la eligieron en primera fase votan por ella en 2a fase, la única forma de ganar es que con los otros votos mas el de la i-ésima persona haya alguien que acumule al menos tantos votos como la i-ésima. Luego para que no tenga oportunidad debe haber una forma de repartir los votos en que nadie llegue al límite de la cantidad de votos que recibe la i-ésima persona.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando los hints se analiza la posibilidad de cada persona 1 a 1, para chequear generamos un grafo bipartito con 2 nodos por persona para flujo máximo, unimos las personas que no eligieron a la i-ésima en primera fase con sus posibles votos. le damos capacidad 1 a todas las aristas de la fuente y de los posibles votos pero ajustamos las capacidades al destino para impedir que se pueda tener más o igual votos que los que tendrá la i-ésima persona. Si el flujo máximo es igual a la gente considerada en el grafo es porque pueden impedir que la i-ésima persona gane.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/KillTheWerewolf.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
