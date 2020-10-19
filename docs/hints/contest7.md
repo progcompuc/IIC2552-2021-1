@@ -34,6 +34,17 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/SurelyYouCongest.cpp">Código de ejemplo</a>
 </details>
 
+### E - Domino Art
+<details> 
+  <summary>Hint</summary>
+  Notemos que si coloreamos las celdas del tablero como ajedrez, una pieza de dominó siempre une celdas de colores opuestos, luego si existe una forma de cubrir con dominos entonces todas las celdas de color negro debe poder conectarse a una blanca sin traslapar.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando el hint podemos chequear la existencia de un cubrimiento con un problema de flujo donde unimos a la fuente las celdas de color negro con capacidad 1, luego unimos las celdas negras que nos importan a las blancas que nos importan adyacentes, luego unimos las blancas que nos importan al destino con capacidad uno, si el flujo es igual a la mitad de las celdas que nos importan entonces es posible cubrir la figura.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Otros/DominoArt.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
