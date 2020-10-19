@@ -19,6 +19,21 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/InCaseOfInvasion.cpp">Código de ejemplo</a>
 </details>
 
+### B - Surely You Congest
+<details> 
+  <summary>Hint 1</summary>
+  Se puede observar que si dos lugares tienen distancias mínimas al destino distintas entonces no hay forma de que choquen en el camino si van sólo por caminos óptimos.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Dado que tengamos las distancias al destino precalculadas (con un algoritmo como dijkstra), podemos asegurarnos de usar sólo aristas que sean óptimas usando aquellas que mantengan distancias óptimas del dijkstra a traves de ellas. A esta técnica se le conoce como usar el DAG de caminos óptimos.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Por el hint 1, podemos procesar las posiciones por distancia al destino pero procesando los que esten a distancias iguales al mismo tiempo, para saber cuantas personas pueden llegar a destino de las que se procesan en algún momento podemos plantear un problema de flujo máximo, podemos tirar aristas de flujo 1 a todas las posiciones que tengan misma distancia (1 por cada persona en ellas) además usamos aristas de capacidad 1 en los caminos óptimos del hint 2. A la respuesta se le suma el flujo máximo en cada procesamiento.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/SurelyYouCongest.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
