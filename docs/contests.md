@@ -49,7 +49,7 @@ Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/398634)\\
 ## Contest 7
 Octubre 09, 12 días, [link a **contest**](https://vjudge.net/contest/400285)\\
 **Tópicos**: [Grafos: Dinic y Flujo Máximo](resources/graphs)\\
-**Puntos**: 5, 5, ?, ?, 4, 5, ?, ?\\
+**Puntos**: 5, 5, ?, 3, 4, 5, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest7)
 
