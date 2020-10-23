@@ -61,5 +61,11 @@ Octubre 16, 12 días, [link a **contest**](https://vjudge.net/contest/401948)\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
 
+## Contest 9
+Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
+**Tópicos**: [Strings: KMP, Suffix Array](resources/strings)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
 
 [Index](index) > ```{{page.title}}```
