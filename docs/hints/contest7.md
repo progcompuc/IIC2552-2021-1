@@ -60,6 +60,21 @@ title: contest 7 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/KillTheWerewolf.cpp">Código de ejemplo</a>
 </details>
 
+### G - Hooligan
+
+<details>    
+  <summary>Hint 1</summary>
+  Obviamente, de partida nos conviene ponernos en el caso optimista de que el equipo 0 gana todos sus partidos pendientes.
+</details>
+<details>     
+  <summary>Hint 2</summary>
+  Pensar que cada par de equipos (i, j) involucra una candidad K_(i,j) de partidos pendientes entre ellos y por ende 2 x K_(i,j) puntos a repartir. Es decir, podemos verlo como que el par (i,j) debe "bombear" 2 x K_(i, j) puntos a i y j. Por otro lado, como queremos que el equipo 0 gane, si el equipo 0 tiene P_0 puntos y el equipo i tienes P_i puntos, entonces el equipo i a lo más puede recibir P_i - P_0 - 1 puntos.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Primero asumimos que el equipo 0 gana todos su partidos pendientes (hint 1). Luego armamos un grafo para maxflow según el hint 2: un source, una capa de nodos (i,j) correspondientes a pares de equipos ((N-2)x(N-1)/2 nodos), una capa de N-1 nodos (equipos) y un target. Las capacidades desde el source son los puntos pendientes a repartir por cada par de equipos, las capacidades hacia el target son las cotas P_i - P_0 - 1 de puntaje extra por equipo. Si el flujo máximo de la red es igual al total de puntaje pendiente, quiere decir que es posible jugar todos los partidos de tal manera que el equipo 0 gane. De lo contrario, no se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/12193_Hooligan.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
