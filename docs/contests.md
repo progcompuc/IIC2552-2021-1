@@ -48,9 +48,10 @@ Octubre 02, 12 días, [link a **contest**](https://vjudge.net/contest/398634)\\
 
 ## Contest 7
 Octubre 09, 12 días, [link a **contest**](https://vjudge.net/contest/400285)\\
+Pueden submitear el F acá: <https://www.urionlinejudge.com.br/judge/en/problems/view/2354>\\
 **Tópicos**: [Grafos: Dinic y Flujo Máximo](resources/graphs)\\
-**Puntos**: 5, 5, ?, 3, 4, 5, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntos**: 5, 5, ?, 3, 4, 5, 4, ?\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest7)
 
 ## Contest 8
