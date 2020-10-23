@@ -75,6 +75,18 @@ title: contest 7 - hints y códigos de ejemplo
   Primero asumimos que el equipo 0 gana todos su partidos pendientes (hint 1). Luego armamos un grafo para maxflow según el hint 2: un source, una capa de nodos (i,j) correspondientes a pares de equipos ((N-2)x(N-1)/2 nodos), una capa de N-1 nodos (equipos) y un target. Las capacidades desde el source son los puntos pendientes a repartir por cada par de equipos, las capacidades hacia el target son las cotas P_i - P_0 - 1 de puntaje extra por equipo. Si el flujo máximo de la red es igual al total de puntaje pendiente, quiere decir que es posible jugar todos los partidos de tal manera que el equipo 0 gane. De lo contrario, no se puede. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/12193_Hooligan.cpp">Código de ejemplo</a>
 </details>
 
+### H - Attacking Rooks
+
+<details>    
+  <summary>Hint</summary>
+  Podemos ver poner una torre como el equivalente de emparejar una subfila con una subcolumna. Luego maximizar las torres es equivalente a maximizar parejas (maximum bipartite matching).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+ Armamos un grafo bipartito donde un grupo son las subfilas y otro las subcolumnas, con aristas conectando subfilas con subcolumnas que tienen una celda en común. Luego resolvemos maximum bipartite matching con maxflow. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6525_AttackingRooks.cpp">Código de ejemplo</a>
+</details>
+
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
