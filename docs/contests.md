@@ -58,14 +58,22 @@ Pueden submitear el F acá: <https://www.urionlinejudge.com.br/judge/en/problems
 Octubre 16, 12 días, [link a **contest**](https://vjudge.net/contest/401948)\\
 **Tópicos**: [Strings: Rolling Hashing, Trie](resources/strings)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: _pending_
 
 ## Contest 9
 Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
 **Tópicos**: [Strings: KMP, Suffix Array](resources/strings)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: 5\\
+**Hints** y **códigos de ejemplo**: _pending_
+
+## Contest 10
+Octubre 30, 12 días, [link a **contest**](https://vjudge.net/contest/333057)\\
+**Tópicos**: [Geometry: dot product, cross product, polygon area](resources/geometry)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
+
 
 [Index](index) > ```{{page.title}}```
