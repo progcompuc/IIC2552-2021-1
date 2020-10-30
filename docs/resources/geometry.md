@@ -20,12 +20,14 @@ title: "Geometría"
   - [youtube: Dot Product & Angle Between Vectors](https://www.youtube.com/watch?v=p8BZTFNSKIw)
 
 ## Apuntes varios de Geometría 2D
-- [implementaciones varias de geometría 2D](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Geometry/Geometry2DUtils.cpp)
+- [apuntes de Benja](https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Material/Geometry/2D.cpp)
+- [apuntes de Pablo](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Geometry/Geometry2DUtils.cpp)
 - Video Repaso de Geometría (muy bueno): [youtube: Geometría Computacional [ICPCCL 2016]](https://youtu.be/nk5ejrBWORw?list=PL-c_98SOXhxaXMMfnemh2ihniZsj57L8-)
 - <https://cp-algorithms.com> (ir a la sección "Geometry")
 
 ## Apuntes varios de Geometría 3D
-- [implementaciones varias de geometría 3D](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Geometry/Geometry3DUtils.cpp)
+- [apuntes de Benja](https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Material/Geometry/3D.cpp)
+- [apuntes de Pablo](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Geometry/Geometry3DUtils.cpp)
   
 ## Trigonometría:
 - [implementaciones varias de trigonometría](https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Geometry/Trigonometry.cpp)
