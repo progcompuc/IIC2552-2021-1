@@ -69,7 +69,7 @@ Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
 **Hints** y **códigos de ejemplo**: _pending_
 
 ## Contest 10
-Octubre 30, 12 días, [link a **contest**](https://vjudge.net/contest/333057)\\
+Octubre 30, 12 días, [link a **contest**](https://vjudge.net/contest/404967)\\
 **Tópicos**: [Geometry: dot product, cross product, polygon area](resources/geometry)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
