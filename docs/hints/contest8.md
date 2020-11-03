@@ -49,6 +49,25 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/EfficientManaging.cpp">Código de ejemplo</a>
 </details>
 
+### F - Diccionário Portuñol
+<details> 
+  <summary>Hint 1</summary>
+  Podemos pensar el problema como descontar de la cantidad de combinaciones totales todos los que se repitan.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Para contar las totales podemos contar cada prefijo en portugués posible usando un Trie de las palabras en portugúes, y para la cantidad de sufijos en español podemos usar un Trie de las palabras en español reversas (así no repetimos sufijos). Luego la cantidad de nodos usados en cada trie multiplicados es la cantidad total de combinaciones prefijo sufijo posibles. Sólo queda descontar las que se repitan.
+</details>
+<details> 
+  <summary>Hint 3</summary>
+  La única forma de que estemos contando combinaciones repetidas es que haya un prefijo en portugúes que termine con la misma letra que empieza un sufijo en español, así se podría tomar esa letra indistíntamente de ambos lados. Podemos precaluclar cuantos prefijos portugueses terminan en cada letra fácilmente usando un dfs sobre los nodos del trie. Lo mismo para las primeras letras de los sufijos en español.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución consiste en descontar de lo contado según hint 1 las repeticiones como mencionadas en el hint 2. Para contarlas hacemos 2 dfs, uno que cuente prefijos en portugués terminados en cada letra (prefijos de largo mayor a 1 pues no puede ser vacío según enunciado y estamos contando repeticiones donde tomamos o no la última letra). En el otro dfs cada vez que encontramos un sufijo que empieze en una letra, descontamos de la respuesta la cantidad de prefijos que terminaban en ella.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/UVA/DiccionarioPortunol.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
