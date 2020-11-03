@@ -64,7 +64,7 @@ Octubre 16, 12 días, [link a **contest**](https://vjudge.net/contest/401948)\\
 ## Contest 9
 Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
 **Tópicos**: [Strings: KMP, Suffix Array](resources/strings)\\
-**Puntos**: 5, ?, ?, ?, ?, ?, 5, ?\\
+**Puntos**: 4, ?, ?, 4, ?, ?, 4, 3\\
 **Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: _pending_
 
