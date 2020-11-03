@@ -41,6 +41,17 @@ title: contest 9 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MatchAndCatch.cpp">Código de ejemplo</a>
 </details>
 
+### H - String Similarity
+<details> 
+  <summary>Hint</summary>
+  Noten que si calulamos el suffix array con arreglo lcp del string original ya se tiene calculado el tamaño de los longuest common preffix de sufijos continuos en el suffix array. Piensen en cómo ocupar esto para obtener la respuesta.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos buscar el lugar donde está el string completo en el suffix array (buscar la posición del 0). Luego la respuesta será la suma de acumular mínimos hacia derecha e izquierda del arreglo lcp, esto pues el largo común de un segmento continuo del suffix array corresponde al mínimo de los lcp del rango.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/HackerRank/StringSimilarity.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
