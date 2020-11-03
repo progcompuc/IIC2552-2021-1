@@ -6,11 +6,17 @@ title: contest 9 - hints y códigos de ejemplo
 
 ### A - Gluing Pictures
 <details> 
-  <summary>Hint</summary>
+  <summary>Hint 1</summary>
+  Noten que basta usar un approach greedy donde vamos completando la palabra buscado usando substrings lo más grandes posibles del string grande. Esto siempre será óptimo, sólo queda cómo buscar el mayor substring que podemos tomar de forma eficiente.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Podemos buscar lo descrito en el hint 1 letra por letra. Dado que hayamos precalculado el suffix array del string original, en este tendremos ordenados los sufijos. Todo substring debe ser el prefijo de un sufijo, luego basta buscar el sufijo que tenga un prefijo común más grande.
 </details>
 <details> 
   <summary>Solución + código</summary>
-  <a href="">Código de ejemplo</a>
+  Podemos buscar letra por letra con búsqueda binaria, inicialmente l = 0, r = N y tenemos todos los sufijos, hacemos búsqueda binaria por una letra y podemos reducir el rango a l', r' donde todos los sufijos en [l', r') comparten la primera letra con el string buscado, luego acotamos este nuevo rango según la segunda letra y así sucesivamente. En el momento donde no podamos encontrar una letra habremos encontrado el substring más largo posible, agregamos uno a la respuesta y empezamos de nuevo del rango [0, N) con la letra que quedamos.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Matcomgrader/GluingPictures.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
