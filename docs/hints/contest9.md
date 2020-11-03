@@ -19,6 +19,17 @@ title: contest 9 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Matcomgrader/GluingPictures.cpp">Código de ejemplo</a>
 </details>
 
+### D - Lucky Common Subsequence
+<details> 
+  <summary>Hint</summary>
+  Noten que si no existiera el virus, el problema de encontrar la mayor subsecuencia común se puede resolver usando un dp cuadrático con estados i, j, correspondientes a las posiciones que estamos revisando de cada string, luego la recursión es en (i, j) considerar dp(i + 1, j), dp(i, j + 1) y si S1[i] == S[j] considerar 1 + dp(i + 1, j + 1) (retornando el máximo). La respuesta es dp(0, 0). Piensen en cómo adaptar esta recursión para detectar cuando se complete un virus y evitarlo.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos usar un approach como KMP, en este algoritmo se recorre un string linealmente y se puede detectar cuando aparece otro string dentro, podemos usar este mismo método para detectar si con las letras que se han usado (cuando se pasó a (i + 1, j + 1) en la recursión) se arma el virus. Basta agregar un estado extra al dp que haga referencia al índice del arreglo lps actual.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LuckyCommonSubsequence.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
