@@ -30,6 +30,17 @@ title: contest 9 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LuckyCommonSubsequence.cpp">Código de ejemplo</a>
 </details>
 
+### G - Match & Catch
+<details> 
+  <summary>Hint</summary>  
+  Piensen en cómo se puede responder lo pedido usando el precálculo de un suffix array y lcp. Noten que todo substring es un prefijo de un sufijo, y para que sea único en el string original basta con que sea de largo mayor al lcp anterior y posterior (pues no habrá otro prefijo de sufijo igual de ese largo).
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos usar el hint 1 pero precalculando sobre el string S1#S2, así podemos filtrar los substrings comunes y unicos de ambos mirando el lcp, de forma que serán continuos en el suffix array pero los lcp inmediatamente posterior y anterior serán menores. Es decir, si estamos en la posición i del suffix array, donde sa[i] es parte de S1 y sa[i + 1] es parte de S2. luego el menor substring común asociado a esa posición debe ser de largo menor o igual a lcp[i], pero sólo será unico en ambos strings si lcp[i] >= largo > max(lcp[i - 1], lcp[i + 1]). Luego si es posible tomamos largo = max(lcp[i - 1], lcp[i + 1]) + 1, y nos quedamos con el menor de estos largos.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MatchAndCatch.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
