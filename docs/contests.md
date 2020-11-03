@@ -57,9 +57,9 @@ Pueden submitear el F acá: <https://www.urionlinejudge.com.br/judge/en/problems
 ## Contest 8
 Octubre 16, 12 días, [link a **contest**](https://vjudge.net/contest/401948)\\
 **Tópicos**: [Strings: Rolling Hashing, Trie](resources/strings)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntos**: ?, 4, 3, 5, ?, 5, ?, ?\\
 **Puntaje Mínimo Esperado**: 5\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest8)
 
 ## Contest 9
 Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
