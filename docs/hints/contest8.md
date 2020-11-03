@@ -19,6 +19,17 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/QueriesForNumberOfPalindromes.cpp">Código de ejemplo</a>
 </details>
 
+### C - Isomorphic Inversion
+<details> 
+  <summary>Hint</summary>
+  Piensen en una forma greedy de seleccionar los segmentos.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos armar los segmentos de forma greedy chequenando con k de 1 creciente separando los primeros y últimos k cada vez que el sustring de los primeros k que quedan sea igual al de los últimos k. Para chequear esto se puede usar hashing preprocesado de todo el string. la respuesta será cuantas veces se pudo separar * 2 más uno si sobraron cosas al medio.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/IsomorphicInversion.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
