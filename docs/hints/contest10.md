@@ -23,6 +23,17 @@ title: contest 10 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/TreasureSpotting.cpp">Código de ejemplo</a>
 </details>
 
+### D - Counting Triangles
+<details> 
+  <summary>Hint</summary>
+  Una opción es ver para cada trío se segmentos, si todos se intersectan de a dos entonces forman un triángulo. Acumulando las veces que se formen triángulos se otendrá la respuesta.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución consiste en usar el hint. Para saber si segmentos intersectan pueden usar el hint 3 de la pregunta A.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingTriangles.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
