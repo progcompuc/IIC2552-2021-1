@@ -73,7 +73,7 @@ Octubre 30, 12 días, [link a **contest**](https://vjudge.net/contest/404967)\\
 **Tópicos**: [Geometry: dot product, cross product, polygon area](resources/geometry)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest10)
 
 ## Contest 11
 Noviembre 06, 12 días, [link a **contest**](https://vjudge.net/contest/406367)\\
