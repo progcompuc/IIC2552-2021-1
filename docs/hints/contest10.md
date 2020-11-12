@@ -34,6 +34,17 @@ title: contest 10 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingTriangles.cpp">Código de ejemplo</a>
 </details>
 
+### F - Left, right or center?
+<details> 
+  <summary>Hint</summary>
+  Pueden detectar a que lado de una recta generada por un segmento se encuentra un punto haciendo uso del producto cruz, si la recta esta dada por el segmento AB y el punto está en P, el producto AB x AP será positivo si el punto está a la derecha o negativo en caso contrario.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La respuesta consiste en usar el hint directamente.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/LeftRightOrCenter.cpp">Código de ejemplo</a>
+</details>
+
 ### G - Inside or outside?
 <details> 
   <summary>Hint</summary>
