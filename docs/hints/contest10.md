@@ -34,6 +34,17 @@ title: contest 10 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingTriangles.cpp">Código de ejemplo</a>
 </details>
 
+### G - Inside or outside?
+<details> 
+  <summary>Hint</summary>
+  Para cada punto, para que esté dentro del polígono basta que este en el mismo lado en todos los segmentos del polígono, es decir, que siempre esté a la izquierda de la linea generada por cada segmento o siempre a la derecha. Basta chequear con producto cruz.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta usar el hint para obtener la solución.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/InsideOrOutside.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
