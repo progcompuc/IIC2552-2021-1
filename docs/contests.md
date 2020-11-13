@@ -84,7 +84,7 @@ Noviembre 06, 12 días, [link a **contest**](https://vjudge.net/contest/406367)\
 
 ## Contest 12
 Noviembre 13, 12 días, [link a **contest**](https://vjudge.net/contest/407720)\\
-**Tópicos**: [Geometry: sweep lines](resources/geometry)\\
+**Tópicos**: [Geometry: convex hull, green's theorem and more](resources/geometry)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
