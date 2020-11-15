@@ -4,6 +4,20 @@ title: contest 8 - hints y códigos de ejemplo
 
 [Index](../index) > [Contests](../contests) > [Contest 8](../contests#contest-8) > ```{{page.title}}```
 
+### A - Dividing the names
+<details> 
+  <summary>Hint 1</summary>
+  Notar que la respuesta es igual a la suma de los largos abreviados x N. Por lo tanto, basta resolver el problema de separar los nombres de tal manera que la suma de los largos abreviados sea la mínima posible, y luego multiplicamos el resultado por N.
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  La información de todos los nombres se puede comprimir en un trie. Piensa en cómo aprovchar el trie para encontrar la repartición óptima de los nombres entre calles y avenidas. Un hint clave: si tenemos varias palabras que pasan por el mismo nodo del trie, sólo podemos abreviar si es que mandamos una palabra a las calles y el resto a las avenidas o viceversa. Si mandamos dos o más a cada grupo, no podemos abreviar.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  La solución es hacer un backtracking + memoization sobre un trie (o en otras palabras, un DP sobre el trie). Los nodos de nuesro trie van a tener un contador count[nodo] que nos dice cuántas palabras pasaron por ese nodo cuando armamos el trie. Entonces nuestra función será DP(nodo, n) = la mínima suma de largos de los sufijos que parten desde este nodo, sujeto a que debemos mandar n sufijos a las calles y (count[nodo] - n) sufijos a las avenidas. La respuesta al problema original entonces está dada por DP(0, N), ya que 0 es la raíz, los sufijos que parten en la raíz son las palabras originales y debemos mandar N a las calles y el resto a las avenidas. La gran dificultad del problema queda entonces en la recurrencia. Si estamos resolviendo DP(nodo, n), supongamos que nodo tiene k hijos. Entonces el n lo tenemos que repartir entre los k hijos, es decir, tenemos que escoger n1, n2, ..., nk tales ques n1 + n2 + ... + nk = n, y resolver recursivamente DP(hijo_i, n_i). La forma de probar todos los posibles n1, n2, ..., nk se puede hacer con una función recursiva que por cada nodo hijo prueba todos los valores válidos con un for y luego llama recursivamente a la misma función para el siguiente hijo, y así sucesivamente. Ahora, con respecto a la respuesta misma, si estamos resolviendo DP(nodo, n), hay count[nodo] palabras que pasaron por nodo. Es decir, nodo contribuye con count[nodo] caracteres a la respuesta final, EXCEPTO si es que podemos aplicar abreviaciones. ¿Cuándo podemos abreviar? Si n == 1, podemos restar 1 a la respuesta ya que esta palabra está sola y se puede abreviar. Si el resto (count[nodo] - n) == 1, también se puede restar 1 a la respuesta ya que esta palabra está sola y se puede abreviar. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6824_DividingTheNames.cpp">Código de ejemplo</a>
+</details>
+
 ### B - Queries for Number of Palindromes
 <details> 
   <summary>Hint 1</summary>
@@ -49,6 +63,17 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/EfficientManaging.cpp">Código de ejemplo</a>
 </details>
 
+
+### E - Death Stars (medium)
+<details> 
+  <summary>Hint</summary>
+  Piensa en una forma de acelerar la comparación entre strings.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usamos rolling hashing. Creamos una instancia de la clase hash por cada fila de la matriz vertical y por cada fila de la matriz horizontal. Luego hacemos un doble for y en cada caso con un tercer for hacemos M comparaciones aprovechando los hashes para ver si las submatrices de MxM coinciden. Para hacer el código más rápido, hacemos break del tercer for apenas algo no coincida. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/958A2_DeathStars(medium).cpp">Código de ejemplo</a>
+</details>
+
 ### F - Diccionário Portuñol
 <details> 
   <summary>Hint 1</summary>
@@ -66,6 +91,27 @@ title: contest 8 - hints y códigos de ejemplo
   <summary>Solución + código</summary>
   La solución consiste en descontar de lo contado según hint 1 las repeticiones como mencionadas en el hint 2. Para contarlas hacemos 2 dfs, uno que cuente prefijos en portugués terminados en cada letra (prefijos de largo mayor a 1 pues no puede ser vacío según enunciado y estamos contando repeticiones donde tomamos o no la última letra). En el otro dfs cada vez que encontramos un sufijo que empieze en una letra, descontamos de la respuesta la cantidad de prefijos que terminaban en ella.
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/UVA/DiccionarioPortunol.cpp">Código de ejemplo</a>
+</details>
+
+
+### G - Cellphone Typing
+<details> 
+  <summary>Hint</summary>
+  Si comprimimos todo en un trie, ¿se te ocurre una forma fácil de resolver el problema?
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Metemos todas las palabras en un trie, y en cada nodo contamos la frecuencia de palabras que pasaron por ese nodo. Luego, simulamos el proceso de tipear cada palabra navegando el trie desde la raíz y usando los caracteres de la palabra como las instrucciones de navegación. Partimos sumando 1 porque el primer caracter siempre se tipea. Luego, los siguientes caracteres se autocompletan si y sólo si la transición en el trie es obligada (si el nodo anterior solo tiene un puro hijo), esto se puede chequear comparando los contadores, si son iguales no hay bifurcaciones. Al final dividimos la suma total por la cantidad de palabras. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/LiveArchive/6133_CellphoneTyping.cpp">Código de ejemplo</a>
+</details>
+
+### H - Dr. Evil Underscores
+<details> 
+  <summary>Hint</summary>
+  Piensa que los números son strings de largo 30 en binario y con padding de 0's por la derecha de ser necesario. Piensa ahora que los metes en un trie. ¿Se te ocurre cómo resolver el problema?
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Armamos un trie con los números como lo sugiere el hint. Luego podemos encontrar el mínimo xor con un DFS sobre el trie desde la raíz. El DFS va a calcular el mínimo xor posible desde el nodo u. Si u tiene un puro hijo, entonces siempre podemos escoger el mismo bit para que en el xor nos de 0. Si u tienes dos hijos, entonces independiente de cuál bit escogamos, en el máximo siempre va a convenir escoger la rama con el bit opuesto, entonces siempre va a haber un bit prendido en la i-ésima posición (donde i es la profundidad del nodo u) y luego escogemos el mínimo entre los dos DFS's de los hijos. <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1285D_Dr.EvilUnderscores.cpp">Código de ejemplo</a>
 </details>
 
 <!-- <details> 
