@@ -64,7 +64,7 @@ Octubre 16, 12 días, [link a **contest**](https://vjudge.net/contest/401948)\\
 ## Contest 9
 Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
 **Tópicos**: [Strings: KMP, Suffix Array](resources/strings)\\
-**Puntos**: 4, ?, ?, 4, ?, ?, 4, 3\\
+**Puntos**: 4, 7, 6, 4, 2, 10, 4, 3\\
 **Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest9)
 
