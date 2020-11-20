@@ -89,4 +89,11 @@ Noviembre 13, 12 días, [link a **contest**](https://vjudge.net/contest/407720)\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
 
+## Contest 13
+Noviembre 20, 12 días, [link a **contest**](https://vjudge.net/contest/408968)\\
+**Tópicos**: [tuttifrutti](resources)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
+
 [Index](index) > ```{{page.title}}```
