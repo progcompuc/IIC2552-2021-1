@@ -91,7 +91,7 @@ Noviembre 13, 12 días, [link a **contest**](https://vjudge.net/contest/407720)\
 
 ## Contest 13
 Noviembre 20, 12 días, [link a **contest**](https://vjudge.net/contest/408968)\\
-**Tópicos**: [tuttifrutti](resources/resources)\\
+**Tópicos**: [tutti frutti](resources/resources)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
