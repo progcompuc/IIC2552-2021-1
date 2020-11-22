@@ -19,6 +19,21 @@ title: contest 11 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Matcomgrader/DazzlingStars.cpp">Código de ejemplo</a>
 </details>
 
+### D - Garden Fence
+<details> 
+  <summary>Hint 1</summary>
+  Notemos que a menos que el óptimo sea dejar todos los árboles a un lado, la solución siempre será una recta que separa dos árboles de cada tipo. De hecho se puede mostrar que el óptimo siempre puede ser alcnzado con una rotación infinitesimal de alguna recta que una dos árboles de cada tipo. Piensen en una forma de recorrer todas las rectas uniendo árboles de tipos distintos considerando el costo de elegirla (en una rotación infinitesimal).
+</details>
+<details> 
+  <summary>Hint 2</summary>
+  Podemos considerar todas estas en tiempo rectas realizando P sweeplines radiales desde cada árbole de tipo P. Usando dos punteros sobre el orden de un sweepline radial de un árbol de tipo P es posible acumular y actualizar el costo en tiempo amortizado O(n). Basta acumular cada vez que se avanze el puntero de un rango de 180 el segundo puntero hasta el final del rango. Luego de hacer todos los sweepline, la instancia de menor costo será la respuesta.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Basta implementar los hints. Tener cuidado con puntos colineales, en caso de empate en el sweepline radial siempre conviene usar primero el punto a menor distancia y saltarse el resto para el sweepline (igual deben ser acumulados para el costo).
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GardenFence.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
