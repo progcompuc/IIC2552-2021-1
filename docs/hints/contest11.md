@@ -19,6 +19,21 @@ title: contest 11 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Matcomgrader/DazzlingStars.cpp">Código de ejemplo</a>
 </details>
 
+### B - Hide and seek
+<details> 
+  <summary>Hint 1</summary>
+  Piensen en como hacer un sweepline radial desde cada seeking kid donde hayan eventos de comienzo de pared, fin de pared y hiding kid. En el sweepline deben mantener ordenadas las paredes activas en orden de distancia al seeking kid.
+</details>
+<details>
+  <summary>Hint 2</summary>
+  Ordenar los eventos de cada sweepline se hace de forma estándar, la dificultad de este problema radica en el orden de los segmentos activos durante el sweepline. Un posible comparador para usar un set para el orden puede ser, dados dos segmentos activos AB y CD, si A empieza después que C entonces A será menor si CA x CD > 0 (producto cruz).
+</details>
+<details>
+  <summary>Solución + código</summary>
+  Dado el sweepline explicado en los hints siempre que un evento hiding kid tenga posición menor a todos los segmentos activos (basta comparar con el más cercano), entonces será visible desde el seeking kid analizado.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/HideAndSeek.cpp">Código de ejemplo</a>
+</details>
+
 ### D - Garden Fence
 <details> 
   <summary>Hint 1</summary>
@@ -34,10 +49,10 @@ title: contest 11 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GardenFence.cpp">Código de ejemplo</a>
 </details>
 
-<!-- <details> 
-  <summary>Hint</summary>   
+<!-- <details>
+  <summary>Hint</summary>
 </details>
-<details> 
+<details>
   <summary>Solución + código</summary>
   <a href="">Código de ejemplo</a>
 </details> -->
