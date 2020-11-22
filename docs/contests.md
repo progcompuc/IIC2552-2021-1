@@ -80,7 +80,7 @@ Noviembre 06, 12 días, [link a **contest**](https://vjudge.net/contest/406367)\
 **Tópicos**: [Geometry: sweep lines](resources/geometry)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest11)
 
 ## Contest 12
 Noviembre 13, 12 días, [link a **contest**](https://vjudge.net/contest/407720)\\
