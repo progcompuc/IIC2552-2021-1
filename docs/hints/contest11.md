@@ -49,6 +49,18 @@ title: contest 11 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GardenFence.cpp">Código de ejemplo</a>
 </details>
 
+<!-- ### H - Balloon
+<details>
+  <summary>Hint 1</summary>
+</details>
+<details>
+  <summary>Hint 2</summary>
+</details>
+<details>
+  <summary>Solución + código</summary>
+  <a href="">Código de ejemplo</a>
+</details> -->
+
 <!-- <details>
   <summary>Hint</summary>
 </details>
