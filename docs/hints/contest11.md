@@ -49,17 +49,24 @@ title: contest 11 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/GardenFence.cpp">Código de ejemplo</a>
 </details>
 
-<!-- ### H - Balloon
+### H - Balloon
 <details>
   <summary>Hint 1</summary>
+  Cada segmento si esinclinado libera globos o hacia otro segmento o hacia el vacío, esto forma un DAG (directed acyclic graph) de los segmentos sobre el cual podemos aplicar programación dinámica para encontrar la solución al problema. Piensen en cómo armar el dag usando un sweepline sobre eventos ordenados por eje x con eventos inicio de segmento, fin de segmento y globo.
 </details>
 <details>
   <summary>Hint 2</summary>
+  Si usamos un sweepline como descrito y mantenemos un set ordenado con los segmentos activos podremos armar el DAG. Para mantener los segmentos ordenados basta usar un comparador de pares de segmentos y usar un set. Dados dos segmentos AB y CD si A.x > C.x entonces AB estará bajo CD si CA x XD < 0.
+</details>
+<details>
+  <summary>Hint 3</summary>
+  Podemos armar el dag uniendo cada segmento uniendolo al segmento que va justo más arriba en el set, esto se define al momento de agregar el segmento si está inclinado hacia la izquierda o al momento de eliminarlo si está inclinado hacia la derecha (Pueden usar upper_bound en c++ para buscar el siguiente segmento). También debemos recordar el menor segmento del set en cada evento globo, pues será el primero con que choca el globo (la respuesta de este globo será evaluar el dp en el segmento con que chocó primero).
 </details>
 <details>
   <summary>Solución + código</summary>
-  <a href="">Código de ejemplo</a>
-</details> -->
+  Dado el DAG descrito en los hints basta armar un algoritmo de programación dinámica que resuelve el problema. Cada segmento busca la respuesta en el segmento al que apunta, en caso de apuntar a un segmento no inclinado se queda en esa posición y en caso contrario se sigue preguntando.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/URI/Balloon.cpp">Código de ejemplo</a>
+</details>
 
 <!-- <details>
   <summary>Hint</summary>
