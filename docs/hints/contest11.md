@@ -52,7 +52,7 @@ title: contest 11 - hints y códigos de ejemplo
 ### H - Balloon
 <details>
   <summary>Hint 1</summary>
-  Cada segmento si esinclinado libera globos o hacia otro segmento o hacia el vacío, esto forma un DAG (directed acyclic graph) de los segmentos sobre el cual podemos aplicar programación dinámica para encontrar la solución al problema. Piensen en cómo armar el dag usando un sweepline sobre eventos ordenados por eje x con eventos inicio de segmento, fin de segmento y globo.
+  Cada segmento si es inclinado libera globos o hacia otro segmento o hacia el vacío, esto forma un DAG (directed acyclic graph) de los segmentos sobre el cual podemos aplicar programación dinámica para encontrar la solución al problema. Piensen en cómo armar el dag usando un sweepline sobre eventos ordenados por eje x con eventos inicio de segmento, fin de segmento y globo.
 </details>
 <details>
   <summary>Hint 2</summary>
@@ -60,7 +60,7 @@ title: contest 11 - hints y códigos de ejemplo
 </details>
 <details>
   <summary>Hint 3</summary>
-  Podemos armar el dag uniendo cada segmento uniendolo al segmento que va justo más arriba en el set, esto se define al momento de agregar el segmento si está inclinado hacia la izquierda o al momento de eliminarlo si está inclinado hacia la derecha (Pueden usar upper_bound en c++ para buscar el siguiente segmento). También debemos recordar el menor segmento del set en cada evento globo, pues será el primero con que choca el globo (la respuesta de este globo será evaluar el dp en el segmento con que chocó primero).
+  Podemos armar el dag uniendo cada al segmento que va justo más arriba en el set, esto se define al momento de agregar el segmento si está inclinado hacia la izquierda o al momento de eliminarlo si está inclinado hacia la derecha (Pueden usar upper_bound en c++ para buscar el siguiente segmento). También debemos recordar el menor segmento del set en cada evento globo, pues será el primero con que choca el globo (la respuesta de este globo será evaluar el dp en el segmento con que chocó primero).
 </details>
 <details>
   <summary>Solución + código</summary>
