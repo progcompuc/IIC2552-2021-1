@@ -72,14 +72,14 @@ Octubre 23, 12 días, [link a **contest**](https://vjudge.net/contest/403555)\\
 Octubre 30, 12 días, [link a **contest**](https://vjudge.net/contest/404967)\\
 **Tópicos**: [Geometry: dot product, cross product, polygon area](resources/geometry)\\
 **Puntos**: 4, 7, ?, 3, ?, 2, 3, 4\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest10)
 
 ## Contest 11
 Noviembre 06, 12 días, [link a **contest**](https://vjudge.net/contest/406367)\\
 **Tópicos**: [Geometry: sweep lines](resources/geometry)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntos**: 4, 5, 5, 4, 5, 3, 2, 5\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest11)
 
 ## Contest 12
