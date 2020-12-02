@@ -28,7 +28,7 @@ Agosto 28, 10 días, [link a **contest**](https://vjudge.net/contest/391596)\\
 ## Contest 4
 Septiembre 04, 10 días, [link a **contest**](https://vjudge.net/contest/392902)\\
 **Tópicos**: [Segment Tree Lazy, Fenwick Tree 2D, Union Find](resources/data_structures)\\
-**Puntos**: 4, ?, ?, 3, 2, 4, ?, 8\\
+**Puntos**: 4, 4, 4, 3, 2, 4, 2, 8\\
 **Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest4)
 
