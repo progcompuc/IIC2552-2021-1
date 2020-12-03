@@ -85,7 +85,7 @@ Noviembre 06, 12 días, [link a **contest**](https://vjudge.net/contest/406367)\
 ## Contest 12
 Noviembre 13, 12 días, [link a **contest**](https://vjudge.net/contest/407720)\\
 **Tópicos**: [Geometry: convex hull, green's theorem and more](resources/geometry)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntos**: 6, 5, 6, 4, 5, 4, 2, 6\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
 
