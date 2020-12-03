@@ -99,8 +99,8 @@ Noviembre 20, 12 días, [link a **contest**](https://vjudge.net/contest/408968)\
 ## Contest 14
 Noviembre 27, 12 días, [link a **contest**](https://vjudge.net/contest/410352)\\
 **Tópicos**: [tutti frutti](resources/resources)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntos**: 4, 5, 4, 5, 4, 8, 8, 3\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: _pending_
 
 [Index](index) > ```{{page.title}}```
