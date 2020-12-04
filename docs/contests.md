@@ -103,4 +103,11 @@ Noviembre 27, 12 días, [link a **contest**](https://vjudge.net/contest/410352)\
 **Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: _pending_
 
+## Contest 15
+Diciembre 04, hasta el cierre de notas, [link a **contest**](https://vjudge.net/contest/411603)\\
+**Tópicos**: [tutti frutti](resources/resources)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
+
 [Index](index) > ```{{page.title}}```
