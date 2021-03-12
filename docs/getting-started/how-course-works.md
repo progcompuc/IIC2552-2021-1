@@ -12,7 +12,7 @@ Este curso es 100% práctico. La nota final dependerá de la resolución por par
 
 - Se publicarán en [vjudge.net](https://vjudge.net), un sitio web que permite crear competencias utilizando problemas obtenidos de múltiples jueces online, con un scoreboard que se actualiza en tiempo real a medida que los participantes resuelven problemas. Para competir es necesario que te crees una cuenta en [vjudge.net](https://vjudge.net) y posteriormente que te unas con dicha cuenta a los contests a medida que estos vayan siendo publicados.
 
-- La mayoría de las competencias serán **individuales**, pero al acernarnos al final del semestre se permitirá competir en forma **grupal**, con un máximo de 3 integrantes por grupo (esto ya que la materia se pondrá un poco más complicada).
+- A menos que se indique lo contrario, todas las competencias serán **individuales**. Excepcionalmente, hacia el final del semestre es posible que una que otra competencia sea de carácter **grupal**, con un máximo de 3 integrantes por grupo (esto será avisado si se llega a realizar).
 
 - En general los contests serán temáticos. Es decir, cada contest estará compuesto por problemas que se resuelven utilizando estrategias pertenecientes a una categoría o tema común (ej. fuerza bruta, geometría, grafos, strings, etc.). El tema del contest se avisará con anticipación junto con una recomendación de material de estudio que los alumnos podrán revisar antes de la clase.
 
