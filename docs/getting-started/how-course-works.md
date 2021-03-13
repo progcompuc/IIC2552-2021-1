@@ -35,7 +35,7 @@ Este curso es 100% práctico. La nota final dependerá de la resolución por par
 Además de las competencias semanales, existen varias formas de obtener décimas de bonus, las que se ponderarán y sumarán directamente a tu nota final:
 
 ### 2.1) BONUS C++
-Para incentivar el uso de C++ (el lenguaje más popular en progcomp), existe un bonus de décimas que se sumarán directamente a tu nota final. ¿Cómo obtener este bonus?
+Bonus para incentivar el uso de C++ (el lenguaje más popular en progcomp). ¿Cómo obtener este bonus?
 
  - Primero que todo, este bonus es válido sólo para gente sin (o con demasiada poca) experiencia previa programando en C++. Si ya tienes experiencia en C++ (o en C, que es muy parecido), este bonus no es para ti. 
  - Para obtener este bonus, en algún momento durante el semestre debes avisarnos que quieres cobrar este bonus. Debes indicarnos los contests y respectivos problemas que has hecho en C++. Nosotros revisaremos tus códigos. Para obtener el 100% del bonus, se debe notar un dominio progresivo de C++ en tus códigos. Haber logrado resolver al menos un problema complicado en C++ es un plus.
