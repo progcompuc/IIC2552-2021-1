@@ -50,14 +50,14 @@ Cada cierto tiempo la [Red de Programación Competitiva (RPC)](http://redprogram
   - Participar en la competencia
   - **Mandar una foto del grupo con todos sus integrantes juntos frente a un mismo computador** (necesitamos evidencia de que se juntaron, y además la idea es que sea lo más parecido a un simulacro de la ICPC, donde los 3 integrantes comparten un mismo PC, [como en este ejemplo](https://youtu.be/BZo23gj9ksk?t=4237)). [Nota COVID: en caso de pandemia, se acepta un screenshot de zoom, skype, etc.]
   - Al terminar la competencia, deben mandar el link al scoreboard final de la competencia RPC en que participaron.
-  - El bonus se calculará como 5\*(X/N) décimas, donde X = problemas resueltos por el grupo, N = problemas resueltos por el equipo que quedó en primer lugar. Las 6\*(X/N) décimas obtenidas se sumarán a las décimas de bonus de cada integrante del equipo.
+  - El bonus se calculará como 5\*(X/N) décimas, donde X = problemas resueltos por el grupo, N = problemas resueltos por el equipo que quedó en primer lugar. Las 5\*(X/N) décimas obtenidas se sumarán a las décimas de bonus de cada integrante del equipo.
 
 ### 2.3) BONUS Contest Individual:
 Existen muchos sitios online que organizan competencias individuales cada cierto tiempo. Los alumnos tienen la opción de participar en estas competencias y obtener décimas de bonus. Los sitios que más recomendamos son [Codeforces](https://codeforces.com/), [Atcoder](https://atcoder.jp/) y [Codechef](https://www.codechef.com/). Todos tienen calendarios: [calendario codeforces](http://codeforces.com/calendar), [calendario atcoder](https://atcoder.jp/calendar), [calendario codechef](https://www.codechef.com/event-calendar). Para obtener este bonus debes:
   - Registrarte en Codeforces, Atcoder y/o Codechef.
   - Participar en una competencia individual (generalmente duran alrededor de 2 horas).
   - Al final de la competencia avisarnos en qué competencia participaste y mandar el link al ranking donde quedaste.
-  - El bonus se calculará como 3\*(X/N) décimas, donde X = cantidad de problemas resueltos por ti, N = cantidad de problemas resueltos por la persona que quedó en primer lugar. Las 4\*(X/N) décimas obtenidas se sumarán a tus décimas de bonus.
+  - El bonus se calculará como 3\*(X/N) décimas, donde X = cantidad de problemas resueltos por ti, N = cantidad de problemas resueltos por la persona que quedó en primer lugar. Las 3\*(X/N) décimas obtenidas se sumarán a tus décimas de bonus.
 
 ### 2.4) SUPER BONUS Codeforces:
 [Codeforces](https://codeforces.com/) tiene un sistema de [rating](https://codeforces.com/ratings/country/Chile) parecido al ELO en Ajedrez. Cualquier alumn@ que participe en **al menos 3 contests** de Codeforces durante el semestre y luego de ello alcance un **rating de 1700 o superior**, automáticamente tendrá **nota final 7.0 en el curso**.
