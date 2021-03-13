@@ -18,9 +18,9 @@ Este curso es 100% práctico. La nota final dependerá de la resolución por par
 
 - En general el **primer módulo de cada clase (14:00 - 15:30) será de cátedra**. La idea es revisar contenidos relevantes para el contest de la semana. Esto significa revisar la teoría, ver códigos de ejemplo y quizá explicar la solución de algún problema que aparecerá en el contest. También es muy común **discutir soluciones de problemas del contest pasado** en este bloque.
 
-- El resto de la clase (15:30 en adelante) es práctico. La idea es que durante los dos módulos restantes los alumnos trabajen en sus computadores programando. Por esto **se recomienda que cada uno traiga su laptop a la clase**. Si no tienes laptop, por favor avisa al staff del curso con anticipación para poder coordinar laptops de repuesto.
+- El resto de la clase (15:30 en adelante) es práctico. La idea es que durante los dos módulos restantes los alumnos trabajen en sus computadores programando. Por esto **se recomienda que cada uno traiga su laptop a la clase**. Si no tienes laptop, por favor avisa al staff del curso con anticipación para poder coordinar laptops de repuesto. [Nota COVID: esto, obviamente, no aplica en formato de clase remoto]
 
-- Salvo en contest grupales, **cada alumn@ debe programar su propia solución**. **Copiar código ajeno está terminantemente prohibido**. No obstante, sí está permitido y es completamente válido conversar con los demás compañeros y compañeras para compartir ideas e ingeniar soluciones para los problemas. Además, durante la clase siéntanse libres de hacernos saber sus preguntas tanto al profesor como al ayudante, pues estamos a su servicio para aclarar todas las dudas que tengan.
+- Salvo en contest grupales, **cada alumn@ debe programar su propia solución**. **Copiar código ajeno está terminantemente prohibido**. Sin embargo, sí está permitido conversar sobre los problemas, compartir ideas y discutir posibles soluciones con sus compañer@s. Además, tanto el profesor como el ayudante estamos disponibles para atender sus dudas y preguntas sobre los problemas, sobre código, sobre teoría, etc.
 
 - Los problemas de cada contest tendrán diferentes niveles de dificultad, algunos problemas son más fáciles y otros más difíciles. Por ende, cada problema tendrá asociado un puntaje según su nivel de dificultad, y los puntos que obtengas en el contest serán la suma de los puntos de los problemas que resuelvas. Estos puntajes se mantendrán intencionalmente ocultos por un par de días luego de iniciado el contest :)
 
@@ -28,20 +28,19 @@ Este curso es 100% práctico. La nota final dependerá de la resolución por par
 
 - Cada contest tendrá un **puntaje mínimo esperado**, si en el contest logras un puntaje >= a dicho mínimo obtienes un 100% de completado en el contest, de lo contrario obtienes un porcentaje inferior y una **deuda de puntaje**. Todas las deudas de puntaje de todos tus contests se suman y conforman tu **deuda de puntaje total**. No obstante, si tu puntaje para un contest supera el mínimo esperado, se genera un **excedente de puntaje**, y del mismo modo todos tus excedentes se suman y conforman tu **excedente de puntaje total**. Como es de esperar, el excedente de puntaje te puede ayudar a compensar tu deuda de puntaje y subir tu nota, aunque ten en cuenta que el excedente de puntaje es multiplicado por un coeficiente de 0.33.
 
-- vjudge permite enviar soluciones en **modo post-competencia**. Si lo deseas puedes seguir resolviendo problemas en este modo luego del fin de un contest, aunque todos los puntos de los problemas que resuelvas así van directo a tu excedente de puntaje, y por ende serán multiplicados por 0.33 (en otras palabras, rinde más resolver problemas dentro de plazo que fuera de plazo)
-
+- vjudge permite enviar soluciones en **modo post-competencia**. Si lo deseas puedes seguir resolviendo problemas en este modo luego del fin de un contest, aunque todos los puntos de los problemas que resuelvas así van directo a tu excedente de puntaje, y por ende serán multiplicados por 0.3 (en otras palabras, rinde más resolver problemas dentro de plazo que fuera de plazo)
 
 ## 2) Bonuses
 
 Además de las competencias semanales, existen varias formas de obtener décimas de bonus, las que se ponderarán y sumarán directamente a tu nota final:
 
 ### 2.1) BONUS C++
-Para incentivar el uso de C++ (por lejos el lenguaje más popular en progcomp), existe un bonus de décimas que se sumarán directamente a tu nota final que puedes obtener si decides programar tus soluciones en C++. ¿Cómo obtener este bonus?
+Para incentivar el uso de C++ (el lenguaje más popular en progcomp), existe un bonus de décimas que se sumarán directamente a tu nota final. ¿Cómo obtener este bonus?
 
- - Primero que todo, este bonus es válido sólo para gente que no tenga experiencia previa programando en C++ (o experiencia muy reducida).
- - En algún contest debes programar al menos un problema en C++. Entre más problemas programes en C++, mejor. Al finalizar dicho contest, debes avisarnos al ayudante o al profesor que te revisemos los códigos (nosotros tenemos acceso a sus códigos en vjudge). Nosotros examinaremos tu código y según qué cosas uses, si se nota esfuerzo en hacer un código bonito y ordenado, si le sacas provecho al lenguaje, por ejemplo si usas cosas de C++11, etc., nosotros te premiaremos con décimas.
- - Este bonus tiene un techo de 8 décimas. Si sacas este bonus muchas veces y te pasas de las 8 décimas, el bonus va a quedar congelado en las 8 décimas nomás.
- - Este bonus sólo estará disponible las primeras 5 competencias. De la competencia número 6 en adelante ya no corre.
+ - Primero que todo, este bonus es válido sólo para gente sin (o con demasiada poca) experiencia previa programando en C++. Si ya tienes experiencia en C++ (o en C, que es muy parecido), este bonus no es para ti. 
+ - Para obtener este bonus, en algún momento durante el semestre debes avisarnos que quieres cobrar este bonus. Debes indicarnos los contests y respectivos problemas que has hecho en C++. Nosotros revisaremos tus códigos. Para obtener el 100% del bonus, se debe notar un dominio progresivo de C++ en tus códigos. Haber logrado resolver al menos un problema complicado en C++ es un plus.
+ - Puedes obtener hasta un máximo de 10 décimas con este bonus.
+ - Este bonus sólo puede ser cobrado una vez en todo el semestre (una posibilidad es esperar hasta el final del semestre y ahí recién cobrarlo).
  - Si quieres aprender C++, [puedes encontrar hartos recursos acá](../resources/cpp).
 
 ### 2.2) BONUS RPC _(grupal)_
