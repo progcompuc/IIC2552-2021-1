@@ -19,7 +19,7 @@ Así, se calcula:
 - X = sum { M_i * X_i } / sum { M_i }  (es decir, el promedio ponderado de los X_i)
 
 Así, E se usa para reducir la deuda D de la siguiente manera:
-- D' = max(D - E*0.33, 0)
+- D' = max(D - E*0.3, 0)
 - X' = X + (1-X) * (D-D')/D
 
 Así, se obtiene una nota preliminar
