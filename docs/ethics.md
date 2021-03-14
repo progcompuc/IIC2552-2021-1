@@ -6,9 +6,9 @@ title: Ética e Integridad Académica
 
 # {{page.title}}
 
-## TL;DR;
+## TL;DR
 1. You shall not copy-paste código ajeno (hay penas del infierno por hacer esto).
-2. Se recomienda intentar hacer las cosas por tu cuenta propia, pero si encuentras que algunos problemas son muy difíciles, hay varios tips (ver detalles abajo).
+2. Por un tema de aprendizaje, siempre intenta hacer los problemas por ti mism@ primero. Pero si encuentras que se está poniendo muy complicado, hay varias recomendaciones para pedir ayuda / recibir apoyo de manera ética (ver detalles abajo).
 
 ## Detalles
 Puedes hacer uso de recursos en línea al resolver problemas. Esto incluye documentación de tu lenguaje de programación favorito, descripciones de algoritmos, implementaciones estándar de ciertos algoritmos y estructuras de datos como referencia, wikipedia, youtube, libros, tutoriales, etc. Es más, en caso de **desesperación** en este curso está incluso permitido consultar soluciones de ejemplo. Sin embargo, **LA COPIA DESCARADA DE SOLUCIONES AJENAS** está terminantemente **PROHIBIDA**. Por favor, **NUNCA** hagas copy paste de códigos ajenos. La idea del curso es que aprendas a programar tus propias soluciones, y hacer **copy paste** sabotea completamente dicho propósito. Para evitar pasar malos ratos, nuestra recomendación al enfrentar problemas es la siguiente:
