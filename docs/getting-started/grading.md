@@ -34,6 +34,6 @@ Luego se calcula las décimas de bonus efectivas:
 Finalmente, la nota final está dada por:
 - Nota_v3 = Nota_v2 + B
 
-Todo lo anterior se encuentra formalizado en el _spreadsheet de notas y asistencia (TODO agregar link)_
+Todo lo anterior se encuentra formalizado en el [spreadsheet de notas](https://docs.google.com/spreadsheets/d/148QVdpnsCeT4iTTXKosLiey2mepM2kp95l0tql2HPKA/edit#gid=0)
 
 [Index](../index) > ```{{page.title}}```
