@@ -75,6 +75,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/H-Index.cpp">Código de ejemplo C++</a>
 </details>
 
+### F - Center Alignment
+<details> 
+   <summary>Hint</summary>
+   Basta implementar lo descrito en el enunciado. Cuidado con los casos especiales de alineamiento, si hay una cantidad impar de espacio, se da menos espacio a la izquierda primero, la próxima vez con espacios impares a la derecha y así.
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Implementar el hint.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CenterAlignement.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CenterAlignement.cpp">Código de ejemplo C++</a>
+</details>
+
 
 <!-- <details> 
   <summary>Hint</summary>   
