@@ -61,6 +61,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TemporarilyUnavailable.cpp">Código de ejemplo C++</a>
 </details>
 
+### E - H-Index
+<details> 
+   <summary>Hint</summary>
+   Se debe encontrar el mayor H tal que tenemos al menos H papers con al menos H citas. Para esto piensen cómo facilita el cálculo ordenar las citas de cada paper de mayor a menor. Ojo que no se puede resolver viendo todas las posibilidades de H y chequeando porque no pasa en el tiempo límite.
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Dado que lo tenemos ordenado de mayor a menor, para cada posición i en la lista de citas C (de 0 a N - 1) la respuesta será el máximo de calcular min(C[i], i + 1). Esto pues min(C[i], i + 1) representa el mayor número que cumple que hay al menos esa cantidad de papers con al menos esa cantidad de citas para cada posición.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/H-Index.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/H-Index.cpp">Código de ejemplo C++</a>
+</details>
+
 
 <!-- <details> 
   <summary>Hint</summary>   
