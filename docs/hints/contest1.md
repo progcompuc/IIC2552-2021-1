@@ -18,7 +18,6 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/StonesOnTheTable.cpp">Código de ejemplo C++</a>
 </details>
 
-
 ### B - Sum of the Others
 <details> 
    <summary>Hint</summary>
@@ -115,6 +114,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/TouchscreenKeyboard.py">Código de ejemplo Python</a>
    
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/TouchscreenKeyboard.cpp">Código de ejemplo C++</a>
+</details>
+
+### I - Adding Words
+<details> 
+   <summary>Hint</summary>
+   Pueden usar diccionarios de Python o maps de c++ para asignar valores a las palabras y palabras a los valores. Usando esto piensen en cómo implementar el resto.
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Usando el hint, en caso de definición sólo asignamos, en caso de clear limpiamos los diccionarios y en caso de cálculo se va sumando el valor multiplicado por signo anterior hasta encontrar un igual. Ojo ir chequeando que existan las keys en los maps. Hay un caso borde al volver a asignar una palabra previamente asignada, en este caso deben borrar la asignación del valor anterior a la palabra.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/AddingWords.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/AddingWords.cpp">Código de ejemplo C++</a>
 </details>
 
 <!-- <details> 
