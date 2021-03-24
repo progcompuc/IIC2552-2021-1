@@ -33,6 +33,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/SumOfTheOthers.cpp">Código de ejemplo C++</a>
 </details>
 
+### C - Maximum Square
+<details> 
+   <summary>Hint</summary>
+   Piensen en cómo ayudaría ordenar las tablas de menor a mayor (o viceversa).
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Si están ordenadas de menor a mayor y se recorren en ese orden, la primera vez que las tablas que quedan sean menos o igual al valor actual, las tablas que queden serán la respuesta.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.cpp">Código de ejemplo C++</a>
+</details>
+
 
 <!-- <details> 
   <summary>Hint</summary>   
