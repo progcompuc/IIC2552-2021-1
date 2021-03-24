@@ -103,6 +103,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/FourSegments.cpp">Código de ejemplo C++</a>
 </details>
 
+### H - Touchscreen Keyboard
+<details> 
+   <summary>Hint</summary>
+   Podemos asignarles coordenadas de fila y columna a cada letra. Usando esto es fácil obterner la solución calculando distancias y ordenando.
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Implementar el hint.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/TouchscreenKeyboard.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/TouchscreenKeyboard.cpp">Código de ejemplo C++</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
