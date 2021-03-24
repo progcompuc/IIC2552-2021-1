@@ -89,6 +89,19 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CenterAlignement.cpp">Código de ejemplo C++</a>
 </details>
 
+### G - Four Segments
+<details> 
+   <summary>Hint</summary>
+   Busque características necesarias y suficientes para determinar que los segmentos entregados forman un rectángulo, por ejemplo, hay exactamente 4 puntos y 4 segmentos, 2 verticales y 2 horizontales.
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Implementar el hint.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/FourSegments.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/FourSegments.cpp">Código de ejemplo C++</a>
+</details>
 
 <!-- <details> 
   <summary>Hint</summary>   
