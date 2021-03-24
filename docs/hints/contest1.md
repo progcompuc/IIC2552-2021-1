@@ -13,6 +13,7 @@ title: contest 1 - hints y códigos de ejemplo
    <summary>Solución + código</summary>
    Implementar el hint
    
+   
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/StonesOnTheTable.py">Código de ejemplo Python</a>
    
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/StonesOnTheTable.cpp">Código de ejemplo C++</a>
