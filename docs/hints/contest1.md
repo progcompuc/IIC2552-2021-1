@@ -47,6 +47,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MaximumSquare.cpp">Código de ejemplo C++</a>
 </details>
 
+### D - Temporarily unavailable
+<details> 
+   <summary>Hint</summary>
+   Podemos chequear si no hay intersección y retornar 0 (basta ver si el comienzo de cobertura esta después del final del recorrido o si el final del radio de cobertura está antes del inicio del recorrido), en otro caso basta sumar el tamaño del principio al comienzo del radio de cobertura y del final del radio de cobertura hasta el final del recorrido (si son positivos).
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Implementar el hint.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TemporarilyUnavailable.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TemporarilyUnavailable.cpp">Código de ejemplo C++</a>
+</details>
+
 
 <!-- <details> 
   <summary>Hint</summary>   
