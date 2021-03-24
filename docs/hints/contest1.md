@@ -106,7 +106,7 @@ title: contest 1 - hints y códigos de ejemplo
 ### H - Touchscreen Keyboard
 <details> 
    <summary>Hint</summary>
-   Podemos asignarles coordenadas de fila y columna a cada letra. Usando esto es fácil obterner la solución calculando distancias y ordenando.
+   Podemos asignarles coordenadas de fila y columna a cada letra. Usando esto es fácil obterner la solución calculando distancias y ordenando. Pueden guardar las coordenadas en un diccionario de python o en un map de c++.
 </details>
 <details>
    <summary>Solución + código</summary>
