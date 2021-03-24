@@ -130,6 +130,20 @@ title: contest 1 - hints y códigos de ejemplo
    <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/AddingWords.cpp">Código de ejemplo C++</a>
 </details>
 
+### J - They Are Everywhere
+<details> 
+   <summary>Hint</summary>
+   Hay varias formas de hacerlo, una de las más simple consiste en mantener un rango en que están presentes todos los pokemons para cada posición final. Empezando de la primera posición en que estén todos los pokemons hacia la izquierda, si avanzamos el borde derecho en una posición podemos mover el izquierdo mientras la ocurrencia del pokemon en el borde izquierdo dentro del rango sea mayor a 1. La respuesta final será el mínimo de estos rangos. Está técnica es una aplicación de dos punteros y es un enfoque bastante usado en programación competitiva.
+</details>
+<details>
+   <summary>Solución + código</summary>
+   Implementar el hint.
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheyAreEverywhere.py">Código de ejemplo Python</a>
+   
+   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheyAreEverywhere.cpp">Código de ejemplo C++</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
