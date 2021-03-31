@@ -46,18 +46,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PolynomialMultiplication.cpp">Código de ejemplo C++</a>
 </details>
 
-### D - 
+### D - Remove Smallest
 <details> 
   <summary>Hint</summary>
-  
+  Piensen en cómo lo harían si el arreglo estuviera ordenado de mayor a menor.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Si primero ordenamos el arreglo, tendremos que los elementos que buscamos estarán en índices continuos, luego podemos recorrer el arreglo de izquierda a derecha y cada vez que nos encontremos con un salto de más de 1 con el elemento anterior, tendremos que ese elemento (el anterior) no puede ser eliminado y sumamos 1 a la respuesta.
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/RemoveSmallest.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/RemoveSmallest.cpp">Código de ejemplo C++</a>
 </details>
 
 ### E - 
