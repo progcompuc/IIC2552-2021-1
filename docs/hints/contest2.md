@@ -60,18 +60,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/RemoveSmallest.cpp">Código de ejemplo C++</a>
 </details>
 
-### E - 
+### E - Counting Stars
 <details> 
   <summary>Hint</summary>
-  
+  Podemos recorrer todas las posiciones, cada vez que nos encontremos con una estrella (con un '-') debemos marcar todo lo perteneciente a esa estrella para no contarla denuevo, piensen en cómo hacer eso.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Cada vez que nos encontramos una estrella podemos llamar una función recursiva que visite toda la estrella y la marque como contada, para esto la función puede recibir coordenada x e y y llamar recursivamente a la misma función para los vecinos de la coordenada que también sean parte de la estrella y no hayan sido ya visitados por la función luego sólo sumamos uno a la respuesta cada vez que veamos un '-' no marcado como visitado y cada vez que pase llamamos a la función recursiva para marcar como visitada toda esa estrella. Esta técnica de visitar es una aplicación de recorrer grafos con dfs, lo que se verá más adelante.
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingStars.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingStars.cpp">Código de ejemplo C++</a>
 </details>
 
 ### F - 
