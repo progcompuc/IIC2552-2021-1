@@ -130,14 +130,14 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MakingSequencesIsFun.cpp">Código de ejemplo C++</a>
 </details>
 
-### J - 
+### J - Hyperset
 <details> 
   <summary>Hint</summary>
-  
+  Podemos recorrer cada par de string en el input en  O(N^2), para cada par podemos determinar únicamente cuál sería el tercero que armaría un set con estos, por cada caracter si son iguales el tercero debe ser igual y si son distintos el tercero debe tener el que falta, luego basta chequear si el string armado estaba en el input (esto se puede hacer rápido con un set). La complejidad si es bien implementado de esta solución es de O(k * N^2 * log(N)) que pasa en el tiempo.
 </details>
 <details> 
   <summary>Solución + código</summary>
-  
+  Implementar el hint.
   
   <a href="">Código de ejemplo Python</a>
   
