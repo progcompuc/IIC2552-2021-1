@@ -88,18 +88,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PizzaHawaii.cpp">Código de ejemplo C++</a>
 </details>
 
-### G - 
+### G - Zagrade
 <details> 
   <summary>Hint</summary>
-  
+  Primero debemos obtener una lista de pares de indices correspondientes a pares de paréntesis correlacionados. Para esto basta leer el string dado de izquierda a derecha y tener una lista de posiciones de abre paréntesís aún no acoplados, cada vez que encontremos un cierra paréntesis lo acoplamos con el último abre paréntesis en la lista (y lo quitamos de la lista). Usando esto sólo tenemos que ver todas las combinaciones de pares de paréntesis a eliminar, armar los strings respectivos y ordenar la lista de respuestas.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Usando el hint, para ver cómo generar todas las combinaciones podemos hacerlo con un for que recorra i desde 1 a (2^N - 1), donde N es la cantidad de pares de paréntesis, cada uno de estos valores para i se puede interpretar como un número binario de N bits, donde si el j-ésimo bit está prendido nos indica si eliminar el j-ésimo par de paréntesis de este caso de respuesta, los numeros binarios justo generarán todas las posibilidades en este for. Luego de armados los strings para cada i y puestas en una lista, basta ordenar y retornar.
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/Zagrade.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/Zagrade.cpp">Código de ejemplo C++</a>
 </details>
 
 ### H - 
