@@ -139,9 +139,9 @@ title: contest 2 - hints y códigos de ejemplo
   <summary>Solución + código</summary>
   Implementar el hint.
   
-  <a href="">Código de ejemplo Python</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Hyperset.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Hyperset.cpp">Código de ejemplo C++</a>
 </details>
 
 <!-- <details> 
