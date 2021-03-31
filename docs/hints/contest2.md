@@ -116,18 +116,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.cpp">Código de ejemplo C++</a>
 </details>
 
-### I - 
+### I - Making Sequences is Fun
 <details> 
   <summary>Hint</summary>
-  
+  Podemos ir agregando los números de n dígitos en bloques mientras sea posible, empezando con n = #(dígitos en m). la cantidad de números con n dígitos que se pueden agregar en un principio es (10^n - m) sumamos eso a la respuesta, updateamos m a 10^n, sumamos uno a n y repetimos mientras no nos pasemos de w.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Cuando agregar más nos haría pasarnos de w sumamos (w - costo hasta ahora) / (n * k) (que es la máxima cantidad de números de n dígitos que nos alcanzan) y retornamos la respuesta.
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MakingSequencesIsFun.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/MakingSequencesIsFun.cpp">Código de ejemplo C++</a>
 </details>
 
 ### J - 
