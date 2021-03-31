@@ -18,6 +18,131 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/ReversedBinaryNumbers.cpp">Código de ejemplo C++</a>
 </details>
 
+### B - Two distinct points
+<details> 
+  <summary>Hint</summary>
+  Basta con elegir un número cualquiera del primer segmento y para el segundo elegir alguno de los vértices, mientras sea distinto al punto elegido para el primer segmento.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Implementar el hint.
+  
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoDistinctPoints.py">Código de ejemplo Python</a>
+  
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoDistinctPoints.cpp">Código de ejemplo C++</a>
+</details>
+
+### C - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### D - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### E - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### F - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### G - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### H - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### I - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
+
+### J - 
+<details> 
+  <summary>Hint</summary>
+  
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  
+  
+  <a href="">Código de ejemplo Python</a>
+  
+  <a href="">Código de ejemplo C++</a>
+</details>
 
 <!-- <details> 
   <summary>Hint</summary>   
