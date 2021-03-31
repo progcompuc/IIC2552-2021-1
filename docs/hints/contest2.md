@@ -74,18 +74,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/CountingStars.cpp">Código de ejemplo C++</a>
 </details>
 
-### F - 
+### F - Pizza Hawaii
 <details> 
   <summary>Hint</summary>
-  
+  Podemos guardar en diccionarios/maps para cada ingrediente en qué recetas aparece.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Usando el hint basta comparar cada par de ingredientes (uno de cada idioma) y ver si las listas de recetas en que aparecen son iguales. En caso de serlo agregamos ese par a la respuesta. Para devolver los pares en el orden pedido basta hacer un sort a la lista de pares respuesta.
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PizzaHawaii.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PizzaHawaii.cpp">Código de ejemplo C++</a>
 </details>
 
 ### G - 
