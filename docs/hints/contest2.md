@@ -102,18 +102,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/Zagrade.cpp">Código de ejemplo C++</a>
 </details>
 
-### H - 
+### H - Sum
 <details> 
   <summary>Hint</summary>
-  
+  Primero debemos encontrar una base que genere el mayor largo en la suma, una base que siempre sirve para esto es el mayor dígito que nos dieron en el input + 1.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Luego basta ir pasando la suma de estos números en la nueva base a la nueva base, podemos hacerlo todo en un while acumulando suma de digitos menores y acumulado anterior, dividiendo por la base en cada paso y dividiendo por 10 los números en cada paso (para quitar el menor dígito).
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/Sum.cpp">Código de ejemplo C++</a>
 </details>
 
 ### I - 
