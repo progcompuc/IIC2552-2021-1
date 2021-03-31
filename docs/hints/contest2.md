@@ -32,18 +32,18 @@ title: contest 2 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoDistinctPoints.cpp">Código de ejemplo C++</a>
 </details>
 
-### C - 
+### C - Polynomial Multiplication I
 <details> 
   <summary>Hint</summary>
-  
+  Multiplicar polinomios en O(N^2) pasa en tiempo, es decir, multipliquen coeficiente a coeficiente.
 </details>
 <details> 
   <summary>Solución + código</summary>
+  Para multiplicar polinomios basta hacer un doble for en los grados de cada polinomio y multiplicar cada coefs_1[i] * coefs_2[j] asignando la respuesta a coefs_ans[i + j].
   
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PolynomialMultiplication.py">Código de ejemplo Python</a>
   
-  <a href="">Código de ejemplo Python</a>
-  
-  <a href="">Código de ejemplo C++</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/PolynomialMultiplication.cpp">Código de ejemplo C++</a>
 </details>
 
 ### D - 
