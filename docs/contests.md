@@ -16,6 +16,6 @@ Marzo 26, 12 días, [link a **contest**](https://vjudge.net/contest/429814)\\
 **Tópicos**: [Problemas de implementación (excelente oportunidad para aprender C++)](resources/cpp)\\
 **Puntos**: 2, 1, 2, 2, 3, 3, 4, 3, 4, 3\\
 **Puntaje Mínimo Esperado**: 5\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Hints** y **códigos de ejemplo**: [link](hints/contest2)
 
 [Index](index) > ```{{page.title}}```
