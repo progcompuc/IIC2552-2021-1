@@ -54,10 +54,23 @@ title: contest 3 - hints y códigos de ejemplo
 </details>
 <details> 
   <summary>Solución + código</summary>
-  Usando el hint necesitamos poder calcular el tiempo que tomaría el camino dado un valor para c. Para esto basta saber que distancia = velocidad * tiempo, luego podemos obtener el tiempo sumando distancia / velocidad para cada tramo donde la velocidad será (v[i] + c). Usando este valor como dice el hint en una búßqueda binaria encontramos la respuesta.
+  Usando el hint necesitamos poder calcular el tiempo que tomaría el camino dado un valor para c. Para esto basta saber que distancia = velocidad * tiempo, luego podemos obtener el tiempo sumando distancia / velocidad para cada tramo donde la velocidad será (v[i] + c). Usando este valor como dice el hint en una búsqueda binaria encontramos la respuesta.
   
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/NeedForSpeed.py">Código de ejemplo Python</a>
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/NeedForSpeed.cpp">Código de ejemplo C++</a>
+</details>
+
+### The Meeting Place Cannot Be Changed
+<details> 
+  <summary>Hint</summary>
+  Si usamos búsqueda binaria para poder calcular el menor tiempo necesario para juntarse, debemos generar un predicado que dado un tiempo t nos diga si es posible juntarse o no en ese tiempo. Para esto usen que cada persona i en un tiempo t puede llegar a cualquier punto en un rango (x[i] - v[i] * t, x[i] + v[i] * t).
+</details>
+<details>
+  Usando el hint, podemos verificar si es posible juntarse en un tiempo te viendo si los rangos de cada persona tienen intersección no vacía, para esto basta recordar el máximo límite inferior L de los rangos y el mínimo límite superior R de los rangos, si L <= R entonces si hay intersección. Usando este predicado en una búsqueda binaria se encuentra la respuesta.
+  
+  <summary>Solución + código</summary>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheMeetingPlaceCannotBeChanged.py">Código de ejemplo Python</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TheMeetingPlaceCannotBeChanged.cpp">Código de ejemplo C++</a>
 </details>
 
 <!-- <details> 
