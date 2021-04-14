@@ -47,6 +47,19 @@ title: contest 3 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/VanyaAndLanterns.cpp">Código de ejemplo C++</a>
 </details>
 
+### E - Need for Speed
+<details> 
+  <summary>Hint</summary>
+  Si usamos búsqueda binaria para encontrar el c pedido, debemos pensar en un predicado que dado un c nos diga si el tiempo que toma es menor o no al tiempo que sabemos que demora el camino. En caso de ser menor necesitamos un c más pequeño y viceversa. Piensen en cómo calculan el tiempo que demoraría el camino dado un c.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando el hint necesitamos poder calcular el tiempo que tomaría el camino dado un valor para c. Para esto basta saber que distancia = velocidad * tiempo, luego podemos obtener el tiempo sumando distancia / velocidad para cada tramo donde la velocidad será (v[i] + c). Usando este valor como dice el hint en una búßqueda binaria encontramos la respuesta.
+  
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/NeedForSpeed.py">Código de ejemplo Python</a>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Kattis/NeedForSpeed.cpp">Código de ejemplo C++</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>
 </details>
