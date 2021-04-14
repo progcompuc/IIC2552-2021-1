@@ -21,8 +21,8 @@ Marzo 26, 12 días, [link a **contest**](https://vjudge.net/contest/429814)\\
 ## Contest 3
 Abril 09, 14 días, [link a **contest**](https://vjudge.net/contest/432543)\\
 **Tópicos**: [Búsqueda Binaria](resources/search)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntos**: 1, 1, 4, 2, 3, 2, 3, 4, 5\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: _pending_
 
 
