@@ -111,6 +111,16 @@ title: contest 4 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/DevuAndHisBrother.cpp">Código de ejemplo</a>
 </details>
 
+### J - Chasing the Cheetahs
+<details> 
+  <summary>Hint</summary>
+  Es equivalente al problema E - Race Time
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/ChasingTheCheetahs.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
