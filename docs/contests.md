@@ -39,4 +39,11 @@ Abril 23, 14 días, [link a **contest**](https://vjudge.net/contest/435087)\\
 **Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest5)
 
+## Contest 6
+Abril 30, 14 días, [link a **contest**](https://vjudge.net/contest/436466)\\
+**Tópicos**: [tuttifrutti](resources/resources)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
+
 [Index](index) > ```{{page.title}}```
