@@ -33,7 +33,18 @@ title: contest 6 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/TwoSquares.cpp">Código de ejemplo</a>
 </details>
 
-<!-- <details> 
+### D - Hanoi Towers Trouble Again!
+<details> 
+  <summary>Hint</summary>
+  Se puede programar un backtracking que solucione el problema.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos hacer un backtracking solve(i, x) que busca poner x en alguno de los primeros i - 1stacks, si se puede en alguno intentamos y se sigue con x + 1 en los primeros i - 1, si no se puede lo ponemos en el i-ésimo y seguimos con el x + 1 en los primeros i stacks. Cuando intentemos un i mayor al permitido cortamos.
+  <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/UVA/10276_HanoiTowerTroublesAgain!.cpp">Código de ejemplo</a>
+</details>
+
+<!-- <details>
   <summary>Hint</summary>   
 </details>
 <details> 
