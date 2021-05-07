@@ -48,7 +48,7 @@ Abril 30, 14 días, [link a **contest**](https://vjudge.net/contest/436466)\\
 
 ## Contest 7
 Mayo 07, 21 días, [link a **contest**](https://vjudge.net/contest/437659)\\
-**Tópicos**: [tuttifrutti](resources/resources)\\
+**Tópicos**: [DP](resources/dp)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
