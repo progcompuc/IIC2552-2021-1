@@ -33,7 +33,7 @@ La recurrencia del DP(n, h) del hint, ignorando casos bases, sería la sumatoria
 <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/BabyEhabPartitionsAgain.cpp">Código de ejemplo</a>
 </details>
 
-### H - Greenhouse Effect
+### D - Greenhouse Effect
 <details> 
   <summary>Hint 1</summary>
   Un primer insight es darse cuenta de que al poder colocar las plantas en el lugar que queramos, las coordenadas de estas no son realmente importantes para el problema, sólo el orden inicial de los tipos.
@@ -48,7 +48,7 @@ La recurrencia del DP(n, h) del hint, ignorando casos bases, sería la sumatoria
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/GreenhouseEffect.cpp">Código de ejemplo</a>
 </details>
 
-### B - Looking for Order
+### E - Looking for Order
 <details>
   <summary>Hint</summary>
   Podemos representar los objetos que tenemos que recoger con los bits de un entero 'mask'. Entonces podemos pensar en un DP de la forma DP(mask) = el mínimo tiempo para recoger los objetos indicados por los bits prendidos de 'mask', y la solución al problema inicial sería DP(2^N-1), con N siendo la cantidad de objetos.
@@ -81,7 +81,7 @@ Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, den
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/SPOJ/ScubaDiver.cpp">Código de ejemplo</a>
 </details>
 
-### I - Changing A String
+### H - Changing A String
 <details> 
   <summary>Hint</summary>
   Podemos pensar el problema como ir igualando los strings de a poco de izquierda a derecha, de esta forma podemos definir un subproblema del dp como minimizar la cantidad de movimientos dado que estoy en el el índice i del primer string y en el índice j del segundo (asumes que ya igualaste lo anterior).
@@ -92,7 +92,7 @@ Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, den
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/ChangingAString.cpp">Código de ejemplo</a>
 </details>
 
-### C - Rotate Columns (Hard Version)
+### I - Rotate Columns (Hard Version)
 <details> 
   <summary>Hint 1</summary>
   Si M > N, notar que podemos ordenar las columnas de mayor a menor de acuerdo al máximo valor por columna, quedarnos con las primeras N columnas y descartar el resto. Esto porque cualquier solución que no use alguna(s) de las primeras N columnas siempre la podemos empatar o mejorar rotando apropiadamente las primeras N columnas.
@@ -110,7 +110,7 @@ Implementamos el DP(mask) definido conceptualmente en el hint. Internamente, den
   Primero nos quedamos con min(M,N) columnas según el Hint 1. Luego buscamos la suma de máximos óptima con un DP(i, mask) como se indicó en el Hint 2. Internamente, para la i-ésima columna debemos escoger un 'submask' de 'mask' (subconjunto de las filas disponibles) donde esta columna contribuirá con máximos. Dado un 'submask', podemos buscar la clase de equivalencia de 'submask' (que podemos precomputar de antes) y luego la suma de la rotación óptima de la columna i-ésima para dicha clase de equivalencia (también precomputable de antes). Entonces escoger un 'submask' de 'mask' para la columna i tiene un costo asociado de maxsum[i][mask2class[submask]] + DP(i+1, mask - submask). Es súper importante hacer estos pre-cómputos porque de no hacerlos, estaríamos obligados a hacerlos a cada rato dentro del DP y esto daría TLE por los límites del problema y la restricción de tiempo (este es un excelente problema para aprender el valor de precomputar muchas cosas). <a href="https://github.com/PabloMessina/Competitive-Programming-Material/blob/master/Solved%20problems/Codeforces/1209E2_RotateColumns(HardVersion).cpp">Código de ejemplo</a>
 </details>
 
-### D - Knapsack for all Segments
+### J - Knapsack for all Segments
 <details>
   <summary>Hint</summary>
   Notar que el problema es equivalente a contar todas las tuplas (L, sequence, R), donde sequence = (i1, i2, ..., ik) es una secuencia de índices de algún largo k tal que L <= i1 < i2 < .. < ik <= R y A[i1] + A[i2] + ... + A[ik] = S. Usando nuestro conocimiento previo de backtracking, todos las tuplas (L, sequence, R) válidas las podemos contar explorando un árbol de decisiones sobre los índices 0, 1, ..., N-1, donde por cáda índice vamos decidiendo si lo consideramos el L de la tupla, algún elemento de sequence o el R de la tupla (en ese orden). Pero bactracking daría TLE. La gracia está en darse cuenta que hay subproblemas que se repiten, y ahí podemos aplicar DP.
