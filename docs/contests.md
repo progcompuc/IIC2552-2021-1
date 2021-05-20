@@ -49,8 +49,8 @@ Abril 30, 14 días, [link a **contest**](https://vjudge.net/contest/436466)\\
 ## Contest 7
 Mayo 07, 21 días, [link a **contest**](https://vjudge.net/contest/437659)\\
 **Tópicos**: [DP](resources/dp)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
+**Puntos**: 2, 3, 4, 3, 4, 3, 3, 4, 7, 5\\
+**Puntaje Mínimo Esperado**: 5\\
 **Hints** y **códigos de ejemplo**: _pending_
 
 [Index](index) > ```{{page.title}}```
