@@ -27,9 +27,12 @@ La recurrencia del DP(n, h) del hint, ignorando casos bases, sería la sumatoria
 ### C - Baby Ehab Partitions Again
 <details>
   <summary>Hint</summary>
+  Notemos que la suma debe ser par para poder separar en estos 2 grupos. Además, si no es posible separar en 2 grupos como los que se piden entonces la respuesta debe ser 0.
+  Para saber si es posible encontrar esta separación podemos aplicar programación dinámica, piensen en un dp parecido al del problema B.
 </details>
 <details> 
 <summary>Solución + código</summary>
+  Usando el hint, para saber si existe respuesta basta una función de programación dinámica que vea si es posible elegir valores en el arreglo tal que su suma sea la mitad de la suma total (usando una función DP(i, v) donde i es el valor en el que vamos y v es la suma que nos falta, la respuesta será saber si es posible DP(0, S/2) con S suma total). En caso de si haber forma, notemos que basta quitar un número impar, en caso de no haberlo dividimos todos por dos hasta que haya y lo quitamos.
 <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/BabyEhabPartitionsAgain.cpp">Código de ejemplo</a>
 </details>
 
