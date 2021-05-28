@@ -54,7 +54,7 @@ Mayo 07, 21 días, [link a **contest**](https://vjudge.net/contest/437659)\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest7)
 
 ## Contest 8
-Mayo 21, 21 días, [link a **contest**](https://vjudge.net/contest/440112)\\
+Mayo 21, 14 días, [link a **contest**](https://vjudge.net/contest/440112)\\
 **Tópicos**: [tuttifrutti](resources/resources)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
