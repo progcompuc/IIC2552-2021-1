@@ -36,6 +36,17 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CormenTheBestFriendOfAMan.cpp">Código de ejemplo</a>
 </details>
 
+### E - Alternating Subsequence
+<details> 
+  <summary>Hint</summary>   
+  Notemos que el largo más grande de una secuencia alternante es la cantidad de segmentos con números del mismo signo, pues siempre conviene tomar un número de cada segmento continuo de números del mismo signo.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Usando el hint, la secuencia alternante más grande y de suma mayor, toma en cada segmento de números del mismo signo al más grande de ellos.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/AlternatingSubsequence.cpp">Código de ejemplo</a>
+</details> 
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
