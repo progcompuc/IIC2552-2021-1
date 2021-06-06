@@ -29,6 +29,13 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/BinaryRemovals.cpp">Código de ejemplo</a>
 </details>
 
+### D - Cormen The Best Friend Of a Man
+<details> 
+  <summary>Solución + código</summary>
+  De forma codiciosa, si recorremos el arreglo que se nos entrega, siempre conviene aumentar el número actual al mínimo que haga que la suma del actual y el anterior sea >= K, esto llegará a la menor cantidad de adiciones.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CormenTheBestFriendOfAMan.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
