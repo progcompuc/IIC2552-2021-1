@@ -56,9 +56,9 @@ Mayo 07, 21 días, [link a **contest**](https://vjudge.net/contest/437659)\\
 ## Contest 8
 Mayo 21, 14 días, [link a **contest**](https://vjudge.net/contest/440112)\\
 **Tópicos**: [tuttifrutti](resources/resources)\\
-**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
-**Puntaje Mínimo Esperado**: ?\\
-**Hints** y **códigos de ejemplo**: _pending_
+**Puntos**: 2, 2, 3, 3, 3, 3, 4, 6\\
+**Puntaje Mínimo Esperado**: 4\\
+**Hints** y **códigos de ejemplo**: [link](hints/contest8)
 
 ## Contest 9
 Mayo 28, 14 días, [link a **contest**](https://vjudge.net/contest/441277)\\
