@@ -47,6 +47,17 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/AlternatingSubsequence.cpp">Código de ejemplo</a>
 </details> 
 
+### F - Long Jumps
+<details> 
+  <summary>Hint</summary>  
+  Piensen en usar DP.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos hacer un dp con estado el índice en que estamos y que responda la máxima suma partiendo de este índice, luego la suma será A[i] + dp(i + A[i]), basta luego tomar el máximo de dp(i) para todo i.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LongJumps.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
