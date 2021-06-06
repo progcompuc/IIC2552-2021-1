@@ -22,6 +22,13 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/SantaClausAndCandies.cpp">Código de ejemplo</a>
 </details>
 
+### C - Binary Removals
+<details> 
+  <summary>Solución + código</summary>
+  Nos piden dejar el string de la forma 000...000111...111, cómo no se pueden eliminar dígitos seguidos, el primer momento donde se vean dos 1 juntos, mientras no hayan dos 0 juntos luego de eso se podrá.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/BinaryRemovals.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
