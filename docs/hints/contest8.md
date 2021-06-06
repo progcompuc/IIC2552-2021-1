@@ -58,6 +58,17 @@ title: contest 8 - hints y códigos de ejemplo
   <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/LongJumps.cpp">Código de ejemplo</a>
 </details>
 
+### G - Canine poetry
+<details> 
+  <summary>Hint</summary>
+  Noten que basta evitar los palíndromos de tamaño 2 o 3. Pues los más grandes tienen esos en medio.
+</details>
+<details> 
+  <summary>Solución + código</summary>
+  Podemos recorrer el string y recordar las últimas 2 letras, si la letra nueva es igual a la última hay un palíndromo de tamaño 2, cambiamos la nueva, si la nueva es igual a la penúltima hay un palíndromo de tamaño 3, cambiamos la nueva. Podemos siempre asumir que la cambiamos a una letra que nunca será igual a las que vienen 3 más alla, pues hay suficientes letras en el alfabeto para eso.
+  <a href="https://github.com/BenjaminRubio/CompetitiveProgramming/blob/master/Problems/Codeforces/CaninePoetry.cpp">Código de ejemplo</a>
+</details>
+
 <!-- <details> 
   <summary>Hint</summary>   
 </details>
