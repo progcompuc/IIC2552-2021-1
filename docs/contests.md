@@ -76,7 +76,7 @@ Junio 04, 14 días, [link a **contest**](https://vjudge.net/contest/442309)\\
 
 
 ## Contest 11
-Junio 04, 14 días, [link a **contest**](https://vjudge.net/contest/443866)\\
+Junio 18, 14 días, [link a **contest**](https://vjudge.net/contest/443866)\\
 **Tópicos**: [Grafos - BFS/DFS](resources/graphs)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
