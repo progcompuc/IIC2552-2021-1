@@ -74,13 +74,18 @@ Junio 04, 14 días, [link a **contest**](https://vjudge.net/contest/442309)\\
 **Puntaje Mínimo Esperado**: 4\\
 **Hints** y **códigos de ejemplo**: [link](hints/contest10)
 
-
 ## Contest 11
-Junio 18, 14 días, [link a **contest**](https://vjudge.net/contest/443866)\\
+Junio 18, 16 días, [link a **contest**](https://vjudge.net/contest/443866)\\
 **Tópicos**: [Grafos - BFS/DFS](resources/graphs)\\
 **Puntos**: ?, ?, ?, ?, ?, ?, ?, ?, ?\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
 
+## Contest 12
+Julio 18, 14 días, [link a **contest**](https://vjudge.net/contest/445209)\\
+**Tópicos**: [Grafos - Shortest Path](resources/graphs)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
 
 [Index](index) > ```{{page.title}}```
