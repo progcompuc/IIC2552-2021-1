@@ -88,4 +88,11 @@ Julio 18, 14 días, [link a **contest**](https://vjudge.net/contest/445209)\\
 **Puntaje Mínimo Esperado**: ?\\
 **Hints** y **códigos de ejemplo**: _pending_
 
+## Contest 13
+Julio 18, 14 días, [link a **contest**](https://vjudge.net/contest/446249)\\
+**Tópicos**: [Math + tuttifruitti](resources/math)\\
+**Puntos**: ?, ?, ?, ?, ?, ?, ?, ?\\
+**Puntaje Mínimo Esperado**: ?\\
+**Hints** y **códigos de ejemplo**: _pending_
+
 [Index](index) > ```{{page.title}}```
